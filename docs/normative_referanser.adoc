@@ -1,0 +1,8 @@
+
+== Normative referanser
+
+Følgende standarder er normative og danner grunnlag for denne standard: 
+
+* https://doc.difi.no/data/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_]: Standarden stiller krav til innhold i beskrivelse av begrep og begrepssamling. 
+
+* NS-ISO 30042:2019 _Forvaltning av terminologiressurser - Utvekslingsformat for termbaser (TBX)_: Standarden definerer et rammeverk for bl.a. hvordan (samlinger av) begrepsbeskrivelser skal kunne utveksles i maskinlesbare formater.

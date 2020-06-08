@@ -1,0 +1,658 @@
+
+// == Felt i standarden
+
+I tabellene under er det brukt følgende prefiks: 
+[cols="15s,85", stripes=odd]
+|===
+|Prefiks | **Forklaring**
+|adms: |Asset Description Metadata Schema (ADMS), https://www.w3.org/TR/vocab-adms/#
+|datcat: | Terminological Data Categories, http://www.datcatinfo.net/#/
+|dct: | (Dublin Core) DCMI Metadata Terms, http://purl.org/dc/terms/
+|rdfs: | RDF Schema, https://www.w3.org/TR/rdf-schema/#
+|skos: | SKOS Simple Knowledge Organization System, https://www.w3.org/TR/skos-reference/#
+| skosno: | Norske utvidelser av SKOS, data.norge.no/vacabulary/skosno#
+| tei: | Text Encoding Initiative, https://tei-c.org/release/doc/tei-p5-doc/en/html/
+|===
+
+=== Begrep
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘concept’, skos:Concept
+|TBX-representasjon a|`<conceptEntry id="begrep001">`
+|Datatype (med ev. PID til definisjon) |Se attributtene under Begrep.
+|TBX-Nivå |conceptEntry
+|Merknad |(ingen)
+|===
+
+=== Begrep.identifikator
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘Identifier’, datcat:DC-3894
+|TBX-representasjon a|`<admin type=”identifikator”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |conceptEntry
+|Merknad |(ingen)
+|===
+
+=== Begrep.ansvarligVirksomhet
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘responsible organization’, datcat:DC-452
+|TBX-representasjon a|`<transac type=”ansvarligVirksomhet”>nnnnnnnnn</transac>`
+|Datatype (med ev. PID til definisjon) |Organisasjonsnummer, https://www.brreg.no/om-oss/oppgavene-vare/alle-registrene-vare/om-enhetsregisteret/organisasjonsnummeret/
+|TBX-Nivå |conceptEntry
+|Merknad |I en `<transacGrp>`
+|===
+
+=== Begrep.fagområde.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘subject field’, datcat:DC-489
+|TBX-representasjon a|`<descrip type=”fagområde”>tekst</descrip>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.fagområde.språkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon  |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nb”>`
+|Datatype (med ev. PID til definisjon) a| PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder):
+
+* `nb`
+* `nn` 
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.bruksområde.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘bruksområde’, skosno:bruksområde
+|TBX-representasjon a|`<descrip type=”bruksområde”>tekst</descrip>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.bruksområde.språkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nn”>`
+|Datatype (med ev. PID til definisjon) a|PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder): 
+
+* `nb` 
+* `nn` 
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.gyldighetsperiode.gyldigFraOgMed
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘start date’, adms:schema-startdate
+|TBX-representasjon a|`<transac type=”typeDato”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `gyldigFraOgMed` ('gyldig fra og med', skosno:gyldigFraOgMed)
+|TBX-Nivå |conceptEntry
+|Merknad |I en `<transacGrp>` sammen med selve datoen som oppgis som `<date>`
+|===
+
+=== Begrep.gyldighetsperiode.gyldigTilOgMed
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘end date’, adms:schema-enddate
+|TBX-representasjon a|`<transac type=”typeDato”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `gyldigTilOgMed` ('gyldig til og med', skosno:gyldigTilOgMed)
+|TBX-Nivå |conceptEntry
+|Merknad |I en `<transacGrp>` sammen med selve datoen som oppgis som `<date>`
+|===
+
+=== Begrep.kontaktpunkt
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘contact Point’, adms:dcat-contactpoint
+|TBX-representasjon a|`<transacNote type=”kontaktpunkt”>`
+|Datatype (med ev. PID til definisjon) |Vcard
+|TBX-Nivå |conceptEntry
+|Merknad |I samme `<transacGrp>` som den aktuelle Begrep.ansvarligVirksomhet
+|===
+
+=== Begrep.sistOppdatert
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘last modification date’, datcat:DC-2526
+|TBX-representasjon a|`<transac type=”typeDato”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `sistOppdatert` (‘last modification date’, datcat:DC-2526)
+|TBX-Nivå |conceptEntry
+|Merknad |I en `<transacGrp>` sammen med selve datoen som oppgis som `<date>`
+|===
+
+=== Begrep.anbefaltTerm
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘preferred’, datcat:DC-72
+|TBX-representasjon a|`<termNote type=”typeTerm”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `anbefaltTerm` (‘preferred’, datcat:DC-72)
+|TBX-Nivå |termSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.tillattTerm
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘admitted’, datcat:DC-73
+|TBX-representasjon a|`<termNote type=”typeTerm”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `tillattTerm` (‘admitted’, datcat:DC-73)
+|TBX-Nivå |termSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.frarådetTerm
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘not recommended’, datcat:DC-74
+|TBX-representasjon a|`<termNote type=”typeTerm”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `frarådetTerm` (‘not recommended’, datcat:DC-74)
+|TBX-Nivå |termSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.datastrukturterm
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘ident’, tei:ref-ident
+|TBX-representasjon a|`<termNote type=”typeTerm”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `datastrukturterm` (‘ident’, tei:ref-ident)
+|TBX-Nivå |termSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.definisjon
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘Definition’, datcat:DC-168
+|TBX-representasjon a|`<descrip type=”definisjon”>`
+|Datatype (med ev. PID til definisjon) |Se attributtene under Betydningsbeskrivelse
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.alternativFormulering
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘alternativ formulering’, skosno:AlternativFormulering
+|TBX-representasjon a|`<descrip type=”alternativFormulering”>`
+|Datatype (med ev. PID til definisjon) |Se attributtene under Betydningsbeskrivelse
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Begrep.assosiativRelasjon
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘associative relation’, datcat:DC-88
+|TBX-representasjon a|`<descrip type=”typeRelasjon”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `assosiativRelasjon` (‘associative relation’, datcat:DC-88)
+|TBX-Nivå |langSec
+|Merknad |I en `<descripGrp>` sammen med de andre metadata om den aktuelle relasjonen
+|===
+
+=== Begrep.generiskRelasjon
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘generic relation’, datcat:DC-242
+|TBX-representasjon a|`<descrip type=”typeRelasjon”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `generiskRelasjon` (‘generic relation’, datcat:DC-242)
+|TBX-Nivå |langSec
+|Merknad |I en `<descripGrp>` sammen med de andre metadata om den aktuelle relasjonen
+|===
+
+=== Begrep.partitivRelasjon
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘partitive relation’, datcat:DC-397
+|TBX-representasjon a|`<descrip type=”typeRelasjon”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `partitivRelasjon` (‘partitive relation’, datcat:DC-397)
+|TBX-Nivå |langSec
+|Merknad |I en `<descripGrp>` sammen med de andre metadata om den aktuelle relasjonen
+|===
+
+=== Begrep.seOgså
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘see also’, rdfs:seealso
+|TBX-representasjon a|`<xref type=”seOgså”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |conceptEntry
+|Merknad |(ingen)
+|===
+
+=== Begrep.erstatter
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘replaces’, dct:replaces
+|TBX-representasjon a|`<xref type=”erstatter”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |conceptEntry
+|Merknad |(ingen)
+|===
+
+=== Begrep.erstattesAv
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘is replaced by’, dct:isReplacedBy
+|TBX-representasjon a|`<xref type=”erstattesAv”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |conceptEntry
+|Merknad |(ingen)
+|===
+
+=== Term.navn.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘term’ , datcat:DC-508
+|TBX-representasjon a|`<term>tekst</term>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |termSec
+|Merknad |(ingen)
+|===
+
+=== Term.navn.språkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nb”>`
+|Datatype (med ev. PID til definisjon) a|PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder): 
+
+* `nb` 
+* `nn` 
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Term.sistOppdatert
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘last modification date’, datcat:DC-2526
+|TBX-representasjon a|`<transac type=”typeDato”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `sistOppdatert` (‘last modification date’, datcat:DC-2526)
+|TBX-Nivå |termSec
+|Merknad |I en `<transacGrp>` sammen med selve datoen som oppgis som `<date>`
+|===
+
+=== TillattTerm.målgruppe
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘audience’, datcat:DC-527
+|TBX-representasjon a|`<termNote type=”målgruppe”>`
+|Datatype (med ev. PID til definisjon) a|PickList: 
+
+* `allmennheten` (‘allmennheten’, skosno:allmennheten) 
+* `fagspesialist` (‘fagspesialist’, skosno:fagspesialist)
+|TBX-Nivå |termSec
+|Merknad |(ingen)
+|===
+
+=== Betydningsbeskrivelse.tekst.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |Se Begrep.definsjon hhv. Begrep.alteranativFormulering
+|TBX-representasjon a|`<descrip type=”definisjon”>tekst</descript>` hhv. `<descrip type=”alternativFormulering”>tekst</descrip>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Betydningsbeskrivelse.tekst.språkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nn”>`
+|Datatype (med ev. PID til definisjon) a|PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder):
+
+* `nb` 
+* `nn` 
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Betydningsbeskrivelse.kildebeskrivelse.forholdTilKilde
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘ forhold til kilde’, skosno:forholdTilKilde
+|TBX-representasjon a|`<admin type=”forholdTilKilde”>`
+|Datatype (med ev. PID til definisjon) a|PickList:
+
+* `sitatFraKilde` (‘sitat fra kilde’, skosno:sitatFraKilde) 
+* `basertPåKilde` (‘basert på kilde’, skosno:basertPåKilde) 
+* `egendefinert` (‘egendefinert’, skosno:egendefinert)
+|TBX-Nivå |langSec
+|Merknad |I en `<adminGrp>`, dessuten i den samme `<descripGrp>` som den aktuelle Betydningsbeskrivelse.tekst.tekst
+|===
+
+=== Betydningsbeskrivelse.kildebeskrivelse.kilde.URI
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘source’, datcat:DC-471
+|TBX-representasjon a|`<xref type=”kilde”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |langSec
+|Merknad |I samme `<adminGrp>` som den aktuelle Betydningsbeskrivelse.forholdTilKilde
+|===
+
+=== Betydningsbeskrivelse.kildebeskrivelse.kilde.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘source’, datcat:DC-471
+|TBX-representasjon a|`<adminNote type=”kilde”>kilde</adminNote>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |I samme `<adminGrp>` som den aktuelle Betydningsbeskrivelse.forholdTilKilde
+|===
+
+=== Betydningsbeskrivelse.merknad.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘explanation’, datcat:DC-223
+|TBX-representasjon a|`<descripNote type=”merknad”>tekst</descripNote>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Betydningsbeskrivelse.tekst.tekst
+|===
+
+=== Betydningsbeskrivelse.merknad.språkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nb”>`
+|Datatype (med ev. PID til definisjon) a|PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder):
+
+* `nb` 
+* `nn` 
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Betydningsbeskrivelse.eksempel.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘example’, datcat:DC-222
+|TBX-representasjon a|`<descripNote type=”eksempel”>tekst</descrip>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Betydningsbeskrivelse.tekst.tekst
+|===
+
+=== Betydningsbeskrivelse.eksempel.sspråkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nn”>`
+|Datatype (med ev. PID til definisjon) a|PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder):
+
+* `nb` 
+* `nn` 
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Betydningsbeskrivelse.målgruppe
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘audience’, datcat:DC-527
+|TBX-representasjon a|`<descripNote type=”målgruppe”>`
+|Datatype (med ev. PID til definisjon) a|PickList:
+
+* `allmennheten` (‘allmennheten’, skosno:allmennheten) 
+* `fagspesialist` (‘fagspesialist’, skosno:fagspesialist)
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Betydningsbeskrivelse.tekst.tekst
+|===
+
+=== Betydningsbeskrivelse.omfang.URI
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘omfang’, skosno:omfang 
+|TBX-representasjon a|`<xref type=”omfang”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Betydningsbeskrivelse.tekst.tekst
+|===
+
+=== Betydningsbeskrivelse.omfang.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘omfang’, skosno:omfang
+|TBX-representasjon a|`<descripNote type=”omfang”>tekst</descripNote>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Betydningsbeskrivelse.tekst.tekst
+|===
+
+=== Betydningsbeskrivelse.sistOppdatert
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘last modification date’, datcat:DC-2526
+|TBX-representasjon a|`<transac type=”typeDato”>`
+|Datatype (med ev. PID til definisjon) a|PickList:
+
+* `sistOppdatert` (‘last modification date’, datcat:DC-2526)
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Betydningsbeskrivelse.tekst.tekst, dessuten i en `<transacGrp>` sammen med selve datoen som oppgis som `<date>`
+|===
+
+=== AssosiativRelasjon.beskrivelse.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘description’, datcat:DC-2520
+|TBX-representasjon a|`<descripNote type=”beskrivelse”>tekst</descipNote>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Begrep.assosiativRelasjon
+|===
+
+=== AssosiativRelasjon.beskrivelse.språkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nb”>`
+|Datatype (med ev. PID til definisjon) a|PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder):
+
+* `nb` 
+* `nn`
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== GeneriskRelasjon.inndelingskriterium.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘description’, datcat:DC-2520
+|TBX-representasjon a|`<descripNote type=”inndelingskriterium”>tekst</descipNote>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Begrep.generiskRelasjon
+|===
+
+=== GeneriskRelasjon.inndelingskriterium.språkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nn”>`
+|Datatype (med ev. PID til definisjon) a|PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder):
+
+* `nb` 
+* `nn` 
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== PartitivRelasjon.inndelingskriterium.tekst
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘description’, datcat:DC-2520
+|TBX-representasjon a|`<descripNote type=”inndelingskriterium”>tekst</descipNote>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle Begrep.partitivRelasjon
+|===
+
+=== PartitivRelasjon.inndelingskriterium.språkMålform
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘language identifier’, datcat:DC-279
+|TBX-representasjon a|`<langSec xml:lang=”nb”>`
+|Datatype (med ev. PID til definisjon) a|PickList, fra ISO 639-1 (to bokstavers kode), ev. ISO 639-2 og ISO 639-3 (tre bokstavers koder):
+
+* `nb` 
+* `nn` 
+* ...
+|TBX-Nivå |langSec
+|Merknad |(ingen)
+|===
+
+=== Begrepsrelasjon.sistOppdatert
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘last modification date’, datcat:DC-2526
+|TBX-representasjon a|`<transac type=”typeDato”>`
+|Datatype (med ev. PID til definisjon) a|PickList:
+
+* `sistOppdatert` (‘last modification date’, datcat:DC-2526)
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle assosiative, generiske eller partitive relasjonen, dessuten i en `<transacGrp>` sammen med selve datoen som oppgis som `<date>`
+|===
+
+=== Begrepsrelasjon.overordnetBegrep
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘superordinate concept generic’, datcat:DC-496
+|TBX-representasjon a|`<xref type=”overordnetBegrep”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle generiske eller partitive begrepsrelasjonen
+|===
+
+=== Begrepsrelasjon.underordnetBegrep
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘subordinate concept generic’, datcat:DC-491
+|TBX-representasjon a|`<xref type=”underordnetBegrep”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den aktuelle generiske eller partitive begrepsrelasjonen
+|===
+
+=== Begrepsrelasjon.assosiertBegrep
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘associated concept’, datcat:DC-87
+|TBX-representasjon a|`<xref type=”assosiertBegrep”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |langSec
+|Merknad |I samme `<descripGrp>` som den assosiative begrepsrelasjonen
+|===
+
+=== Begrepssamling
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘concept collection’, skos:Collection
+|TBX-representasjon a|`<tbxHeader>`
+|Datatype (med ev. PID til definisjon) |Se attributtene under Begrepssamling
+|TBX-Nivå |tbxHeader
+|Merknad |(ingen)
+|===
+
+=== Begrepssamling.navn
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘title’, dct:title
+|TBX-representasjon a|`<title>tekst</title>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |titleStmt
+|Merknad |(ingen)
+|===
+
+=== Begrepssamling.identifikator
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘identifier’, datcat:DC-3894
+|TBX-representasjon a|`<p type=”identifikator”>`
+|Datatype (med ev. PID til definisjon) |URI
+|TBX-Nivå |sourceDesc
+|Merknad |(ingen)
+|===
+
+=== Begrepssamling.ansvarligVirksomhet
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘responsible organization’, datcat:DC-452
+|TBX-representasjon a|`<p type=”ansvarligVirksomhet”>`
+|Datatype (med ev. PID til definisjon) |Organisasjonsnummer, https://www.brreg.no/om-oss/oppgavene-vare/alle-registrene-vare/om-enhetsregisteret/organisasjonsnummeret/
+|TBX-Nivå |sourceDesc
+|Merknad |(ingen)
+|===
+
+=== Begrepssamling.beskrivelse
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘description’, datcat:DC-2520
+|TBX-representasjon a|`<note>tekst</note>`
+|Datatype (med ev. PID til definisjon) |PCDATA
+|TBX-Nivå |titleStmt
+|Merknad |(ingen)
+|===
+
+=== Begrepssamling.kontaktpunkt
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘contact point’, adms:dcat-contactpoint
+|TBX-representasjon a|`<p type=”kontaktpunkt”>`
+|Datatype (med ev. PID til definisjon) |Vcard
+|TBX-Nivå |sourceDesc
+|Merknad |(ingen)
+|===
+
+=== Begrepssamling.begrep
+[cols="35s,65", stripes=odd]
+|===
+|PID til definisjon |‘concept’, skos:Concept
+|TBX-representasjon a|`<conceptEntry id="begrep002">`
+|Datatype (med ev. PID til definisjon) |Se attributtene under Begrep
+|TBX-Nivå |conceptEntry
+|Merknad |Begrep som er i `<body>`-delen av den aktuelle TBX-filen
+|===
+
