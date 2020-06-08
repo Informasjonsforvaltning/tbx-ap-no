@@ -1,0 +1,47 @@
+= Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO) - Versjon 1.0.1
+:description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO)
+:doctype: book
+:docinfo:
+:icons: font
+:toc: left
+:toclevels: 2
+:sectanchors:
+:title-logo-image: image:digitaliseringsdirektoratet.png[pdfwidth=30vw]
+
+//:sectnums:
+
+//:sectnumlevels: 3
+
+//{description}
+
+image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
+
+*Publisert*: 2020-03-07
+
+include::locale/attributes.adoc[]
+
+include::shared/download.adoc[]
+
+// WARNING: Det foretas redaksjonelle endringer av standarden.
+
+// :leveloffset: +1
+
+// Innhold her.
+
+include::forord.adoc[]
+
+include::formaal_omfang_avgrensninger.adoc[]
+
+include::normative_referanser.adoc[]
+
+include::definisjoner.adoc[]
+
+include::spesifikasjon.adoc[]
+
+include::spesifikasjon-felter.adoc[]
+
+include::vedlegg-a.adoc[]
+
+include::vedlegg-b.adoc[]
+
+include::../shared/stats.adoc[]

@@ -1,0 +1,286 @@
+
+== Vedlegg A (informativt) - Eksempler
+
+Eksempelfilene er per 2020-03-09 validert korrekt mot TBX-Core (https://raw.githubusercontent.com/LTAC-Global/TBX_Core_RNG/master/TBXcoreStructV03.rng[https://raw.githubusercontent.com/LTAC-Global/TBX_Core_RNG/master/TBXcoreStructV03.rng]).
+
+=== A.1 Eksempelfil med minimumsbeskrivelser av et begrep
+
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VERSION HISTORY
+sist oppdatert: 2020-03-09
+-->
+<?xml-model href="TBXcoreStructV03.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="TBX-AP-No_DCA.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<tbx xmlns="urn:iso:std:iso:30042:ed-2" style="dca" type="TBX-AP-NO" xml:lang="nb">
+  <!-- xml:lang kan overstyres senere i filen -->
+  <tbxHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TBX-Difi-minimum</title>
+        <!-- Begrepssamling.navn -->
+        <note><!-- Begrepssamling.beskrivelse -->
+				  Dette er en eksempelfil, som illustrerer bruk av TBX-AP-NO. 
+				  Eksemplet viser kun obligatoriske felter i Forvaltningsstandard for begrepsbeskrivelser 2.0.
+        </note>
+      </titleStmt>
+      <sourceDesc>
+        <p type="identifikator">https://URIen_til_denne_begrepssamling</p>
+        <!-- Begrepssamling.identifikator, som URI -->
+        <p type="ansvarligVirksomhet">985 942 897</p>
+        <!-- Begrepssamling.ansvarligVirksomhet, som org.nr. -->
+      </sourceDesc>
+    </fileDesc>
+  </tbxHeader>
+  <text>
+    <body>
+      <conceptEntry id="begrep001">
+        <!-- conceptEntry for begrep 'term', med kun obligatoriske felter fra Forvaltningsstandard for begrepsbeskrivelser 2.0 -->
+        <admin type="identifikator">http://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35329</admin>
+        <!-- Begrep.identifikator, som URI -->
+        <transacGrp>
+          <transac type="ansvarligVirksomhet">985 942 897</transac>
+          <!-- Begrep.ansvarligVirksomhet, som org.nr. -->
+        </transacGrp>
+        <langSec xml:lang="nb">
+          <!-- språkkoden gjelder for alle elementene i denne langSec -->
+          <descrip type="definisjon">betegnelse for et allmennbegrep som tilhører et fagområde</descrip>
+          <!-- Betydningsbeskrivelse.tekst.tekst, i fritekst -->
+          <termSec>
+            <term>term</term>
+            <!-- Term.navn.tekst, som fritekst -->
+            <termNote type="typeTerm">anbefaltTerm</termNote>
+            <!-- at termen er en anbefalt term, som enumeration -->
+          </termSec>
+        </langSec>
+      </conceptEntry>
+    </body>
+  </text>
+</tbx>
+----
+=== A.2 Eksempelfil med alle felter for begrepsbeskrivelser
+
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VERSION HISTORY
+sist oppdatert: 2020-03-09
+-->
+<?xml-model href="TBXcoreStructV03.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="TBX-AP-No_DCA.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<tbx xmlns="urn:iso:std:iso:30042:ed-2" style="dca" type="TBX-AP-NO" xml:lang="nb">
+  <!-- xml:lang kan overstyres senere i filen -->
+  <tbxHeader>
+    <!-- tilsvarende Begrepssamling -->
+    <fileDesc>
+      <titleStmt>
+        <title>TBX-ed2-Difi-eksempler</title>
+        <!-- Begrepssamling.navn, som fritekst -->
+        <note><!-- Begrepssamling.beskrivelse, som fritekst -->
+				  Dette er en eksempelfil, som illustrerer bruk av TBX.
+				  Eksemplene til sammen bruker alle felter i Forvaltningsstandard for begrepsbeskrivelser.
+				</note>
+      </titleStmt>
+      <sourceDesc>
+        <p type="identifikator">https://URIen_til_denne_begrepssamling</p>
+        <!-- Begrepssamling.identifikator, som URI -->
+        <p type="ansvarligVirksomhet">985 942 897</p>
+        <!-- Begrepssamling.ansvarligVirksomhet, som org.nr. -->
+        <p type="kontaktpunkt">
+				  vcard:Organization; 
+				  vcard:hasEmail mailto:kontakt@ny.url; 
+				  vcard:hasURL http://kontakt.oss/ny/url; 
+				  vcard:organization-unit "kontaktavdelingen"
+        </p>
+        <!-- Begrepssamling.kontaktpunkt, som VCard -->
+      </sourceDesc>
+    </fileDesc>
+  </tbxHeader>
+  <text>
+    <body>
+      <!-- Begrepene i Begrepssamlingen: -->
+      <!-- først et eksempel, begrepet 'anbefalt term', med kun obligatoriske felter fra Forvaltningsstandard for begrepsbeskrivelser 2.0 -->
+      <conceptEntry id="c01">
+        <!-- conceptEntry for et begrep, 'anbefalt term' -->
+        <admin type="identifikator">http://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35354</admin>
+        <!-- Begrep.identifikator, som URI -->
+        <transacGrp>
+          <transac type="ansvarligVirksomhet">985 942 897</transac>
+          <!-- Begrep.ansvarligVirksomhet, som org.nr. -->
+        </transacGrp>
+        <langSec xml:lang="nb">
+          <!--  språkkoden gjelder for alle elementene i denne langSec -->
+          <descrip type="definisjon">term som blir sett på som den best egnede for et bestemt begrep</descrip>
+          <!-- Betydningsbeskrivelse.tekst.tekst, i fritekst -->
+          <termSec>
+            <term>term</term>
+            <!-- Term.navn.tekst, i fritekst -->
+            <termNote type="typeTerm">anbefaltTerm</termNote>
+            <!-- at termen er en anbefalt term, som enumeration -->
+          </termSec>
+        </langSec>
+      </conceptEntry>
+      <!-- slutten på conceptEntry for begrepet 'anbefalt term' -->
+      <!-- så et eksempel, begrep 'tillatt term', som bruker de aller fleste feltene i standarden, med noe "dummy_tekst"  -->
+      <conceptEntry id="c02">
+        <!-- conceptEntry for et annet begrep, 'tillatt term' -->
+        <admin type="identifikator">http://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35355</admin>
+        <!-- Begrep.identifikator, som URI -->
+        <transacGrp>
+          <transac type="ansvarligVirksomhet">985 942 897</transac>
+          <!-- Begrep.ansvarligVirksomhet, som org.nr. -->
+          <transacNote type="kontaktpunkt">
+					  vcard:Organization; 
+					  vcard:hasEmail mailto:kontakt@ny.url
+          </transacNote>
+          <!-- Begrep.kontaktpunkt, som VCard -->
+        </transacGrp>
+        <transacGrp>
+          <!-- Begrep.gyldighetsperiode.gyldigFraOgMed -->
+          <transac type="typeDato">gyldigFraOgMed</transac>
+          <!-- typeDato som enumeration -->
+          <date>2018-04-17</date>
+          <!-- selve datoen -->
+        </transacGrp>
+        <transacGrp>
+          <!-- Begrep.gyldighetsperiode.gyldigTilOgMed -->
+          <transac type="typeDato">gyldigTilOgMed</transac>
+          <!-- typeDato som enumeration -->
+          <date>2019-04-16</date>
+          <!-- selve datoen -->
+        </transacGrp>
+        <transacGrp>
+          <!-- Begrep.sistOppdatert -->
+          <transac type="typeDato">sistOppdatert</transac>
+          <!-- typeDato som enumeration -->
+          <date>2018-07-04</date>
+          <!-- selve datoen -->
+        </transacGrp>
+        <langSec xml:lang="nb">
+          <!-- langSec for bokmål, alle felter som bruker datatype TekstMedSpråkkode og med samme språkkode, samles i en slik langSec -->
+          <descripGrp>
+            <!-- en descripGrp med elementer som omhandler Begrep.Definisjon -->
+            <descrip type="definisjon">term som blir sett på som egnet for et bestemt begrep, og som blir brukt ved siden av en anbefalt term</descrip>
+            <!-- Begrep.Definisjon.tekst.tekst, i fritekst -->
+            <adminGrp>
+              <!-- en adminGrp for Begrep.Definisjon.kildebeskrivelse -->
+              <admin type="forholdTilKilde">sitatFraKilde</admin>
+              <!-- Begrep.Definisjon.kildebeskrivelse.forholdTilKilde, som enumeration -->
+              <!-- lovlige verdier til "forholdTilKilde": sitatFraKilde, basertPåKilde, egendefinert -->
+              <adminNote type="kilde">NS-ISO 1087-1:2000: Terminologiarbeid - Ordliste - Del 1: Teori og anvendelser</adminNote>
+              <!-- Begrep.Definisjon.kildebeskrivelse.kilde.tekst, i fritekst -->
+              <xref type="kilde" target="http://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35355"/>
+              <!-- Begrep.Definisjon.kildebeskrivelse.kilde.URI, som URI -->
+            </adminGrp>
+            <descripNote type="merknad">dummy_tekst</descripNote>
+            <!-- Begrep.Definisjon.merknad.tekst, i fritekst -->
+            <descripNote type="omfang">dummy_tekst</descripNote>
+            <!-- Begrep.Definisjon.omfang.tekst, i fritekst -->
+            <xref type="omfang" target="https://uri_til_omfang"/>
+            <!-- Begrep.Definisjon.omfang.URI -->
+            <descripNote type="eksempel">dummy_tekst</descripNote>
+            <!-- Begrep.Definisjon.eksempel.tekst, i fritekst -->
+            <transacGrp>
+              <!-- Begrep.sistOppdatert -->
+              <transac type="typeDato">sistOppdatert</transac>
+              <!-- typeDato som enumeration -->
+              <date>2018-07-02</date>
+              <!-- selve datoen -->
+            </transacGrp>
+          </descripGrp>
+          <descripGrp>
+            <!-- Begrep.AlternativFormulering -->
+            <descrip type="alternativFormulering">dummy_tekst</descrip>
+            <!-- Betydningsbeskrivelse.tekst.tekst, i fritekst -->
+            <descripNote type="målgruppe">allmennheten</descripNote>
+            <!-- Betydningsbeskrivelse.målgruppe, som enumeration -->
+            <!-- lovlige verdier til "målgruppe": allmennheten, fagspesialist -->
+          </descripGrp>
+          <descrip type="fagområe">terminologi</descrip>
+          <!-- Begrep.fagområde.tekst, i fritekst -->
+          <descrip type="bruksområde">terminologi</descrip>
+          <!-- Begrep.bruksområde, i fritekst -->
+          <descripGrp>
+            <!-- Begrep.GeneriskRelasjon, tilsvarende med partitivRelasjon  -->
+            <descrip type="typeRelasjon">generiskRelasjon</descrip>
+            <!-- typeRelasjon, som enumeration -->
+            <!-- lovlige verdier til "typeRelasjon": assosiativRelasjon, generiskRelasjon, partitivRelasjon -->
+            <descripNote type="inndelingskriterium">klassifisering</descripNote>
+            <!-- Begrep.GeneriskRelasjon.inndelingskriterium.tekst, i fritekst -->
+            <xref type="overordnetBegrep" target="http://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35329"/>
+            <!-- xref til det relaterte begrepet, i dette tilfelle begrepet 'term' som er overbegrep til 'tillatt term' -->
+            <!-- typeRelatertBegrep som enumeration -->
+            <!-- lovlige verdier til "xref type her er: assosiertBegrep, overordnetBegrep, underordnetBegrep -->
+            <transacGrp>
+              <!-- Begrepsrelasjon.sistOppdatert -->
+              <transac type="typeDato">sistOppdatert</transac>
+              <!-- typeDato som enumeration -->
+              <date>2018-04-17</date>
+              <!-- selve datoen -->
+            </transacGrp>
+          </descripGrp>
+          <xref type="seOgså" target="http://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36723"/>
+          <xref type="erstatter" target="https://URI_til_begrepet_som_dette_begrepet_erstatter"/>
+          <xref type="erstattesAv" target="https://URI_til_begrepet_som_dette_begrepet_erstattesAv"/>
+          <termSec>
+            <!-- en termSec for 'tillatt term' -->
+            <term>tillatt term</term>
+            <!-- Term.navn.tekst, i fritekst -->
+            <termNote type="typeTerm">anbefaltTerm</termNote>
+            <!-- om termen er en anbefalt, tillat eller frarådet term -->
+            <!-- typeTerm som enumeration -->
+            <!-- lovlige verdier til "typeTerm": anbefaltTerm, tillattTerm, frarådetTerm, datastrukturterm -->
+          </termSec>
+          <termSec>
+            <!-- nå med en annen termSec, for termen "synonym" som er en tillatt term til begrepet 'tillatt term' -->
+            <term>synonym</term>
+            <!-- Term.navn.tekst, i fritekst -->
+            <termNote type="typeTerm">tillattTerm</termNote>
+            <!-- om termen er en anbefalt, tillat eller frarådet term -->
+            <!-- typeTerm som enumeration -->
+            <!-- lovlige verdier til "typeTerm": anbefaltTerm, tillattTerm, frarådetTerm, datastrukturterm -->
+            <termNote type="målgruppe">allmennheten</termNote>
+            <!-- Term.målgruppe, som enumeration -->
+            <!-- lovlige verdier for "målgruppe": allmennheten, fagspesialist -->
+          </termSec>
+        </langSec>
+        <!-- slutten på langSec for bokmål -->
+        <langSec xml:lang="nn">
+          <!-- langSec for nynorsk -->
+          <descripGrp>
+            <!-- Begrep.definisjon -->
+            <descrip type="definisjon">term som blir sett på som eigna for eit visst omgrep, og som blir brukt ved sida av ein tilrådd term</descrip>
+            <!-- Betydningsbeskrivelse.tekst.tekst, i fritekst -->
+            <transacGrp>
+              <!-- Betydningsbeskrivelse.sistOppdatert -->
+              <transac type="typeDato">sistOppdatert</transac>
+              <!-- typeDato som enumeration -->
+              <date>2018-07-03</date>
+              <!-- selve datoen -->
+            </transacGrp>
+          </descripGrp>
+          <termSec>
+            <!-- en termSec, for termen "tillatten term" som er en 'anbefalt term' -->
+            <term>tillaten term</term>
+            <!-- Term.navn.tekst, i fritekst -->
+            <termNote type="typeTerm">anbefaltTerm</termNote>
+            <!-- om termen er en anbefalt, tillat eller frarådet term -->
+            <!-- typeTerm som enumeration -->
+            <!-- lovlige verdier til "typeTerm": anbefaltTerm, tillattTerm, frarådetTerm, datastrukturterm -->
+            <transacGrp>
+              <!-- Term.sistOppdatert -->
+              <transac type="typeDato">sistOppdatert</transac>
+              <!-- typeDato som enumeration -->
+              <date>2018-07-03</date>
+              <!-- selve datoen -->
+            </transacGrp>
+          </termSec>
+        </langSec>
+        <!-- slutten på langSec for nynorsk -->
+      </conceptEntry>
+      <!-- slutten på conceptEntry for begrepet 'tillatt term' -->
+    </body>
+  </text>
+</tbx>
+----
