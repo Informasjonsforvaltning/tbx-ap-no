@@ -1,3 +1,4 @@
+include::locale/attributes.adoc[]
 = Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO) - Versjon 1.0.1
 :description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO)
 :doctype: book
@@ -17,8 +18,6 @@
 image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
 *Publisert*: 2020-03-07
-
-include::locale/attributes.adoc[]
 
 include::shared/download.adoc[]
 
@@ -44,4 +43,4 @@ include::vedlegg-a.adoc[]
 
 include::vedlegg-b.adoc[]
 
-include::../shared/stats.adoc[]
+include::shared/stats.adoc[]
