@@ -7,7 +7,7 @@ include::locale/attributes.adoc[]
 :toc: left
 :toclevels: 2
 :sectanchors:
-:title-logo-image: image:digitaliseringsdirektoratet.png[pdfwidth=30vw]
+:title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
 //:sectnums:
 
