@@ -1,4 +1,3 @@
-
 == Vedlegg A (informativt) - Eksempler
 
 Eksempelfilene er per 2020-03-09 validert korrekt mot TBX-Core (https://raw.githubusercontent.com/LTAC-Global/TBX_Core_RNG/master/TBXcoreStructV03.rng[https://raw.githubusercontent.com/LTAC-Global/TBX_Core_RNG/master/TBXcoreStructV03.rng]).
@@ -21,7 +20,7 @@ sist oppdatert: 2020-03-09
         <title>TBX-Difi-minimum</title>
         <!-- Begrepssamling.navn -->
         <note><!-- Begrepssamling.beskrivelse -->
-				  Dette er en eksempelfil, som illustrerer bruk av TBX-AP-NO. 
+				  Dette er en eksempelfil, som illustrerer bruk av TBX-AP-NO.
 				  Eksemplet viser kun obligatoriske felter i Forvaltningsstandard for begrepsbeskrivelser 2.0.
         </note>
       </titleStmt>
@@ -88,9 +87,9 @@ sist oppdatert: 2020-03-09
         <p type="ansvarligVirksomhet">985 942 897</p>
         <!-- Begrepssamling.ansvarligVirksomhet, som org.nr. -->
         <p type="kontaktpunkt">
-				  vcard:Organization; 
-				  vcard:hasEmail mailto:kontakt@ny.url; 
-				  vcard:hasURL http://kontakt.oss/ny/url; 
+				  vcard:Organization;
+				  vcard:hasEmail mailto:kontakt@ny.url;
+				  vcard:hasURL http://kontakt.oss/ny/url;
 				  vcard:organization-unit "kontaktavdelingen"
         </p>
         <!-- Begrepssamling.kontaktpunkt, som VCard -->
@@ -131,7 +130,7 @@ sist oppdatert: 2020-03-09
           <transac type="ansvarligVirksomhet">985 942 897</transac>
           <!-- Begrep.ansvarligVirksomhet, som org.nr. -->
           <transacNote type="kontaktpunkt">
-					  vcard:Organization; 
+					  vcard:Organization;
 					  vcard:hasEmail mailto:kontakt@ny.url
           </transacNote>
           <!-- Begrep.kontaktpunkt, som VCard -->
