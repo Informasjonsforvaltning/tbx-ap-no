@@ -1,4 +1,3 @@
-
 == Spesifikasjon for hvordan TBX brukes ved maskinell tilgjengeliggjøring av begrepsbeskrivelser
 
 Spesifikasjonen i dette kapitlet utgjør definisjonen av en TBX-dialekt, kalt TBX-AP-NO. Dialektnavnet TBX-AP-NO skal oppgis i en TBX-fil for å være i samsvar med denne standarden: `<tbx type="TBX-AP-NO">`.

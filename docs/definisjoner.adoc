@@ -1,4 +1,3 @@
-
 == Definisjon av de mest sentrale begreper
 
 Tilgjengeliggjøring:: publisering eller utveksling
