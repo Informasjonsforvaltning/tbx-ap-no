@@ -1,4 +1,4 @@
-== Vedlegg A (informativt) - Eksempler
+== Vedlegg A (ikke-normativt) - Eksempler
 
 Eksempelfilene er per 2020-03-09 validert korrekt mot TBX-Core (https://raw.githubusercontent.com/LTAC-Global/TBX_Core_RNG/master/TBXcoreStructV03.rng[https://raw.githubusercontent.com/LTAC-Global/TBX_Core_RNG/master/TBXcoreStructV03.rng]).
 
