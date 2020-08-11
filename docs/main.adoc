@@ -17,7 +17,7 @@ include::locale/attributes.adoc[]
 
 image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
-*Publisert*: 2019-03-15 (v.1.0)+
+*Publisert*: 2019-03-15 (v.1.0) +
 *Oppdatert*: 2020-07-01 (v.1.0.2) +
 *Status*: Gjeldende
 
