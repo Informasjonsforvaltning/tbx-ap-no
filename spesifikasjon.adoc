@@ -1,0 +1,15 @@
+== Spesifikasjon for hvordan TBX brukes ved maskinell tilgjengeliggjøring av begrepsbeskrivelser
+
+Spesifikasjonen i dette kapitlet utgjør definisjonen av en TBX-dialekt, kalt TBX-AP-NO. Dialektnavnet TBX-AP-NO skal oppgis i en TBX-fil for å være i samsvar med denne standarden: `<tbx type="TBX-AP-NO">`.
+
+Spesifikasjonen sier ikke hva som er obligatoriske felter, men hvordan et felt skal representeres i TBX når feltet brukes. Se _Forvaltningsstandard for begrepsbeskrivelser_ hhv. _TBX_ for hva som er obligatorisk.
+
+Vi har gjort noen bevisste valg når det gjelder TBX-representasjon og -plassering:
+
+* Referanser fra et begrep til andre begreper: Vi har valgt å bruke `<xref>`, også i tilfeller der begreper som refereres til er i samme TBX-fil. Dette fordi _Forvaltningsstandard for begrepsbeskrivelser_ krever at ethvert begrep skal ha en URI, noe som gjør at `<xref>` alltid kan brukes.
+* Plassering av generiske og partitive relasjoner: ‘Inndelingskriterium’ er ikke påkrevd for en generisk eller partitiv relasjon. Det er derfor strengt tatt ikke nødvendig å plassere en generisk eller partitiv relasjon i en `<langSec>`. Vi har allikevel valgt å plassere generiske og partitive relasjoner under `<langSec>` for å ha konsistens med tilfeller der ‘inndelingskriterium’ er oppgitt og som dermed trenger språkkode, samt konsistens med assosiative relasjoner der det alltid skal oppgis en ‘beskrivelse’ som trenger språkkode.
+* Plassering av ‘omfang’: I henhold til _Forvaltningsstandard for begrepsbeskrivelser_ hører ‘omfang’ sammen med den aktuelle definisjonen eller alternative formuleringen. Vi har derfor valgt å plassere ‘omfang’ i samme `<descripGrp>` som den aktuelle definisjonen eller alternative formuleringen. Dette gjør at ‘omfang’ også er i en `<langSec>` som må ha en språkkode, selv om språkkode ikke er påkrevd for ‘omfang.tekst’.
+
+I tabellen under er det også tatt med PID (persistent identifier) til definisjoner av datafelter og kodeverdier. Dette for å oppnå semantisk interoperabilitet med andre TBX-dialekter, ved at man gjennom unike PIDer refererer til samme definisjoner av datafelter og kodeverdier, selv om man bruker ulike termer i ulike TBX-dialekter. Vi bruker primært PIDer som finnes fra http://www.datcatinfo.net/[Data Category Repository], supplert med definisjoner/PIDer fra andre offisielle kilder (bl.a. https://www.w3.org/TR/skos-reference/[SKOS] og http://dublincore.org/documents/dcmi-terms/[Dublin Core]). Der det p.t. ikke finnes ferdige internasjonale definisjoner, er PID oppgitt med prefiks “skosno:”. Disse vil bli definert og publisert under `data.norge.no/vocabulary/skosno#`. PIDer er ikke nødvendig å oppgi i en TBX-fil, men brukes til å slå opp i definisjoner når man implementerer eller tolker en TBX-fil som er i samsvar med denne standarden.
+
+Se ellers eksemplene i vedlegget til dette dokumentet.

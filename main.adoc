@@ -1,0 +1,54 @@
+include::locale/attributes.adoc[]
+= Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO) - Versjon 1.0
+:description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO)
+:doctype: book
+:docinfo:
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toclevels: 2
+:sectanchors:
+:title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
+
+//:sectnums:
+
+//:sectnumlevels: 3
+
+//{description}
+
+image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
+
+*Status*: Gjeldende +
+*Publisert*: 2019-03-15 (v.1.0) +
+*Oppdatert*: 2020-07-01 (v.1.0.2) +
+*Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
+*Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
+
+include::shared/download.adoc[]
+
+NOTE: *Innmelding av feil og mangler:* +
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/tbx-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+
+toc::[]
+
+// :leveloffset: +1
+
+// Innhold her.
+
+include::forord.adoc[]
+
+include::formaal_omfang_avgrensninger.adoc[]
+
+include::normative_referanser.adoc[]
+
+include::definisjoner.adoc[]
+
+include::spesifikasjon.adoc[]
+
+include::spesifikasjon-felter.adoc[]
+
+include::vedlegg-a.adoc[]
+
+include::vedlegg-b.adoc[]
+
+include::shared/stats.adoc[]
