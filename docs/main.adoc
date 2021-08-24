@@ -1,4 +1,4 @@
-include::locale/attributes.adoc[]
+include::locale/attributes-nb.adoc[]
 = Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO) - Versjon 1.0
 :description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO)
 :doctype: book
@@ -29,11 +29,10 @@ include::shared/download.adoc[]
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/tbx-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
-// WARNING: Det foretas redaksjonelle endringer av standarden.
+// innholdsfortegnelse i PDF plasseres her:
+toc::[]
 
-// :leveloffset: +1
-
-// Innhold her.
+// Innhold her:
 
 include::forord.adoc[]
 
