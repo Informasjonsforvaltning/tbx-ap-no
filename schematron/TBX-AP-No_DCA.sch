@@ -4,7 +4,7 @@ sist oppdatert: 2019-01-09
 status: til utprøving 
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:sqf="http://www.schematron-quickfix.com/validator/process" queryBinding="xslt2">
-  <ns uri="urn:iso:std:iso:30042:ed:2" prefix="tbx"/>
+  <ns uri="urn:iso:std:iso:30042:ed-2" prefix="tbx"/>
   <pattern id="coreEnforecement">
     <rule context="tbx:termNote">
       <assert test="parent::tbx:termSec or parent::tbx:termNoteGrp/parent::tbx:termSec">Any termNote is only allowed at the termSec level.</assert>
@@ -18,7 +18,7 @@ status: til utprøving
       <assert test="attribute::type='TBX-AP-NO'">The name of this dialect should be TBX-AP-NO</assert>
       <assert test="attribute::style='dca'">The style of this dialect should be declared as 'dca'</assert>
     </rule>
-    <rule context="*[not(namespace-uri() = 'urn:iso:std:iso:30042:ed:2')]">
+    <rule context="*[not(namespace-uri() = 'urn:iso:std:iso:30042:ed-2')]">
       <assert test="false()">DCT style elements are not permitted in DCA style TBX.</assert>
     </rule>
   </pattern>
