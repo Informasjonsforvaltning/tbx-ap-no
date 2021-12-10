@@ -4,7 +4,7 @@ sist oppdatert: 2019-01-09
 status: til utprøving 
 -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:sqf="http://www.schematron-quickfix.com/validator/process" queryBinding="xslt2">
-  <ns uri="urn:iso:std:iso:30042:ed:3.0" prefix="tbx"/>
+  <ns uri="urn:iso:std:iso:30042:ed-2" prefix="tbx"/>
   <pattern id="coreEnforecement">
     <rule context="tbx:termNote">
       <assert test="parent::tbx:termSec or parent::tbx:termNoteGrp/parent::tbx:termSec">Any termNote is only allowed at the termSec level.</assert>
@@ -15,10 +15,10 @@ status: til utprøving
   </pattern>
   <pattern id="dialectEnforcement">
     <rule context="tbx:tbx">
-      <assert test="attribute::type='TBX-AP-No'">The name of this dialect should be TBX-AP-No</assert>
+      <assert test="attribute::type='TBX-AP-NO'">The name of this dialect should be TBX-AP-NO</assert>
       <assert test="attribute::style='dca'">The style of this dialect should be declared as 'dca'</assert>
     </rule>
-    <rule context="*[not(namespace-uri() = 'urn:iso:std:iso:30042:ed:3.0')]">
+    <rule context="*[not(namespace-uri() = 'urn:iso:std:iso:30042:ed-2')]">
       <assert test="false()">DCT style elements are not permitted in DCA style TBX.</assert>
     </rule>
   </pattern>
@@ -67,42 +67,42 @@ status: til utprøving
   <pattern id="module.Difi.descripNote">
     <rule context="tbx:descripNote[@type='beskrivelse']">
       <!-- AssosiativRelasjon.beskrivelse  -->
-      <assert test="parent::tbx.descripGrp/parant::tbx:langSec">'beskrivelse' may only appear in a descripGrp at the langSec level</assert>
+      <assert test="parent::tbx.descripGrp/parent::tbx:langSec">'beskrivelse' may only appear in a descripGrp at the langSec level</assert>
     </rule>
     <rule context="tbx:descrip[@type='eksempel']">
       <!-- Begrep.eksempel -->
-      <assert test="parent::tbx.descripGrp/parant::tbx:langSec">'eksempel' may only appear in a descripGrp at the langSec level</assert>
+      <assert test="parent::tbx.descripGrp/parent::tbx:langSec">'eksempel' may only appear in a descripGrp at the langSec level</assert>
     </rule>
     <rule context="tbx:descripNote[@type='inndelingskriterium']">
       <!-- GeneriskRelasjon.inndelingskriterium;  PartitivRelasjon.inndelingskriterium -->
-      <assert test="parent::tbx.descripGrp/parant::tbx:langSec">'inndelingskreterium' may only appear in a descripGrp at the langSec level</assert>
+      <assert test="parent::tbx.descripGrp/parent::tbx:langSec">'inndelingskreterium' may only appear in a descripGrp at the langSec level</assert>
     </rule>
     <rule context="tbx:descripNote[@type='merknad']">
       <!-- Betydningsbeskrivelse.merknad -->
-      <assert test="parent::tbx.descripGrp/parant::tbx:langSec">'merknad' may only appear in a descripGrp at the langSec level</assert>
+      <assert test="parent::tbx.descripGrp/parent::tbx:langSec">'merknad' may only appear in a descripGrp at the langSec level</assert>
     </rule>
     <rule context="tbx:descripNote[@type='målgruppe']">
       <!-- Betydningsbeskrivelse.målgruppe -->
-      <assert test="parent::tbx.descripGrp/parant::tbx:langSec">'målgruppe' may only appear in a descripGrp at the langSec level</assert>
+      <assert test="parent::tbx.descripGrp/parent::tbx:langSec">'målgruppe' may only appear in a descripGrp at the langSec level</assert>
       <assert test=".='allmennheten' or .='fagspesialist'">Permitted values: 'allmennheten', 'fagspesialist'</assert>
     </rule>
     <rule context="tbx:descrip[@type='omfang']">
       <!-- Betydningsbeskrivelse.omfang.tekst -->
-      <assert test="parent::tbx.descripGrp/parant::tbx:langSec">'omfang' may only appear in a descripGrp at the langSec level</assert>
+      <assert test="parent::tbx.descripGrp/parent::tbx:langSec">'omfang' may only appear in a descripGrp at the langSec level</assert>
     </rule>
   </pattern>
   <pattern id="module.Difi.p">
     <rule context="tbx:p[@type='ansvarligVirksomhet']">
       <!-- Begrepssamling.ansvarligVirksomhet -->
-      <assert test="parrent::tbx.sourceDesc">'ansvarligVirksomhet' may only appear at the sourceDesc level</assert>
+      <assert test="parent::tbx.sourceDesc">'ansvarligVirksomhet' may only appear at the sourceDesc level</assert>
     </rule>
     <rule context="tbx:p[@type='identifikator']">
       <!-- Begrepssamling.identifikator -->
-      <assert test="parrent::tbx.sourceDesc">'identifikator' may only appear at the sourceDesc level</assert>
+      <assert test="parent::tbx.sourceDesc">'identifikator' may only appear at the sourceDesc level</assert>
     </rule>
     <rule context="tbx:p[@type='kontaktpunkt']">
       <!-- Begrepssamling.kontaktpunkt -->
-      <assert test="parrent::tbx.sourceDesc">'kontaktpunkt' may only appear at the sourceDesc level</assert>
+      <assert test="parent::tbx.sourceDesc">'kontaktpunkt' may only appear at the sourceDesc level</assert>
     </rule>
   </pattern>
   <pattern id="module.Difi.termNote">
@@ -146,7 +146,7 @@ status: til utprøving
       <!-- Begrep.erstattesAv -->
       <assert test="parent::tbx:conceptEntry">'erstattesAv' may only appear  at the conceptEntry level</assert>
     </rule>
-    <rule context="tbx:xref[@type='kilde'">
+    <rule context="tbx:xref[@type='kilde']">
       <!-- Betydningsbeskrivelse.kildebeskrivelse.kilde.URI -->
       <assert test="parent::tbx:adminGrp/parent::tbx:descripGrp/parent::tbx:langSec">'kilde' may only appear in an adminGrp in a descripGrp at the langSec level</assert>
     </rule>
