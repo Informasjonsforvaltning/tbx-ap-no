@@ -257,9 +257,9 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Definisjon-forhold-til-kilde>>.
 
 === <langSec> | <admin> (0..2) [[langSec-admin]]
 
-(norsk) `<admin>` her brukes til å beskrive (valgfri) begrepets status eller versjonsnoter til begrepets aktuelle versjon.
+(norsk) `<admin>` her er valgfri og kan brukes til å beskrive begrepets status eller versjonsnoter til begrepets aktuelle versjon.
 
-(English) `<admin>` here is used to describe (optional) the status of the concept or version note(s) about the current version of the concept.
+(English) `<admin>` here optional and may be used to describe the status of the concept or version note(s) about the current version of the concept.
 
 ==== Begrep – status <adms:status> (0..1) [[Begrep-status]]
 
@@ -321,9 +321,9 @@ Eksempel i TBX-AP-NO (DCT style), for SSBs begrep ‘landbakgrunn’:
 === <langSec> | <descrip> (0..n) [[langSec-descrip]]
 
 
-(norsk) Denne `<descrip>` brukes til å beskrive følgende opplysninger om begrepet: eksempel, merknad, fagområde eller verdiområde.
+(norsk) Denne `<descrip>` brukes til å beskrive følgende opplysninger om begrepet: (valgfri) eksempel, (anbefalt) merknad, (anbefalt) fagområde eller (valgfri) verdiområde.
 
-(English) This `<descrip>` here is used to describe the following information about the concept: example, note, subject field or value range.
+(English) This `<descrip>` here is used to describe the following information about the concept: (optional) example, (recommended) note, (recommended) subject field or (optional) value range.
 
 ==== Begrep – eksempel <skos:example> (0..n) [[Begrep-eksempel]]
 
