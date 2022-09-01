@@ -1,4 +1,4 @@
-=== <langSec> [[langSec]]
+=== <langSec> (1..n) [[langSec]]
 
 [Figur-langSec]
 .Begrep (<conceptEntry>) | <langSec> (basert på Fig. 3 i NS-ISO 30042:2019)_
