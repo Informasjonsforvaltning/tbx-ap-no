@@ -227,9 +227,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 === <conceptEntry> | <transacGrp> (0..2) [[conceptEntry-transacGrp]]
 
 
-(norsk) `<transacGrp>` brukes til å oppgi dato opprettet eller dato sist oppdatert som begge er anbefalte egenskaper.
+(norsk) `<transacGrp>` her er anbefalt og bør brukes til å oppgi dato opprettet eller dato sist oppdatert som begge er anbefalte egenskaper.
 
-(Enligsh) `<transacGrp>` is used to specify date created or date last updated, which are recommended properties.
+(Enligsh) `<transacGrp>` here is recommended and should be used to specify date created or date last updated, which are recommended properties.
 
 ==== Begrep – transaksjonstype <basic:transactionType> (1..1) [[Begrep-transaksjonstype]]
 
@@ -291,9 +291,9 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-transaksjonstype>>.
 
 === <conceptEntry> | <descrip> (0..n) [[conceptEnetry-descrip]]
 
-(norsk) `<descrip>` brukes her til å beskrive ulike begrepsrelasjoner som alle er valgfrie egenskaper, når det ikke er behov for å beskrive relasjonene med ytterligere egenskaper. Bruk `<descripGrp>` i `<langSec>` når det er behov for ytterligere egenskaper for relasjonen.
+(norsk) `<descrip>` her er valgfri og kan brukes til å beskrive ulike begrepsrelasjoner som alle er valgfrie egenskaper, når det ikke er behov for å beskrive relasjonene med ytterligere egenskaper. Bruk `<descripGrp>` i `<langSec>` når det er behov for ytterligere egenskaper for relasjonen.
 
-(English) `<descrip>` is used here to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use `<descripGrp>` in `<langSec>` when there is need for additional information about a concept relation.
+(English) `<descrip>` here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use `<descripGrp>` in `<langSec>` when there is need for additional information about a concept relation.
 
 ==== Begrep – generaliserer <xkos:generalizes> (0..n) [[Begrep-generaliserer]]
 
