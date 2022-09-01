@@ -1,6 +1,6 @@
 == Krav til TBX-representasjon av en begrepssamling [[Krav-begrepssamling]]
 
-=== <tbx> (1..1)
+=== Begrepssamling <tbx> (1..1)
 
 
 [Figur-tbx]
