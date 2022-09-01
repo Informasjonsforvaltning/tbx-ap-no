@@ -1,0 +1,726 @@
+=== <langSec> [[langSec]]
+
+[Figur-langSec]
+.Begrep (<conceptEntry>) | <langSec> (basert på Fig. 3 i NS-ISO 30042:2019)_
+[link=images/TBX-AP-NO_langSec.png]
+image::images/TBX-AP-NO_langSec.png[]
+
+(norsk) `<langSec>` er obligatorisk og skal brukes til å representere termer og definisjoner for et gitt begrep i ett gitt skriftspråk. `<langSec>` kan også brukes til å representere valgfri begrepsrelasjoner der det er behov for mer detaljert beskrivelse av relasjonene. De enkelte delene i `<langSec>` er beskrevet i de etterfølgende avsnittene. Språkkoden skal oppgis i start-taggen til `<langSec>` og vil gjelde for hele `<langSec>`, se eksemplet under.
+
+(norsk) Restriksjon: Det skal være maks. én `<langSec>` per skriftspråk per begrep (<conceptEntry>).
+
+(English) `<langSec>` is mandatory and shall be used to represent terms and definitions for a given concept in a given language. `<langSec>` may also be used to represent optional concept relations when there is need for describing the relations with details. The various parts of `<langSec>` is described in the following sections. The language code is specified in the start tag of `<langSec>` and will apply to the whole `<langSec>`, see the example below.
+
+(English) Restriction: There shall be max. one `<langSec>` per language per concept (<conceptEntry>).
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+<langSec xml:lang="nb"> <!-- langSec med norsk bokmål -->
+   …
+</langSec>
+</conceptEntry>
+-----
+
+=== <langSec> | Term <termSec> (1..n) [[Term]]
+
+(norsk) `<termSec>` er obligatorisk og skal brukes til å beskrive termer i det gitte språk (`<langSec>`) for det gitte begrepet (`<conceptEntry>`).
+
+(norsk) Restriksjon: En `<langSec>` kan ha flere `<termSec>` men maks. én der <<Term-betegnelsesstatus>> har verdi `basic:preferredTermAdmnSts`.
+
+(Engelish) `<termSec>` is mandatory and shall be used to describes terms in that given language (`<langSec>``) for that given concept (``<conceptEntry>`).
+
+(English) Resctriction: A `<langSec>` may have several `<termSec>` but max. one where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts`.
+
+==== <langSec> | Term <termSec> | tekst <term> (1..1) [[Term-tekst]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |term / term
+| Datakategori / Data category |term
+| PID |http://datcatinfo.termweb.eu/datcat/DC-508[http://datcatinfo.termweb.eu/datcat/DC-508]
+| TBX-nivå / TBX level |termSec
+| TBX-klassifisering / TBX Classification |term
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi selve termen (teksten) i det gitte skriftspråket.
+
+(English) This property is used to specify the term (the text) in that given language.
+| Multiplisitet |1..1
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
+[source,xml]
+-----
+<conceptEntry id="BEGREP-975">
+   <langSec xml:lang="nb">
+      <termSec>
+         <term>mødrekvote</term>
+      </termSec>
+   </langSec>
+</conceptEntry>
+-----
+
+==== <langSec> | Term <termSec>| <termNote> (1..1) [[termSec-termNote]]
+
+
+(norsk) `<termNote>` brukes til å oppgi (obligatorisk) https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[betegnelsesstatus] (anbefalt term, tillatt term, frarådd term eller datastrukturterm).
+
+(English) `<termNote>` is used to specify (mandatory) the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[acceptability rating] of the term (preferred term, admitted term, deprecated term or data structure label).
+
+===== Term - betegnelsesstatus <basic:administrativeStatus> (1..1) [[Term-betegnelsesstatus]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |betegnelsesstatus / acceptability rating
+| Datakategori / Data category |basic:administrativeStatus
+| PID |http://datcatinfo.termweb.eu/datcat/DC-70[http://datcatinfo.termweb.eu/datcat/DC-70]
+| TBX-nivå / TBX level |termSec
+| TBX-klassifisering / TBX Classification |termNote
+| Verdiområde / Range a|Picklist:
+
+* basic:preferredTermAdmnSts
+** PID http://datcatinfo.termweb.eu/datcat/DC-72, for anbefalt term / preferred term
+* basic:admittedTermAdmnSts
+** PID http://datcatinfo.termweb.eu/datcat/DC-73, for tillatt term / admitted term
+* basic:deprecatedTermAdmnSts
+** PID http://datcatinfo.termweb.eu/datcat/DC-74, for frarådd term / deprecated (not recommended) term
+* skosno:dataStructureTerm
+** PID https://data.norge.no/vocabulary/skosno#dataStructureTerm, for datastrukturterm / data structure term
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi betegnelsesstatus til termen, dvs. om termen er en anbefalt term, tillatt term, frarådd term eller datastrukturterm.
+
+(English) This property is used to specify the acceptability rating of the term, i.e., if the term is a preferred term, admitted term, deprecated term or data structure term.
+| Multiplisitet |1..1
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 «mødrekvote»:
+[source,xml]
+-----
+<conceptEntry id="BEGREP-975">
+   <langSec xml:lang="nb">
+      <termSec>
+         <term>mødrekvote</term>
+         <basic:administrativeStatus>basic:preferredTermAdmnSts</basic:administrativeStatus>
+      </termSec>
+   </langSec>
+</conceptEntry>
+-----
+
+=== <langSec> | Definisjon <descripGrp> (0..n)
+
+
+(norsk) Denne `<descripGrp>` er anbefalt og bør brukes til å oppgi definisjon til begrepet i det gitte skriftspråket.
+
+(norsk) Restriksjon 1: Det skal være min. én `<langSec>` som inneholder Definisjon (en slik `<descripGrp>`). Med andre ord: ethvert begrep skal ha minst én definisjon.
+
+(norsk) Restriksjon 2: Det kan oppgis maks. definisjon (denne `<descripGrp>`) per <<Definisjon-målgruppe>> per skriftspråk (`<langSec>`).
+
+(English) This `<descripGrp>` is recommended and should be used to specify the definition of the concept in that given language.
+
+(English) Restriction 1: There shall be min. one `<langSec>` which contains a Definisjon (such a `<descripGrp>`). In other words, every concept shall have min. one definition.
+
+(Enligsh) Restriction 2: There may be max. one definition (this `<descripGrp>`) per <<Definisjon-målgruppe>> per language (`<langSec>`).
+
+==== <langSec> | Definisjon <descripGrp> (0..n) | tekst <basic:definition> (1..1) [[Definisjon-tekst]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |definisjon / definition
+| Datakategori / Data category |basic:definition
+| PID |http://datcatinfo.termweb.eu/datcat/DC-168
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi definisjonen i det gitte språket.
+
+(English) This property is used to specify the definition in the given language.
+| Multiplisitet |1..1
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
+[source,xml]
+-----
+<conceptEntry id="BEGREP-975">
+   <langSec xml:lang="nb">
+      <descripGrp>
+          <basic:definition>den delen av foreldrepengeperioden som er forbeholdt mor</basic:definition>
+      <descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+==== <langSec> | Definisjon <descripGrp> (0..n) | målgruppe <dct:audience> (0..1) [[Definisjon-målgruppe]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |målgruppe / audience
+| Datakategori / Data category |dct:audience
+| PID |http://purl.org/dc/terms/audience
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descripNote
+| Verdiområde / Range a|Picklist:
+
+(norsk) Verdien skal velges fra kontrollert vokabular https://data.norge.no/vocabulary/audience-type/ (#NB! IKKE publisert ennå#) når verdien finnes på listen.
+
+(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/audience-type/ (#NB! NOT published yet#) when the value is on the list.
+
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi målgruppen for definisjonen, oppgitt som kodet verdi.
+
+(English) This property is used to specify the audience of the definition, as coded value.
+| Multiplisitet |0..1
+| Kravnivå / Requirement level |Valgfri / Optional
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempel:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <descripGrp>
+         <basic:definition>begrep som brukes til å eksemplifisere noe med</basic:definition>
+         <dct:audience>https://data.norge.no/vocabulary/audience-type/public</dct:audience>
+      </descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+==== <langSec> | Definisjon <descripGrp> (1..n) | kildebeskrivelse <adminGrp> (0..1) [[Definisjon-kildebeskrivelse]]
+
+(norsk) Denne `<adminGrp>` er anbefalt og bør brukes til å beskrive kilde(n) til definisjonen.
+
+(English) This `<adminGrp>` is recommended and should be used to describe the source(s) for the definition.
+
+===== Definisjon – forhold til kilde <skosno:relationshipWithSource> (0..1) [[Definisjon-forhold-til-kilde]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |forhold til kilde / relationship with source
+| Datakategori / Data category |skosno:relationshipWithSource
+| PID |https://data.norge.no/vocabulary/skosno#relationshipWithSource
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |admin
+| Verdiområde / Range a|Picklist:
+
+(norsk) Verdien skal velges fra https://data.norge.no/vocabulary/relationship-with-source (#NB! Ikke publisert ennå#), når verdien finnes på listen.
+
+(English) The value shall be chosen from https://data.norge.no/vocabulary/relationship-with-source (#NB! Not yet published#), when the value is on the list.
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi definisjonens forhold til kilde.
+
+(English) This property is used to specify the definition’s relationship with the source(s).
+| Multiplisitet |0..1
+| Kravnivå / Requirement level |Anbefalt / Recommended
+| Merknad / Note |(norsk) Denne egenskapen skal brukes i en `<adminGrp>` sammen med <<Definisjon-kilde>>.
+
+(English) This property shall be used in an `<adminGrp>` together with <<Definisjon-kilde>>.
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempel:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <descripGrp> <!-- descripGrp for a given definition -->
+         <basic:definition>…</basic:definition>
+         <adminGrp>
+            <skosno:relationshipWithSource>https://data.norge.no/vocabulary/relationship-with-source/derived-from-source</skosno:relationshipWithSource>
+            <basic:source>https://example.org/exampleSource</basic:source>
+         </adminGrp>
+      </descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+===== Definisjon – kilde <basic:source> (0..n) [[Definisjon-kilde]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |kilde / source
+| Datakategori / Data category |basic:source
+| PID |http://datcatinfo.termweb.eu/datcat/DC-471
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |adminNote
+| Verdiområde / Range |xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi kilde(r) til definisjonen.
+
+(English) This property is used to specify the source(s) for the definition.
+| Multiplisitet |0..n
+| Kravnivå / Requirement level |Anbefalt / Recommended
+| Merknad / Note |(norsk) Denne egenskapen skal brukes i en `<adminGrp>` sammen med <<Definisjon-forhold-til-kilde>>.
+
+(English) This property shall be used in an `<adminGrp>` together with <<Definisjon-forhold-til-kilde>>.
+|===
+
+Eksempel i TBX-AP-NO (DCT style): Se under <<Definisjon-forhold-til-kilde>>.
+
+=== <langSec> | <admin> (0..2) [[langSec-admin]]
+
+(norsk) `<admin>` her brukes til å beskrive (valgfri) begrepets status eller versjonsnoter til begrepets aktuelle versjon.
+
+(English) `<admin>` here is used to describe (optional) the status of the concept or version note(s) about the current version of the concept.
+
+==== Begrep – status <adms:status> (0..1) [[Begrep-status]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |status / status
+| Datakategori / Data category |adms:status
+| PID |http://www.w3.org/ns/adms#status
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |admin
+| Verdiområde / Range |String or Picklist
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi status til begrepet.
+
+(English) This property is used to specify the status of the concept.
+| Multiplisitet |0..1
+| Kravnivå / Requirement level |Valgfri / Optional
+| Merknad / Note |(norsk) Verdien bør fortrinnsvis velges fra et kontrollert vokabular, f.eks. EUs https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status].
+
+(English) The value should preferably be chosen from a controlled vocabulary, e.g. EU’s https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status].
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempel:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <adms:status>http://publications.europa.eu/resource/authority/concept-status/CURRENT</adms:status>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – versjonsnote <adms:versionNotes> (0..n) [[Begrep-versjonsnote]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |versjonsnote / version notes
+| Datakategori / Data category |adms:versionNotes
+| PID |http://www.w3.org/ns/adms#status[http://www.w3.org/ns/adms#status]
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |admin
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi versjonsnoter.
+
+(English) This property is used to specify version notes.
+| Multiplisitet |0..n
+| Kravnivå / Requirement level |Valgfri / Optional
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for SSBs begrep ‘landbakgrunn’:
+[source,xml]
+-----
+<conceptEntry id="landbakgrunn">
+   <langSec xml:lang="nb">
+      <adms:versionNotes>Fra og med 1.1.2003 ble definisjon endret til også å trekke inn besteforeldrenes fødeland</adms:versionNotes>
+   </langSec>
+</conceptEntry>
+-----
+
+=== <langSec> | <descrip> (0..n) [[langSec-descrip]]
+
+
+(norsk) Denne `<descrip>` brukes til å beskrive følgende opplysninger om begrepet: eksempel, merknad, fagområde eller verdiområde.
+
+(English) This `<descrip>` here is used to describe the following information about the concept: example, note, subject field or value range.
+
+==== Begrep – eksempel <skos:example> (0..n) [[Begrep-eksempel]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |eksempel / example
+| Datakategori / Data category |skos:example
+| PID |http://www.w3.org/2004/02/skos/core#example
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi eksempel på begrepet.
+
+(English) This property is used to specify examples of the concept.
+| Multiplisitet |0..n
+| Kravnivå / Requirement level |Valgfri / Optional
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <skos:example>eksempel1, eksempel2, eksempel3</skos:example>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – merknad <basic:note> (0..n) [[Begrep-merknad]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |merknad / note
+| Datakategori / Data category |basic:note
+| PID |http://datcatinfo.termweb.eu/datcat/DC-382
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi merknad(er) til begrepet.
+
+(English) This property is used to specify notes regarding the concept.
+| Multiplisitet |0..n
+| Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <basic:note>dette er et fiktivt eksempelbegrep som kun skal brukes til eksemplifisering</basic:note>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – fagområde <basic:subjectField> (0..n) [[Begrep-fagområde]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |fagområde / subject field
+| Datakategori / Data category |basic:subjectField
+| PID |http://datcatinfo.termweb.eu/datcat/DC-489
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |String, ref or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi fagområde(r) til begrepet.
+
+(English) This property is used to subject field(s) to the concept.
+| Multiplisitet |0..n
+| Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <basic:subjectField>terminologi</basic:subjectField>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – verdiområde <skosno:valueRange> (0..n) [[Begrep-verdiområde]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |verdiområde / value range
+| Datakategori / Data category |skosno:valueRange
+| PID |https://data.norge.no/vocabulary/skosno#valueRange
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |String or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi verdiområde til begrepet.
+
+(English) This property is used to specify the value range of the concept.
+| Multiplisitet |0..n
+| Kravnivå / Requirement level |Valgfri / Optional
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for SSBs begrep «sivilstand»:
+[source,xml]
+-----
+<conceptEntry id="sivilstand">
+   <langSec xml:lang="nb">
+      <skosno:valueRange>Standard for sivilstand</skosno:valueRange>
+       <skosno:valueRange>https://www.ssb.no/klass/klassifikasjoner/19</skosno:valueRange>
+   </langSec>
+</conceptEntry>
+-----
+
+=== <langSec> | Assosiativ begrepsrelasjon <descripGrp> (0..n) [[Begrep-har-assosiativ-begrepsrelasjon]]
+
+
+(norsk) Denne `<descripGrp>` er valgfri og kan brukes til å beskrive en assosiativ relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å beskrive relasjonen med relasjonsrollen begrepet har.
+
+(English) This `<descripGrp>` are optional and may be used to describe an associative relation that the current concept has with other concepts, when there is need to describe the relation with the relation role that the concept has.
+
+==== Begrep – er relatert til <skos:related> (1..n) [[Begrep-er-relatert-til-med-relasjonsrolle]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |er relater til / related
+| Datakategori / Data category |skos:related
+| PID |http://www.w3.org/2004/02/skos/core#related[http://www.w3.org/2004/02/skos/core#related]
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |ref or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi et annet begrep som begrepet er relater til.
+
+(English) This property is used to refer to a concept which this concept is related to.
+| Multiplisitet |1..n
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+| *Merknad / Note |(norsk) Denne egenskapen skal brukes i en `<descripGrp>` sammen med <<Begrep-relasjonsrolle>>.
+
+(English) This property shall be used in a `<descripGrp>` together with <<Begrep-relasjonsrolle>>.
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksemeplbegrep:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <descripGrp>
+         <skos:related>https://example.org/exConcept</skos:related>
+         <skosno:relationRole>forutsetter</skosno:relationRole>
+       </descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – relasjonsrolle <skosno:relationRole> (1..1) [[Begrep-relasjonsrolle]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |relasjonsrolle / relation role
+| Datakategori / Data category |skosno:relationRole
+| PID |https://data.norge.no/vocabulary/skosno#relationRole
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descripNote
+| Verdiområde / Range |String or picklist
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi relasjonsrollen begrepet har i den aktuelle assosiative relasjonen, enten som kodet verdi eller som tekst.
+
+(English) This property is used to specify the relation role that the concept has in the associative relation, either as coded value or as text.
+| Multiplisitet |1..1
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+| Merknad / Note |(norsk) Denne egenskapen skal brukes i en `<descripGrp>` sammen med <<Begrep-er-relatert-til-med-relasjonsrolle>>.
+
+(English) This property shall be used in a <descripGrp> together with er <<Begrep-er-relatert-til-med-relasjonsrolle>>.
+|===
+
+Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-er-relatert-til-med-relasjonsrolle>>.
+
+
+=== <langSec> | Generisk begrepsrelasjon <descripGrp> (0..n) [[Begrep-har-generisk-begrepsrelasjon]]
+
+
+(norsk) Denne `<descripGrp>` er valgfri og kan brukes til å beskrive en generisk relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å beskrive relasjonen med https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
+
+(English) This `<descripGrp>` is optional and may be used to describe a generic relation that the current concept has with other concepts, when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
+
+
+==== Begrep – generaliserer <xkos:generalizes> (1..n) [[Begrep-generaliserer-med-inndelingskriterium]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |generaliserer / generalizes
+| Datakategori / Data category |xkos:generalizes
+| PID |http://rdf-vocabulary.ddialliance.org/xkos#generalizes[http://rdf-vocabulary.ddialliance.org/xkos#generalizes]
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |ref or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi et annet begrep som begrepet generaliserer.
+
+(English) This property is used to refer to a concept which this concept generalizes.
+| Multiplisitet |1..n
+| Kravnivå / Requirement level | Obligatorisk / Mandatory
+| Merknad 1 / Note 1 | (norsk) Selv om både denne og egenskapen <<Begrep-spesialiserer-med-inndelingskriterium>> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (`<descripGrp>`).
+
+(English) Although both this property and the property <<Begrep-spesialiserer-med-inndelingskriterium>> are mandatory, only one of these shall be used for a given generic relation  (`<descripGrp>`).
+| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen kan også leses som «har underbegrep».
+
+(English) This property/relation may also be read as “has specific concept”.
+| Merknad 3 / Note 3 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-spesialiserer-med-inndelingskriterium>>.
+
+(English) This property/relation is the inverse of <<Begrep-spesialiserer-med-inndelingskriterium>>.
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som generaliserer begrep 974 («foreldrepengeperiode»):
+[source,xml]
+-----
+<conceptEntry id="BEGREP-625">
+   <langSec xml:lang="nb">
+      <descripGrp>
+         <xkos:generalizes>https://data.nav.no/begrep/BEGREP-974</xkos:generalizes>
+      </descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – spesialiserer <xkos:specializes> (1..n) [[Begrep-spesialiserer-med-inndelingskriterium]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |spesialiserer / specializes
+| Datakategori / Data category |xkos:specializes
+| PID |http://rdf-vocabulary.ddialliance.org/xkos#specializes[http://rdf-vocabulary.ddialliance.org/xkos#specializes]
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |ref or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi et annet begrep som begrepet spesialiserer.
+
+English) This property is used to refer to a concept that this concept specializes.
+| Multiplisitet |1..n
+| Kravnivå / Requirement level | Obligatorisk / Mandatory
+| Merknad 1 / Note 1 |(norsk) Selv om både denne og egenskapen <<Begrep-generaliserer-med-inndelingskriterium>> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (`<descripGrp>`).
+
+(English) Although both this property and the property <<Begrep-generaliserer-med-inndelingskriterium>> are mandatory, only one of these shall be used for a given generic relation (`<descripGrp>`).
+| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen kan også leses som «har overbegrep».
+
+(English) This property/relation may also be read as “has generic concept”.
+| Merknad 3 / Note 3 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-generaliserer-med-inndelingskriterium>>.
+
+(English) This property/relation is the inverse of <<Begrep-generaliserer-med-inndelingskriterium>>.
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode») som spesialiserer begrep 625 («ytelsesperiode»):
+[source,xml]
+-----
+<conceptEntry id="BEGREP-974">
+   <langSec xml:lang="nb">
+      <descripGrp>
+         <xkos:specializes>https://data.nav.no/begrep/BEGREP-625</xkos:specializes>
+      </descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – generisk begrepsrelasjon – inndelingskriterium <dct:description> (0..1) [[Begrep-generisk-begrepsrelasjon-inndelingskriterium]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |inndelingskriterium / criterion of subdivision
+| Datakategori / Data category |dct:description
+| PID |http://purl.org/dc/terms/description
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descripNote
+| Verdiområde / Range |String or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi inndelingskriterium for begrepsrelasjonen.
+
+(English) This property is used to specify the criterion of subdivision for the concept relation.
+| Multiplisitet |0..1
+| Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <descripGrp>
+         <xkos:specializes>https://example.org/exConcept2</xkos:specializes>
+         <dct:description>anatomi</dct:description>
+      </descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+=== <langSec> | Partitiv begrepsrelasjon <descripGrp> (0..n) [[Begrep-har-partitiv-begrepsrelasjon]]
+
+(norsk) Denne `<descripGrp>` er valgfri og kan brukes til å beskrive en partitiv relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å beskrive  https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
+
+(English) This `<descripGrp>` is optional and may be used to describe a partitive relation that the concept has with other concepts, when there is need to describe https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
+
+==== Begrep – er del av <xkos:isPartOf> (1..n) [[Begrep-er-del-av-med-inndelingskriterium]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |er en del av / is part of
+| Datakategori / Data category |xkos:isPartOf
+| PID |http://rdf-vocabulary.ddialliance.org/xkos#isPartOf[http://rdf-vocabulary.ddialliance.org/xkos#isPartOf]
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |ref or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi et annet begrep som begrepet er del av.
+
+(English) This property is used to refer to a concept which this concept is part of.
+| Multiplisitet |1..n
+| Kravnivå / Requirement level | Obligatorisk / Mandatory
+| Merknad 1 / Note 1 |(norsk) Selv om både denne og egenskapen <<Begrep-inneholder-med-inndelingskriterium>> er obligatoriske, skal bare én av disse brukes for en gitt partitiv relasjon  (`<descripGrp>`).
+
+(English) Although both this property and the property <<Begrep-inneholder-med-inndelingskriterium>> are mandatory, only one of these shall be used for a given partitive relation  (`<descripGrp>`).
+| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen kan også leses som «har helhetsbegrep».
+
+(English) This property/relation may also be read as “has comprehensive concept”.
+| Merknad 3 / Note 3 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-inneholder-med-inndelingskriterium>>.
+
+(English) This property/relation is the inverse of <<Begrep-inneholder-med-inndelingskriterium>>.
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote») som er del av begrep 974(«foreldrepengeperiode»):
+[source,xml]
+-----
+<conceptEntry id="BEGREP-975">
+   <langSec xml:lang="nb">
+      <descripGrp>
+         <xkos:isPartOf>https://data.nav.no/begrep/BEGREP-974</xkos:isPartOf>
+      </descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – inneholder <xkos:hasPart> (1..n) [[Begrep-inneholder-med-inndelingskriterium]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |inneholder / has part
+| Datakategori / Data category |xkos:hasPart
+| PID |http://rdf-vocabulary.ddialliance.org/xkos#hasPart[http://rdf-vocabulary.ddialliance.org/xkos#hasPart]
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descrip
+| Verdiområde / Range |ref or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi et annet begrep som begrepet inneholder (består av).
+
+(English) This property is used to refer to a concept which this concept has as part.
+| Multiplisitet |1..n
+| Kravnivå / Requirement level | Obligatorisk / Mandatory
+| Merknad 1 / Note 1 |(norsk) Selv om både denne og egenskapen <<Begrep-er-del-av-med-inndelingskriterium>> er obligatoriske, skal bare én av disse brukes for en gitt partitiv relasjon (`<descripGrp>`).
+
+(English) Although both this property and the property <<Begrep-er-del-av-med-inndelingskriterium>> are mandatory, only one of these shall be used for a given partitive relation (`<descripGrp>`).
+| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen kan også leses som «har delbegrep».
+
+(English) This property/relation may also be read as “has partitive concept”.
+| Merknad 3 / Note 3 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-er-del-av-med-inndelingskriterium>>.
+
+(English) This property/relation is the inverse of <<Begrep-er-del-av-med-inndelingskriterium>>.
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode») som inneholder begrep 975 («mødrekvote»), begrep 976 («fellesperiode») og begrep 1467 («fedrekvote»):
+[source,xml]
+-----
+<conceptEntry id="BEGREP-974">
+   <langSec xml:lang="nb">
+      <descripGrp>
+         <xkos:hasPart>https://data.nav.no/begrep/BEGREP-975</xkos:hasPart>
+         <xkos:hasPart>https://data.nav.no/begrep/BEGREP-976</xkos:hasPart>
+         <xkos:hasPart>https://data.nav.no/begrep/BEGREP-1467</xkos:hasPart>
+      </descripGrp>
+   </langSec>
+</conceptEntry>
+-----
+
+==== Begrep – partitiv begrepsrelasjon – inndelingskriterium <dct:description> (0..1) [[Begrep-partitiv-begrepsrelasjon-inndelingskriterium]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |inndelingskriterium / criterion of subdivision
+| Datakategori / Data category |dct:description
+| PID |http://purl.org/dc/terms/description[http://purl.org/dc/terms/description]
+| TBX-nivå / TBX level |langSec
+| TBX-klassifisering / TBX Classification |descripNote
+| Verdiområde / Range |String or xref
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi inndelingskriterium for  begrepsrelasjonen.
+
+(English) This property is used to specify the criterion of subdivision for the concept relation.
+| Multiplisitet |0..1
+| Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
+[source,xml]
+-----
+<conceptEntry id="cid-1">
+   <langSec xml:lang="nb">
+      <descripGrp>
+         <xkos:hasPart>https://example.org/exConcept</xkos:hasPart>
+         <dct:description>anatomi</dct:description>
+      </descripGrp>
+   </langSec>
+</conceptEntry>
+-----

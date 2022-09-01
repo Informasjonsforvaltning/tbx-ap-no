@@ -1,0 +1,43 @@
+== Vedlegg A - Navnerom som er brukt i denne standard [[Navnerom]]
+
+[[Tabell-navnerom]]
+.Oversikt over navnerom som er brukt i denne standarden (tabellen er deskriptiv)
+[cols="10,45,45"]
+|===
+|Prefiks |Navnerom |Forklaring/navn
+|adms | http://www.w3.org/ns/adms | https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema]
+|basic |http://www.tbxinfo.net/ns/basic | https://ltac-global.github.io/TBX_basic_module/[TBX Basic Module]
+|dcat | http://www.w3.org/ns/dcat# | https://www.w3.org/TR/vocab-dcat-2/[Data Catalog Vocabulary]
+|dct | http://purl.org/dc/terms/ | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
+|euvoc |http://publications.europa.eu/ | Publications Office Extensions
+|locn | http://www.w3.org/ns/locn# | https://www.w3.org/ns/locn[ISA Programme Location Core Vocabulary]
+|min |http://www.tbxinfo.net/ns/min | https://ltac-global.github.io/TBX_min_module/[TBX Min Module]
+|owl | http://www.w3.org/2002/07/owl# | https://www.w3.org/OWL/[Web Ontology Language (OWL)]
+|rdfs | http://www.w3.org/2000/01/rdf-schema# | https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
+|skos | http://www.w3.org/2004/02/skos/core# | https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
+|skosno | https://data.norge.no/vocabulary/skosno#  | Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep) (#p.t. under høring#, https://informasjonsforvaltning.github.io/skos-ap-no-begrep/)
+|uneskos | http://purl.org/umu/uneskos# | https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
+|vcard | http://www.w3.org/2006/vcard/ns# | https://www.w3.org/TR/vcard-rdf/[vCard Ontology - for describing People and Organizations]
+|xkos | http://rdf-vocabulary.ddialliance.org/xkos# |https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
+|===
+
+Eksempel på en TBX-start-tagg med ovennevnte prefikser (_eksemplet er descriptivt_):
+[source,xml]
+-----
+<tbx type="TBX-AP-NO-v2" style="dct" xml:lang="nb" xmlns="urn:iso:std:iso:30042:ed-2"
+xmlns:admin="http://www.w3.org/ns/adms#"
+xmlns:basic="http://www.tbxinfo.net/ns/basic"
+xmlns:dcat="http://www.w3.org/ns/dcat#"
+xmlns:dct="http://purl.org/dc/terms/"
+xmlns:euvoc="http://publications.europa.eu/ontology/euvoc/"
+xmlns:locn="http://www.w3.org/ns/locn#"
+xmlns:min="http://www.tbxinfo.net/ns/min"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+xmlns:skosno="https://data.norge.no/vocabulary/skosno#"
+xmlns:uneskos="http://purl.org/umu/uneskos#"
+xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
+>
+-----

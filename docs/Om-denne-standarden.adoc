@@ -1,0 +1,56 @@
+== Om denne standarden [[Om-denne-standarden]]
+
+=== Formål [[Formål]]
+
+Denne standarden skal sikre at begrepsbeskrivelser som forvaltes av offentlig forvaltning, tilgjengeliggjøres på en standardisert og maskinlesbar måte.
+
+=== Omfang og avgrensinger [[Omfang-og-avgrensinger]]
+
+Standarden spesifiserer hvordan begrepsbeskrivelser som er utformet i henhold til _Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_ (som p.t. også er til høring sammen med denne, https://informasjonsforvaltning.github.io/skos-ap-no-begrep), gjøres tilgjengelig i maskinlesbare formater i henhold til ISO-standarden TBX. Standarden spesifiserer ikke krav til et eventuelt IT-system for å forvalte begrepsbeskrivelser.
+
+Standarden brukes når en virksomhet skal tilgjengeliggjøre begrepsbeskrivelser som de selv forvalter, i et maskinlesbart format og i henhold til TBX-standarden. Se ellers bruksområdet https://www.digdir.no/digitalisering-og-samordning/omgrepsanalyse-og-definisjonsarbeid/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_ for andre aktuelle standarder og veiledere.
+
+Standarden er basert på og ikke en direkte oversettelse av ISO-standarden TBX. Standarden er en norsk applikasjonsprofil av TBX, derfor kortnavnet TBX-AP-NO. Engelske navn og tekster som er tatt med i standarden, er ikke alle nødvendigvis ordrett sitat fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet). Engelske navn og tekster er primært ment for engelsktalende utviklere av verktøystøtte.
+
+=== Målgrupper [[Målgrupper]]
+
+Standarden er primært for deg som skal utvikle/tilpasse verktøystøtte for tilgjengeliggjøring av begrepsbeskrivelser i henhold ISO-standarden TBX.
+
+=== Forvaltningsregime [[Forvaltningsregime]]
+
+Standarden forvaltes av https://digdir.no/[Digitaliseringsdirektoratet (Digdir)].
+
+Digdir håndterer mindre endringer. Ved behov for større endringer vil Digdir sette sammen en arbeidsgruppe med representanter fra aktuelle virksomheter. Arbeidsgruppen utarbeider forslag til den reviderte versjonen som sendes ut på åpen høring før fastsetting.
+
+=== Kravnivåene i denne standarden [[Kravnivåene]]
+
+Standarden bruker kravnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
+
+=== Hvordan du leser denne standarden [[Hvordan-du-leser-denne-standarden]]
+
+Denne standarden bruker stilen DCT (Data Category as Tag). Se https://www.tbxinfo.net/dca-v-dct/[Data Category as Attribute / Data Category as Tag] for forskjellen mellom DCT og DCA, og https://www.tbxinfo.net/dca-dct-converter/[DCA-DCT Converter] for konvertering mellom disse.
+
+Alle krav i del 1 av _Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_ (som p.t. også er til høring sammen med denne, https://informasjonsforvaltning.github.io/skos-ap-no-begrep) er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.
+
+[cols="30s,70"]
+|===
+|Ledetekst i tabellen|*Hensikt med raden i tabellen*
+|Navn / Name |Norsk og engelsk egenskapsnavn.
+|Datakategori / Data category |Datakategorinavn som skal brukes i utvekslingen, oppgitt i DCT-stilen.
+
+Eksempel: basic:definition. Se <<Navnerom>> for hva prefiksen `basic:`` står for.
+|PID |En persistent identifikator til egenskapen. Dette for at man skal kunne referere til en felles spesifikasjon, og dermed felles forståelse og bruk av egenskapen. NB! Ikke alle PID-lenker gir menneskevennlige visninger.
+
+Eksempel: http://www.datcatinfo.net/datcat/DC-168 er PID for `basic:definition`
+|TBX-nivå / TBX level |Nivå i TBX-strukturen egenskapen brukes på.
+|TBX-klassifisering / TBX classification | Elementet som er brukt til å klassifisere data kategorier som har tilsvarende hensikt.
+
+Eksempel: Elementet `<descrip>` inneholder primært beskrivende opplysninger om et begrep, og `<admin>` inneholder primært administrative opplysninger om et begrep.
+|Verdiområde / Range |Lovlige verdier som egenskapen kan ha.
+|Anvendelse / Usage note |Forklaring på norsk og engelsk, på hva egenskapen er ment å brukes til, i kontekst av denne standarden.
+| Multiplisitet |Minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
+|Kravnivå / Requirement level |Om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Kravnivåene>>.
+|Merknad / Note |Merknad på norsk og engelsk, knyttet til bruk av egenskapen, bl.a. om det er krav til bruk av kontrollerte vokabularer (picklist), osv.
+|===
+
+Hvordan den enkelte egenskapen brukes i TBX, er eksemplifisert under den aktuelle tabellen. Det gjøres oppmerksom på at ikke alle eksemplene i TBX er komplette, slik at de kan mangle verdi for obligatoriske egenskaper. Eksemplene kan også inneholde fiktive data.

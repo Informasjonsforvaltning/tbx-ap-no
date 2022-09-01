@@ -1,0 +1,146 @@
+== Krav til TBX-representasjon av en begrepssamling [[Krav-begrepssamling]]
+
+=== <tbx> (1..1)
+
+
+[Figur-tbx]
+.Begrepssamling (<tbx>) (basert på Fig. 2 i NS-ISO 30042:2019)
+[link=images/TBX-AP-NO_Begrepssamling.png]
+image::images/TBX-AP-NO_Begrepssamling.png[]
+
+
+(norsk) `<tbx>` er roten til en TBX-fil. Den brukes til å representere en begrepssamling.
+
+Følgende skal tas med sammen med start-taggen av `<tbx>`:
+
+* `xmlns="urn:iso:std:iso:30042:ed-2"` som refererer til ISO 30042:2019
+* `style="dct"` eller `style="dca"` som forteller hvilken stil som er brukt i filen
+* `type="TBX-AP-NO-v2"`, som refererer denne versjonen av TBX-AP-NO
+* `xml:lang="nb"` for bokmål, `"nn"` for nynorsk, `"en"` for engelsk osv., som forteller hvilket hovedspråk som er brukt i filen, som kan overstyres av språkkoden oppgitt i den enkelte `<langSec>`
+* når `style="dct"` er brukt, skal navnerom oppgis for alle prefiksene som er brukt i filen, f.eks. `xmlns:basic=http://www.tbxinfo.net/ns/basic`, se <<Navnerom>> for alle prefiksene som er brukt i denne standarden, med tilhørende navnerom
+
+(norsk) Denne standarden bruker bare `<fileDec>`-delen av `<tbxHeader>`, og bare `<titleStmt>` og `<sourceDesc>` i `<fileDesc>`. `<titleStmt>` og `<fileDesc>` vil bli beskrevet i etterfølgende avsnitt.
+
+(English) `<tbx>` is the root of a TBX-file. It is used to represent a concept collection.
+
+The following shall be used with the start tag of `<tbx>`:
+
+* `xmlns="urn:iso:std:iso:30042:ed-2"` which refers to ISO 30042:2019
+* `style="dct"` or `style="dca"` which specifies the style used in the file
+* `type="TBX-AP-NO-v2"` which refers to this version of TBX-AP-NO
+* `xml:lang="nb"` for Norwegian bokmål, `"nn"` for Norwegian nynorsk, `"en"` for English etc., which specifies the main language that is used in the file, which may be overridden by the language code given in the `<langSec>`
+* when `style="dct"` is used, name spaces for all prefixes that are used in the file shall be given, e.g., `xmlns:basic=http://www.tbxinfo.net/ns/basic`, see <<Navnerom>> for all prefixes that are used in this standard with corresponding name spaces
+
+
+(English) This standard only uses the `<fileDec>`-part of `<tbxHearder>`, and only `<titleStmt>` and `<sourceDesc>` in `<fileDec>`. `<titleStmt>` and `<sourceDesc>` will be described in the following sections.
+
+=== <titleStmt> (1..1) [[titleStmt]]
+
+(norsk) Navn og beskrivelse til begrepssamlingen oppgis i `<titleStmt>`.
+
+(English) The name and description of the concept collection is specified in `<titleStmt>`.
+
+==== Begrepssamling – navn <dct:title> (1..n) [[Begrepssamling-navn]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |navn / title
+| Datakategori / Data category |dct:title
+|*PID*|http://purl.org/dc/terms/title[http://purl.org/dc/terms/title]
+| TBX-nivå / TBX level |fileStmt
+| TBX-klassifisering / TBX Classification |p
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi navnet til begrepssamlingen. Egenskapen bør gjentas når navnet er i flere språk.
+
+(English) This property is used to specify the name of the concept collection. The property should be repeated when the name is in several languages.
+| Multiplisitet |1..n
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
+
+==== Begrepssamling – beskrivelse <dct:description> (0..n) [[Begrepssamling-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |beskrivelse / description
+| Datakategori / Data category |dct:description
+|*PID*|http://purl.org/dc/terms/description[http://purl.org/dc/terms/description]
+| TBX-nivå / TBX level |fileStmt
+| TBX-klassifisering / TBX Classification |p
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi beskrivelse av begrepssamlingen. Egenskapen bør gjentas når teksten er i flere språk.
+
+(English) This property is used to specify the description of the concept collection. The property should be repeated when the text is in several languages.
+| Multiplisitet |0..n
+| Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
+
+=== <sourceDesc> (1..1) [[sourceDesc]]
+
+
+(norsk) Begrepssamlingens identifikator, virksomheten som publiserte begrepssamlingen og kontaktpunkt(er) til virksomheten oppgis i `<sourceDesc>`.
+
+(English) The concept collection's identifier, publisher and contact point to the publisher are specified in `<sourceDesc>`.
+
+==== Begrepssamling – identifikator <dct:identifier> (1..1) [[Begrepssamling-identifikator]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |identifikator / identifier
+| Datakategori / Data category |dct:identifier
+|*PID*|http://purl.org/dc/terms/identifier[http://purl.org/dc/terms/identifier]
+| TBX-nivå / TBX level |sourceDesc
+| TBX-klassifisering / TBX Classification |p
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi identifikatoren til begrepssamlingen.
+
+(English) This property is used to specify the identifier to the concept collection.
+| Multiplisitet |1..1
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
+
+==== Begrepssamling – publisert av <dct:publisher> (1..1) [[Begrepssamling-publisert-av]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |publisert av / publisher
+| Datakategori / Data category |dct:publisher
+|*PID*|http://purl.org/dc/terms/publisher[http://purl.org/dc/terms/publisher]
+| TBX-nivå / TBX level |sourceDesc
+| TBX-klassifisering / TBX Classification |p
+| Verdiområde / Range |String
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til virksomheten som har publisert begrepssamlingen.
+
+(English) This property is used to refer to the publisher of the concept collection.
+| Multiplisitet |1..1
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+| Merknad / Note |(norsk) Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
+
+(English) The organization’s identifier should be used, e.g. in accordance to https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[the organization number registered in the Central Coordinating Register for Legal Entities (CCR)].
+|===
+
+Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
+
+==== Begrepssamling – kontaktpunkt <dcat:contactPoint> (1..n) [[Begrepssamling-kontaktpunkt]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name |kontaktpunkt / contact point
+| Datakategori / Data category |dcat:contactPoint
+|*PID*|http://purl.org/dc/terms/publisher[http://purl.org/dc/terms/publisher]
+| TBX-nivå / TBX level |sourceDesc
+| TBX-klassifisering / TBX Classification |p
+| Verdiområde / Range |vcard:Organization or vcard:Group
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved spørsmål vedrørende begrepssamlingen. Det skal være maks. ett kontaktpunkt per språk, hvis det er ulike kontaktpunkter for f.eks. norske vs. internasjonale kontakter.
+
+(English) This property is used to specify contact point which may be reached regarding the concept collection. There shall be maximum one contact point per language, when there are different contact points for e.g. Norwegian vs. international contacts.
+| Multiplisitet |1..n
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
