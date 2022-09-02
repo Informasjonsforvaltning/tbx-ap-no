@@ -1,0 +1,5 @@
+== Krav til TBX-representasjon av et begrep [[Krav-begrep]]
+
+include::conceptEntry.adoc[]
+
+include::langSec.adoc[]
