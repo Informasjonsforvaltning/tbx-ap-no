@@ -20,7 +20,7 @@ include::shared/download.adoc[]
 *Status*: #under arbeid# +
 *Versjon*: #forberedelse til høringsversjon# +
 *Publisert*: #ikke ennå# +
-*Oppdatert*: 2022-09-01 #løpende oppdateres# +
+*Oppdatert*: 2022-09-02 #løpende oppdateres# +
 *Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
 
