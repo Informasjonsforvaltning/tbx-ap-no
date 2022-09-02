@@ -19,7 +19,7 @@ Følgende skal tas med sammen med start-taggen av `<tbx>`:
 * `xml:lang="nb"` for bokmål, `"nn"` for nynorsk, `"en"` for engelsk osv., som forteller hvilket hovedspråk som er brukt i filen, som kan overstyres av språkkoden oppgitt i den enkelte `<langSec>`
 * når `style="dct"` er brukt, skal navnerom oppgis for alle prefiksene som er brukt i filen, f.eks. `xmlns:basic=http://www.tbxinfo.net/ns/basic`, se <<Navnerom>> for alle prefiksene som er brukt i denne standarden, med tilhørende navnerom
 
-(norsk) Denne standarden bruker bare `<fileDec>`-delen av `<tbxHeader>`, og bare `<titleStmt>` og `<sourceDesc>` i `<fileDesc>`. `<titleStmt>` og `<fileDesc>` vil bli beskrevet i etterfølgende avsnitt.
+(norsk) Denne standarden bruker bare `<fileDesc>`-delen av `<tbxHeader>`, og bare `<titleStmt>` og `<sourceDesc>` i `<fileDesc>`. `<titleStmt>` og `<fileDesc>` vil bli beskrevet i etterfølgende avsnitt.
 
 (English) `<tbx>` is the root of a TBX-file. It is used to represent a concept collection.
 
@@ -32,7 +32,7 @@ The following shall be used with the start tag of `<tbx>`:
 * when `style="dct"` is used, name spaces for all prefixes that are used in the file shall be given, e.g., `xmlns:basic=http://www.tbxinfo.net/ns/basic`, see <<Navnerom>> for all prefixes that are used in this standard with corresponding name spaces
 
 
-(English) This standard only uses the `<fileDec>`-part of `<tbxHearder>`, and only `<titleStmt>` and `<sourceDesc>` in `<fileDec>`. `<titleStmt>` and `<sourceDesc>` will be described in the following sections.
+(English) This standard only uses the `<fileDesc>`-part of `<tbxHearder>`, and only `<titleStmt>` and `<sourceDesc>` in `<fileDesc>`. `<titleStmt>` and `<sourceDesc>` will be described in the following sections.
 
 === <titleStmt> (1..1) [[titleStmt]]
 
