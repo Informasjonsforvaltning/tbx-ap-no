@@ -175,7 +175,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Kravnivå / Requirement level |Obligatorisk / Mandatory
 | Merknad 1 / Note 1 |(norsk) Denne egenskapen skal være i en `<adminGrp>` sammen med <<Begrep-kontaktpunkt>>.
 
-This property shall be within an `<adminGrp>` together with <<Begrep-kontaktpunkt>>.
+(English) This property shall be within an `<adminGrp>` together with <<Begrep-kontaktpunkt>>.
 | Merknad 2 / Note 2 |(norsk) Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
 
 (English) The organization’s identifier should be used, e.g. in accordance to https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[the organization number registered in the Central Coordinating Register for Legal Entities (CCR)].
@@ -206,7 +206,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 | Kravnivå / Requirement level |Obligatorisk / Mandatory
 | Merknad 1 / Note 1 |(norsk) Denne egenskapen skal være i en `<adminGrp>` sammen med <<Begrep-publisert-av>>.
 
-This property shall be within an `<adminGrp>` together with <<Begrep-publisert-av>>.
+(English) This property shall be within an `<adminGrp>` together with <<Begrep-publisert-av>>.
 | Merknad 2 / Note 2 |(norsk) Når det er ulike kontaktpunkter for ulike språk (f.eks. norske vs. internasjonale kontakter), skal det oppgis maks. ett kontaktpunkt per språk.
 
 (English) When there are different contact points for different languages (e.g. Norwegian vs. international contacts), there shall be maximum one contact point per language.

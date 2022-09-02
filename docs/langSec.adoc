@@ -555,7 +555,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som g
 | Verdiområde / Range |ref or xref
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi et annet begrep som begrepet spesialiserer.
 
-English) This property is used to refer to a concept that this concept specializes.
+(English) This property is used to refer to a concept that this concept specializes.
 | Multiplisitet |1..n
 | Kravnivå / Requirement level | Obligatorisk / Mandatory
 | Merknad 1 / Note 1 |(norsk) Selv om både denne og egenskapen <<Begrep-generaliserer-med-inndelingskriterium>> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (`<descripGrp>`).

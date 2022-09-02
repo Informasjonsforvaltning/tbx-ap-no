@@ -54,10 +54,10 @@ xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
 a| *Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog]:
 
 * *identifikator*: https://data.norge.no/concepts
-* *navn*: Begrepsoversikt (bokmål)
+* *navn*: «Begrepsoversikt» (bokmål)
 * *publisert av*: 991825827 (organisasjonsnummer for Digitaliseringsdirektoratet)
-* *kontaktpunkt*: e-post fellesdatakatalog@digdir.no
-* *beskrivelse*: Oversikt over begreper som er forvaltet av offentlig forvaltning (bokmål)
+* *kontaktpunkt*: fellesdatakatalog@digdir.no
+* *beskrivelse*: «Oversikt over begreper som er forvaltet av offentlig forvaltning» (bokmål)
 
 a| *Eksemplet iht. TBX-AP-N* (DCT style):
 -----
