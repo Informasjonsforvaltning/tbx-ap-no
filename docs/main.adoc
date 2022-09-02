@@ -1,32 +1,28 @@
 include::locale/attributes-nb.adoc[]
-= Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO) - Versjon 1.0
-:description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO)
+= TBX-AP-NO – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX
+:description: TBX-AP-NO – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX
 :doctype: book
-:docinfo:
+:docinfo: shared
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
 :toclevels: 2
 :sectanchors:
-:title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
+:table-stripes: odd
+:xrefstyle: short
+:title-logo-image: image:images/Digdir.png[pdfwidth=30vw]
 
-//:sectnums:
-
-//:sectnumlevels: 3
-
-//{description}
-
-image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
-
-WARNING: #Standarden er p.t. under revisjon#. Forslag til revidert versjon vil bli tilgjengelig som https://informasjonsforvaltning.github.io/tbx-ap-no/[Redaktørens utkast]
-
-*Status*: Gjeldende +
-*Publisert*: 2019-03-15 (v.1.0) +
-*Oppdatert*: 2020-07-01 (v.1.0.2) +
-*Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
-*Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
+image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 include::shared/download.adoc[]
+
+
+*Status*: #under arbeid# +
+*Versjon*: #forberedelse til høringsversjon# +
+*Publisert*: #ikke ennå# +
+*Oppdatert*: 2022-09-02 #løpende oppdateres# +
+*Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
+*Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
 
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/tbx-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
@@ -36,20 +32,23 @@ toc::[]
 
 // Innhold her:
 
-include::forord.adoc[]
+include::Forord.adoc[]
 
-include::formaal_omfang_avgrensninger.adoc[]
+include::Om-denne-standarden.adoc[]
 
-include::normative_referanser.adoc[]
+include::Normative-referanser.adoc[]
 
-include::definisjoner.adoc[]
+include::Generelle-krav.adoc[]
 
-include::spesifikasjon.adoc[]
+include::Krav-begrep.adoc[]
+// som inkluderer conceptEntry.adoc og langSec.adoc
 
-include::spesifikasjon-felter.adoc[]
+include::Krav-begrepssamling.adoc[]
 
-include::vedlegg-a.adoc[]
+include::Navnerom.adoc[]
 
-include::vedlegg-b.adoc[]
+include::TBX-eksempler.adoc[]
+
+include::Endringslogg.adoc[]
 
 include::shared/stats.adoc[]

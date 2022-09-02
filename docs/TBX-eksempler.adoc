@@ -1,0 +1,98 @@
+== Vedlegg B – Eksempler i TBX-AP-NO [[TBX-AP-NO-Eksempler]]
+
+
+_Vedlegget er descriptivt_.
+
+=== Eksempel på en TBX-representasjon av en minimum beskrivelse av et begrep [[Eksempel-minimum]]
+
+[stripes=even]
+|===
+a| *Eksempel på minimumsinnhold*, hentet fra https://data.nav.no/begrep/BEGREP-975[NAV] 2022-08-23, for begrepet «mødrekvote»:
+
+* *anbefalt term*: «mødrekvote» (bokmål)
+* *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
+* *identifikator*: https://data.nav.no/begrep/BEGREP-975
+* *publisert av*: 889640782 (organisasjonsnummer til NAV)
+* *kontaktpunkt*: begrepskatalogen@nav.no
+
+a| *Eksempelet iht. TBX-AP-NO* (DCT style):
+-----
+<tbx type="TBX-AP-NO-v2" style="dct" xml:lang="nb" xmlns="urn:iso:std:iso:30042:ed-2"
+xmlns:min="http://www.tbxinfo.net/ns/min"
+xmlns:basic="http://www.tbxinfo.net/ns/basic"
+xmlns:dcat="http://www.w3.org/ns/dcat#"
+xmlns:dct="http://purl.org/dc/terms/"
+xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+   <conceptEntry id="BEGREP-975">
+      <adminGrp>
+        <dct:publisher>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/889640782</dct:publisher>
+        <dcat:contactPoint>
+           <vcard:Organization>
+              <vcard:hasEmail>mailto:begrepskatalogen@nav.no</vcard:hasEmail>
+           </vcard:Organization>
+        </dcat:contactPoint>
+      </adminGrp>
+      <dct:identifier>https://data.nav.no/begrep/BEGREP-975</dct:identifier>
+      <langSec xml:lang="nb">
+         <descripGrp>
+            <basic:definition>den delen av foreldrepengeperioden som er forbeholdt mor</basic:definition>
+         </descripGrp>
+         <termSec>
+            <term>mødrekvote</term>
+            <min:administrativeStatus>basic:preferredTermAdmnSts</min:administrativeStatus>
+         </termSec>
+      </langSec>
+   </conceptEntry>
+</tbx>
+-----
+|===
+
+=== Eksempel på en TBX-representasjon av en begrepssamling [[TBX-eksempel-begrepssamling]]
+
+[stripes=even]
+|===
+a| *Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog]:
+
+* *identifikator*: https://data.norge.no/concepts
+* *navn*: Begrepsoversikt (bokmål)
+* *publisert av*: 991825827 (organisasjonsnummer for Digitaliseringsdirektoratet)
+* *kontaktpunkt*: e-post fellesdatakatalog@digdir.no
+* *beskrivelse*: Oversikt over begreper som er forvaltet av offentlig forvaltning (bokmål)
+
+a| *Eksemplet iht. TBX-AP-N* (DCT style):
+-----
+<tbx type="TBX-AP-NO-v2" style="dct" xml:lang="nb" xmlns="urn:iso:std:iso:30042:ed-2"
+xmlns:min="http://www.tbxinfo.net/ns/min"
+xmlns:basic="http://www.tbxinfo.net/ns/basic"
+xmlns:dcat="http://www.w3.org/ns/dcat#"
+xmlns:dct="http://purl.org/dc/terms/"
+xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+   <tbxHeader>
+      <fileDesc>
+         <titleStmt>
+            <dct:title xml:lang="nb">Begrepsoversikt</dct:title>
+            <dct:description xml:lang="nb">Oversikt over begreper som er forvaltet av offentlig forvaltning</dct:description>
+         </titleStmt>
+         <sourceDesc>
+            <dct:identifier>https://data.norge.no/concepts</dct:identifier>
+            <dct:publisher>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827</dct:publisher>
+            <dcat:contactPoint>
+               <vcard:Organization>
+                 <vcard:hasEmail>mailto:fellesdatakatalog@digdir.no</vcard:hasEmail>
+               </vcard:Organization>
+            </dcat:contactPoint>
+        </sourceDesc>
+      </fileDesc>
+   </tbxHeader>
+   <text>
+      <body>
+          <!-- concepts that are included in the TBX-file, one <conceptEntry> for each concept -->
+          <conceptEntry cid="1">
+          </conceptEntry>
+          <conceptEntry cid="2">
+          </conceptEntry>
+      </body>
+   </text>
+</tbx>
+-----
+|===
