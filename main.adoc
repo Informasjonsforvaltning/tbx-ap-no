@@ -32,7 +32,7 @@ toc::[]
 
 // Innhold her:
 
-include::Forord.adoc[]
+include::forord.adoc[]
 
 include::Om-denne-standarden.adoc[]
 
