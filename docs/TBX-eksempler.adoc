@@ -7,7 +7,7 @@ _Vedlegget er descriptivt_.
 
 [stripes=even]
 |===
-a| *Eksempel på minimumsinnhold*, hentet fra https://data.nav.no/begrep/BEGREP-975[NAV] 2022-08-23, for begrepet «mødrekvote»:
+a| *Eksempel på minimumsinnhold*, hentet fra NAV 2022-08-23, for begrepet https://data.nav.no/begrep/BEGREP-975[«mødrekvote»]:
 
 * *anbefalt term*: «mødrekvote» (bokmål)
 * *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
