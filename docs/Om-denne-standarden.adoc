@@ -24,7 +24,7 @@ Digdir håndterer mindre endringer. Ved behov for større endringer vil Digdir s
 
 === Kravnivåene i denne standarden [[Kravnivåene]]
 
-Standarden bruker kravnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
+Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende https://data.norge.no/specification/dcat-ap-no/#Om-kravene[betydning som i DCAT-AP-NO] og gjentas derfor ikke her.
 
 === Hvordan du leser denne standarden [[Hvordan-du-leser-denne-standarden]]
 

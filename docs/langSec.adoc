@@ -9,7 +9,7 @@ image::images/TBX-AP-NO_langSec.png[]
 
 (norsk) Restriksjon: Det skal være maks. én `<langSec>` per skriftspråk per begrep (<conceptEntry>).
 
-(English) `<langSec>` is mandatory and shall be used to represent terms and definitions for a given concept in a given language. `<langSec>` may also be used to represent optional concept relations when there is need for describing the relations with details. The various parts of `<langSec>` is described in the following sections. The language code is specified in the start tag of `<langSec>` and will apply to the whole `<langSec>`, see the example below.
+(English) `<langSec>` is mandatory and shall be used to represent terms and definitions for a given concept in a given language. `<langSec>` may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of `<langSec>` is described in the following sections. The language code is specified in the start tag of `<langSec>` and will apply to the whole `<langSec>`, see the example below.
 
 (English) Restriction: There shall be max. one `<langSec>` per language per concept (<conceptEntry>).
 
