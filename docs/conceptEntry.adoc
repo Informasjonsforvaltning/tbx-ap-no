@@ -310,7 +310,7 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-transaksjonstype>>.
 (English) This property is used to refer to another concept that this concept generalizes. This concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36721[generic concept] and the other concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36722[specific concept], in a generic concept relation between the two concepts.
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Valgfri / Optional
-| Merknad 1 / Note 1 |(norsk) Egenskapen/relasjonen kan også leses som «har underbegrep».
+| Merknad 1 / Note 1 |(norsk) Egenskapen/relasjonen kan også leses som «har spesifikt begrep».
 
 (English) This property/relation may also be read as “has specific concept”.
 | Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-spesialiserer>>.
@@ -344,7 +344,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som g
 (English) This property is used to refer to another concept that this concept specializes. This concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36722[specific concept] and the other concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36721[generic concept], in a generic concept relation between the two concepts.
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Valgfri / Optional
-| Merknad 1 / Note 1 |(norsk) Egenskapen/relasjonen kan også leses som «har overbegrep».
+| Merknad 1 / Note 1 |(norsk) Egenskapen/relasjonen kan også leses som «har generisk begrep».
 
 (English) This property/relation may also be read as “has generic concept”.
 | Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-generaliserer>>.

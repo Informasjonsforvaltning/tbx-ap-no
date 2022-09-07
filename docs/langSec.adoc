@@ -523,7 +523,7 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-er-relatert-til-med-relasjon
 | Merknad 1 / Note 1 | (norsk) Selv om både denne og egenskapen <<Begrep-spesialiserer-med-inndelingskriterium>> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (`<descripGrp>`).
 
 (English) Although both this property and the property <<Begrep-spesialiserer-med-inndelingskriterium>> are mandatory, only one of these shall be used for a given generic relation  (`<descripGrp>`).
-| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen kan også leses som «har underbegrep».
+| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen kan også leses som «har spesifikt begrep».
 
 (English) This property/relation may also be read as “has specific concept”.
 | Merknad 3 / Note 3 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-spesialiserer-med-inndelingskriterium>>.
@@ -561,7 +561,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som g
 | Merknad 1 / Note 1 |(norsk) Selv om både denne og egenskapen <<Begrep-generaliserer-med-inndelingskriterium>> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (`<descripGrp>`).
 
 (English) Although both this property and the property <<Begrep-generaliserer-med-inndelingskriterium>> are mandatory, only one of these shall be used for a given generic relation (`<descripGrp>`).
-| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen kan også leses som «har overbegrep».
+| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen kan også leses som «har generisk begrep».
 
 (English) This property/relation may also be read as “has generic concept”.
 | Merknad 3 / Note 3 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-generaliserer-med-inndelingskriterium>>.
