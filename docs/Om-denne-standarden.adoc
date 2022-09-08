@@ -38,7 +38,7 @@ Alle krav i del 1 av _Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-B
 |Navn / Name |Norsk og engelsk egenskapsnavn.
 |Datakategori / Data category |Datakategorinavn som skal brukes i utvekslingen, oppgitt i DCT-stilen.
 
-Eksempel: basic:definition. Se <<Navnerom>> for hva prefiksen `basic:`` står for.
+Eksempel: basic:definition. Se <<Navnerom>> for hva prefiksen `basic:` står for.
 |PID |En persistent identifikator til egenskapen. Dette for at man skal kunne referere til en felles spesifikasjon, og dermed felles forståelse og bruk av egenskapen. NB! Ikke alle PID-lenker gir menneskevennlige visninger.
 
 Eksempel: http://www.datcatinfo.net/datcat/DC-168 er PID for `basic:definition`

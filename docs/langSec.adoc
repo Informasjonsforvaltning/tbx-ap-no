@@ -147,7 +147,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
    <langSec xml:lang="nb">
       <descripGrp>
           <basic:definition>den delen av foreldrepengeperioden som er forbeholdt mor</basic:definition>
-      <descripGrp>
+      </descripGrp>
    </langSec>
 </conceptEntry>
 -----
@@ -204,9 +204,9 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempel:
 | TBX-klassifisering / TBX Classification |admin
 | Verdiområde / Range a|Picklist:
 
-(norsk) Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source[Typer forhold til kilde], når verdien finnes på listen.
+(norsk) Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde], når verdien finnes på listen.
 
-(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source[Types of relationship with source], when the value is on the list.
+(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source], when the value is on the list.
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi definisjonens forhold til kilde.
 
 (English) This property is used to specify the definition’s relationship with the source(s).
@@ -225,7 +225,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempel:
       <descripGrp> <!-- descripGrp for a given definition -->
          <basic:definition>…</basic:definition>
          <adminGrp>
-            <skosno:relationshipWithSource>https://data.norge.no/vocabulary/relationship-with-source#derived-from-source</skosno:relationshipWithSource>
+            <skosno:relationshipWithSource>https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source</skosno:relationshipWithSource>
             <basic:source>https://example.org/exampleSource</basic:source>
          </adminGrp>
       </descripGrp>
