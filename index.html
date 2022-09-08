@@ -592,10 +592,10 @@ Dette dokumentet kan også lastes ned <a href="tbx-ap-no.pdf">som PDF</a>.
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <mark>under arbeid</mark> <br>
-<strong>Versjon</strong>: <mark>forberedelse til høringsversjon</mark><br>
-<strong>Publisert</strong>: <mark>ikke ennå</mark><br>
-<strong>Oppdatert</strong>: 2022-09-07 <mark>løpende oppdateres</mark><br>
+<p><strong>Status</strong>: <mark>Til høring</mark> <br>
+<strong>Versjon</strong>: <mark>Høringsversjon</mark><br>
+<strong>Publisert</strong>: 2022-09-08<br>
+<strong>Oppdatert</strong>: 2022-09-08<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/tbx-ap-no/" class="bare">https://data.norge.no/specification/tbx-ap-no/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/tbx-ap-no/" class="bare">https://informasjonsforvaltning.github.io/tbx-ap-no/</a><br></p>
 </div>
@@ -708,7 +708,7 @@ Dette er en høringsversjon, som skal erstatte:<br>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datakategori / Data category</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datakategorinavn som skal brukes i utvekslingen, oppgitt i DCT-stilen.</p>
-<p class="tableblock">Eksempel: basic:definition. Se <a href="#Navnerom"><em>Vedlegg A - Navnerom som er brukt i denne standard</em></a> for hva prefiksen <code>basic:`</code> står for.</p></td>
+<p class="tableblock">Eksempel: basic:definition. Se <a href="#Navnerom"><em>Vedlegg A - Navnerom som er brukt i denne standard</em></a> for hva prefiksen <code>basic:</code> står for.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>PID</strong></p></td>
@@ -1365,7 +1365,7 @@ Dette er en høringsversjon, som skal erstatte:<br>
 <div class="content">
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;conceptEntry id="cid-1"&gt;
    &lt;transacGrp&gt;
-      &lt;basic:transactionType&gt;basic:modification/basic:transactionType&gt;
+      &lt;basic:transactionType&gt;basic:modification&lt;/basic:transactionType&gt;
       &lt;date&gt;2022-06-30&lt;/date&gt;
     &lt;/transacGrp&gt;
 &lt;/conceptEntry&gt;</code></pre>
@@ -2413,7 +2413,7 @@ Dette er en høringsversjon, som skal erstatte:<br>
    &lt;langSec xml:lang="nb"&gt;
       &lt;descripGrp&gt;
           &lt;basic:definition&gt;den delen av foreldrepengeperioden som er forbeholdt mor&lt;/basic:definition&gt;
-      &lt;descripGrp&gt;
+      &lt;/descripGrp&gt;
    &lt;/langSec&gt;
 &lt;/conceptEntry&gt;</code></pre>
 </div>
@@ -2532,10 +2532,10 @@ Dette er en høringsversjon, som skal erstatte:<br>
 <p>Picklist:</p>
 </div>
 <div class="paragraph">
-<p>(norsk) Verdien skal velges fra det kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/relationship-with-source">Typer forhold til kilde</a>, når verdien finnes på listen.</p>
+<p>(norsk) Verdien skal velges fra det kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/relationship-with-source-type">Typer forhold til kilde</a>, når verdien finnes på listen.</p>
 </div>
 <div class="paragraph">
-<p>(English) The value shall be chosen from the controlled vocabulary <a href="https://data.norge.no/vocabulary/relationship-with-source">Types of relationship with source</a>, when the value is on the list.</p>
+<p>(English) The value shall be chosen from the controlled vocabulary <a href="https://data.norge.no/vocabulary/relationship-with-source-type">Types of relationship with source</a>, when the value is on the list.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -2568,7 +2568,7 @@ Dette er en høringsversjon, som skal erstatte:<br>
       &lt;descripGrp&gt; &lt;!-- descripGrp for a given definition --&gt;
          &lt;basic:definition&gt;…&lt;/basic:definition&gt;
          &lt;adminGrp&gt;
-            &lt;skosno:relationshipWithSource&gt;https://data.norge.no/vocabulary/relationship-with-source#derived-from-source&lt;/skosno:relationshipWithSource&gt;
+            &lt;skosno:relationshipWithSource&gt;https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source&lt;/skosno:relationshipWithSource&gt;
             &lt;basic:source&gt;https://example.org/exampleSource&lt;/basic:source&gt;
          &lt;/adminGrp&gt;
       &lt;/descripGrp&gt;
@@ -3673,7 +3673,7 @@ Dette er en høringsversjon, som skal erstatte:<br>
 </ul>
 </div>
 <div class="paragraph">
-<p>(English) This standard only uses the <code>&lt;fileDesc&gt;</code>-part of <code>&lt;tbxHearder&gt;</code>, and only <code>&lt;titleStmt&gt;</code> and <code>&lt;sourceDesc&gt;</code> in <code>&lt;fileDesc&gt;</code>. <code>&lt;titleStmt&gt;</code> and <code>&lt;sourceDesc&gt;</code> will be described in the following sections.</p>
+<p>(English) This standard only uses the <code>&lt;fileDesc&gt;</code>-part of <code>&lt;tbxHeader&gt;</code>, and only <code>&lt;titleStmt&gt;</code> and <code>&lt;sourceDesc&gt;</code> in <code>&lt;fileDesc&gt;</code>. <code>&lt;titleStmt&gt;</code> and <code>&lt;sourceDesc&gt;</code> will be described in the following sections.</p>
 </div>
 </div>
 <div class="sect2">
@@ -3994,8 +3994,8 @@ Dette er en høringsversjon, som skal erstatte:<br>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">euvoc</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://publications.europa.eu/</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(EU) Publications Office Extensions Ontology</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://publications.europa.eu/ontology/euvoc#</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(EU) Publications Office Extensions Ontology (tilgjengelig i <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cdm">RDF</a>)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">min</p></td>
@@ -4049,7 +4049,7 @@ xmlns:admin="http://www.w3.org/ns/adms#"
 xmlns:basic="http://www.tbxinfo.net/ns/basic"
 xmlns:dcat="http://www.w3.org/ns/dcat#"
 xmlns:dct="http://purl.org/dc/terms/"
-xmlns:euvoc="http://publications.europa.eu/ontology/euvoc/"
+xmlns:euvoc="\http://publications.europa.eu/ontology/euvoc#"
 xmlns:min="http://www.tbxinfo.net/ns/min"
 xmlns:owl="http://www.w3.org/2002/07/owl#"
 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -4274,7 +4274,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-07 09:17:56 UTC
+Sist oppdatert 2022-09-08 08:33:49 UTC
 </div>
 </div>
 </body>

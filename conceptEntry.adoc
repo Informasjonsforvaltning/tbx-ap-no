@@ -261,7 +261,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 -----
 <conceptEntry id="cid-1">
    <transacGrp>
-      <basic:transactionType>basic:modification/basic:transactionType>
+      <basic:transactionType>basic:modification</basic:transactionType>
       <date>2022-06-30</date>
     </transacGrp>
 </conceptEntry>
