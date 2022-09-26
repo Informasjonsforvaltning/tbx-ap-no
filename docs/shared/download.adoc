@@ -2,6 +2,6 @@ ifeval::["{backend}" == "html5"]
 
 [TIP]
 //.Nedlasting av dokumentet
-Dette dokumentet kan også lastes ned link:tbx-ap-no.pdf[som PDF].
+Dette dokumentet kan også lastes ned link:files/tbx-ap-no.pdf[som PDF].
 
 endif::[]
