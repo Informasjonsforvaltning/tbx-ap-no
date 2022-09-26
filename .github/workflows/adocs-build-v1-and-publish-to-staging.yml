@@ -42,8 +42,4 @@ jobs:
           files: |
             docs/index.html text/html nb
             docs/files/tpx-ap-no.pdf application/pdf nb files/tpx-ap-no.pdf
-            docs/files/Mal-tilbakemeldinger.docx application/vnd.openxmlformats-officedocument.wordprocessingml.document nb files/Mal-tilbakemeldinger.docx
-            docs/images/Digdir.png image/png nb images/images/Digdir.png
-            docs/images/TBX-AP-NO_Begrepssamling.png image/png nb images/TBX-AP-NO_Begrepssamling.png
-            docs/images/TBX-AP-NO_conceptEntry.png image/png nb images/TBX-AP-NO_conceptEntry.png
-            docs/images/TBX-AP-NO_langSec.png image/png nb images/TBX-AP-NO_langSec.png
+            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
