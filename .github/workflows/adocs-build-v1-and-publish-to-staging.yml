@@ -36,10 +36,10 @@ jobs:
         id: upload-rdf
         with:
           ontology-type: "specification"
-          ontology: "tpx-ap-no"
+          ontology: "tbx-ap-no"
           host: "https://staging.fellesdatakatalog.digdir.no"
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
           files: |
             docs/index.html text/html nb
-            docs/files/tpx-ap-no.pdf application/pdf nb files/tpx-ap-no.pdf
+            docs/files/tbx-ap-no.pdf application/pdf nb files/tbx-ap-no.pdf
             docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
