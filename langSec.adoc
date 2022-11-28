@@ -1,4 +1,4 @@
-=== <langSec> (1..n) [[langSec]]
+=== <langSec> (2..n) [[langSec]]
 
 [Figur-langSec]
 .Begrep (<conceptEntry>) | <langSec> (basert på Fig. 3 i NS-ISO 30042:2019)_
@@ -7,17 +7,24 @@ image::images/TBX-AP-NO_langSec.png[]
 
 `<langSec>` er obligatorisk og skal brukes til å representere termer og definisjoner for et gitt begrep i ett gitt skriftspråk. `<langSec>` kan også brukes til å representere valgfri begrepsrelasjoner der det er behov for mer detaljert beskrivelse av relasjonene. De enkelte delene i `<langSec>` er beskrevet i de etterfølgende avsnittene. Språkkoden skal oppgis i start-taggen til `<langSec>` og vil gjelde for hele `<langSec>`, se eksemplet under.
 
-Restriksjon: Det skal være maks. én `<langSec>` per skriftspråk per begrep (<conceptEntry>).
+Restriksjon 1: Det skal være maks. én `<langSec>` per skriftspråk per begrep (`<conceptEntry>`).
+
+Restriksjon 2: For hvert begrep (`<conceptEntry>`) skal det finnes én `<langSec>` for bokmål og én `<langSec>` for nynorsk, og begge skal ha én term (`<termSec>`) der <<Term-betegnelsesstatus>> har verdi `basic:preferredTermAdmnSts` (= anbefalt term). Dette fordi anbefalt term skal finnes på både bokmål og nynorsk. 
 
 `<langSec>` _is mandatory and shall be used to represent terms and definitions for a given concept in a given language. `<langSec>` may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of `<langSec>` is described in the following sections. The language code is specified in the start tag of `<langSec>` and will apply to the whole `<langSec>`, see the example below._
 
-_Restriction: There shall be max. one `<langSec>` per language per concept (<conceptEntry>)._
+_Restriction 1: There shall be max. one `<langSec>` per language per concept (`<conceptEntry>`)._
+
+_Restriction 2: For each concept (`<conceptEntry>`) there shall be one `<langSec>` for Norwegian Bokmål and one `<langSec>` for Norwegian Nynorsk, and both shall have a term (`<termSec>`) where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts` (= preferred term). This is because "preferred term" shall be in both Norwegian Bokmål and in Norwegian Nynorsk._
 
 Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 [source,xml]
 -----
 <conceptEntry id="cid-1">
-<langSec xml:lang="nb"> <!-- langSec med norsk bokmål -->
+<langSec xml:lang="nb"> <!-- langSec for bokmål -->
+   …
+</langSec>
+<langSec xml:lang="nn"> <!-- langSec for nynorsk -->
    …
 </langSec>
 </conceptEntry>

@@ -543,7 +543,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#conceptEntry-adminGrp">4.3. &lt;conceptEntry&gt; | &lt;adminGrp&gt; (1..1)</a></li>
 <li><a href="#conceptEntry-transacGrp">4.4. &lt;conceptEntry&gt; | &lt;transacGrp&gt; (0..2)</a></li>
 <li><a href="#conceptEnetry-descrip">4.5. &lt;conceptEntry&gt; | &lt;descrip&gt; (0..n)</a></li>
-<li><a href="#langSec">4.6. &lt;langSec&gt; (1..n)</a></li>
+<li><a href="#langSec">4.6. &lt;langSec&gt; (2..n)</a></li>
 <li><a href="#Term">4.7. &lt;langSec&gt; | Term &lt;termSec&gt; (1..n)</a></li>
 <li><a href="#_langsec_definisjon_descripgrp_0_n">4.8. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n)</a></li>
 <li><a href="#langSec-admin">4.9. &lt;langSec&gt; | &lt;admin&gt; (0..2)</a></li>
@@ -2171,7 +2171,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </div>
 </div>
 <div class="sect2">
-<h3 id="langSec"><a class="anchor" href="#langSec"></a>4.6. &lt;langSec&gt; (1..n)</h3>
+<h3 id="langSec"><a class="anchor" href="#langSec"></a>4.6. &lt;langSec&gt; (2..n)</h3>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="images/TBX-AP-NO_langSec.png"><img src="images/TBX-AP-NO_langSec.png" alt="Figur-langSec"></a>
@@ -2182,13 +2182,19 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p><code>&lt;langSec&gt;</code> er obligatorisk og skal brukes til å representere termer og definisjoner for et gitt begrep i ett gitt skriftspråk. <code>&lt;langSec&gt;</code> kan også brukes til å representere valgfri begrepsrelasjoner der det er behov for mer detaljert beskrivelse av relasjonene. De enkelte delene i <code>&lt;langSec&gt;</code> er beskrevet i de etterfølgende avsnittene. Språkkoden skal oppgis i start-taggen til <code>&lt;langSec&gt;</code> og vil gjelde for hele <code>&lt;langSec&gt;</code>, se eksemplet under.</p>
 </div>
 <div class="paragraph">
-<p>Restriksjon: Det skal være maks. én <code>&lt;langSec&gt;</code> per skriftspråk per begrep (&lt;conceptEntry&gt;).</p>
+<p>Restriksjon 1: Det skal være maks. én <code>&lt;langSec&gt;</code> per skriftspråk per begrep (<code>&lt;conceptEntry&gt;</code>).</p>
+</div>
+<div class="paragraph">
+<p>Restriksjon 2: For hvert begrep (<code>&lt;conceptEntry&gt;</code>) skal det finnes én <code>&lt;langSec&gt;</code> for bokmål og én <code>&lt;langSec&gt;</code> for nynorsk, og begge skal ha én term (<code>&lt;termSec&gt;</code>) der <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> har verdi <code>basic:preferredTermAdmnSts</code> (= anbefalt term). Dette fordi anbefalt term skal finnes på både bokmål og nynorsk.</p>
 </div>
 <div class="paragraph">
 <p><code>&lt;langSec&gt;</code> <em>is mandatory and shall be used to represent terms and definitions for a given concept in a given language. <code>&lt;langSec&gt;</code> may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of <code>&lt;langSec&gt;</code> is described in the following sections. The language code is specified in the start tag of <code>&lt;langSec&gt;</code> and will apply to the whole <code>&lt;langSec&gt;</code>, see the example below.</em></p>
 </div>
 <div class="paragraph">
-<p><em>Restriction: There shall be max. one <code>&lt;langSec&gt;</code> per language per concept (&lt;conceptEntry&gt;).</em></p>
+<p><em>Restriction 1: There shall be max. one <code>&lt;langSec&gt;</code> per language per concept (<code>&lt;conceptEntry&gt;</code>).</em></p>
+</div>
+<div class="paragraph">
+<p><em>Restriction 2: For each concept (<code>&lt;conceptEntry&gt;</code>) there shall be one <code>&lt;langSec&gt;</code> for Norwegian Bokmål and one <code>&lt;langSec&gt;</code> for Norwegian Nynorsk, and both shall have a term (<code>&lt;termSec&gt;</code>) where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code> (= preferred term). This is because "preferred term" shall be in both Norwegian Bokmål and in Norwegian Nynorsk.</em></p>
 </div>
 <div class="paragraph">
 <p>Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:</p>
@@ -2196,7 +2202,10 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;conceptEntry id="cid-1"&gt;
-&lt;langSec xml:lang="nb"&gt; &lt;!-- langSec med norsk bokmål --&gt;
+&lt;langSec xml:lang="nb"&gt; &lt;!-- langSec for bokmål --&gt;
+   …
+&lt;/langSec&gt;
+&lt;langSec xml:lang="nn"&gt; &lt;!-- langSec for nynorsk --&gt;
    …
 &lt;/langSec&gt;
 &lt;/conceptEntry&gt;</code></pre>
@@ -4340,7 +4349,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-28 15:03:40 UTC
+Sist oppdatert 2022-11-28 15:25:41 UTC
 </div>
 </div>
 </body>
