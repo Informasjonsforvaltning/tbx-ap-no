@@ -257,17 +257,21 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempel:
 | PID |http://datcatinfo.termweb.eu/datcat/DC-471
 | TBX-nivå / _TBX level_  |langSec
 | TBX-klassifisering / _TBX Classification_  |adminNote
-| Verdiområde / _Range_  |xref
+| Verdiområde / _Range_  |xref or xsd:sequence
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi kilde(r) til definisjonen.
 
 _This property is used to specify the source(s) for the definition._
 | Multiplisitet / _Multiplicity_  |0..n
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
-| Merknad / _Note_ |
+| Merknad 1 / _Note 1_ |
 Denne egenskapen skal brukes i en `<adminGrp>` sammen med <<Definisjon-forhold-til-kilde>>.
 
 _This property shall be used in an `<adminGrp>` together with <<Definisjon-forhold-til-kilde>>._
+| Merknad 2 / _Note 2_ |
+Bruk `xsd:sequence` når den ønskede rekkefølgen mellom kildene skal oppgis.
+
+_Use `xsd:sequence` when the preferred order between the sources need to be specified._
 |===
 
 Eksempel i TBX-AP-NO (DCT style): Se under <<Definisjon-forhold-til-kilde>>.
