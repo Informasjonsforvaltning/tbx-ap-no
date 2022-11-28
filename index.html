@@ -751,7 +751,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / Requirement level</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Kravnivåene">Section 1.5</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Kravnivåene"> 1.5, &#8220;Kravnivåene i denne standarden&#8221;</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
@@ -904,7 +904,55 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-dato-gyldi-fra-og-med"><a class="anchor" href="#Begrep-dato-gyldi-fra-og-med"></a>4.2.2. Begrep – dato gyldig fra og med &lt;euvoc:startDate&gt; (0..1)</h4>
+<h4 id="Begrep-ansvarlig-virksomhet"><a class="anchor" href="#Begrep-ansvarlig-virksomhet"></a>4.2.2. Begrep – ansvarlig virksomhet &lt;dct:creator&gt; (0..1)</h4>
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn / Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ansvarlig virksomhet / responsible organization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datakategori / Data category</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:creator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>PID</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/creator" class="bare">http://purl.org/dc/terms/creator</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>TBX-nivå / TBX level</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">conceptEntry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>TBX-klassifisering / TBX Classification</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">admin</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <a href="#Begrep-publisert-av"> 4.3.1, &#8220;Begrep – publisert av &lt;dct:publisher&gt; (1..1)&#8221;</a>.</p>
+<p class="tableblock"><em>This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <a href="#Begrep-publisert-av"> 4.3.1, &#8220;Begrep – publisert av &lt;dct:publisher&gt; (1..1)&#8221;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / Requirement level</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / Recommended</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Begrep-dato-gyldi-fra-og-med"><a class="anchor" href="#Begrep-dato-gyldi-fra-og-med"></a>4.2.3. Begrep – dato gyldig fra og med &lt;euvoc:startDate&gt; (0..1)</h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -962,7 +1010,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-dato-gyldig-til-og-med"><a class="anchor" href="#Begrep-dato-gyldig-til-og-med"></a>4.2.3. Begrep – dato gyldig til og med &lt;euvoc:endDate&gt; (0..1)</h4>
+<h4 id="Begrep-dato-gyldig-til-og-med"><a class="anchor" href="#Begrep-dato-gyldig-til-og-med"></a>4.2.4. Begrep – dato gyldig til og med &lt;euvoc:endDate&gt; (0..1)</h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1020,7 +1068,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-versjonsnummer"><a class="anchor" href="#Begrep-versjonsnummer"></a>4.2.4. Begrep – versjonsnummer &lt;owl:versionInfo&gt; (0..1)</h4>
+<h4 id="Begrep-versjonsnummer"><a class="anchor" href="#Begrep-versjonsnummer"></a>4.2.5. Begrep – versjonsnummer &lt;owl:versionInfo&gt; (0..1)</h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1078,7 +1126,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-inngår-i"><a class="anchor" href="#Begrep-inngår-i"></a>4.2.5. Begrep – inngår i begrepssamling &lt;uneskos:memberOf&gt; (0..n)</h4>
+<h4 id="Begrep-inngår-i"><a class="anchor" href="#Begrep-inngår-i"></a>4.2.6. Begrep – inngår i begrepssamling &lt;uneskos:memberOf&gt; (0..n)</h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1191,8 +1239,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / Note 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal være i en <code>&lt;adminGrp&gt;</code> sammen med <a href="#Begrep-kontaktpunkt">Section 4.3.2</a>.</p>
-<p class="tableblock">(English) This property shall be within an <code>&lt;adminGrp&gt;</code> together with <a href="#Begrep-kontaktpunkt">Section 4.3.2</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal være i en <code>&lt;adminGrp&gt;</code> sammen med <a href="#Begrep-kontaktpunkt"> 4.3.2, &#8220;Begrep – kontaktpunkt &lt;dcat:contactPoint&gt; (1..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property shall be within an <code>&lt;adminGrp&gt;</code> together with <a href="#Begrep-kontaktpunkt"> 4.3.2, &#8220;Begrep – kontaktpunkt &lt;dcat:contactPoint&gt; (1..n)&#8221;</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
@@ -1259,8 +1307,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / Note 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal være i en <code>&lt;adminGrp&gt;</code> sammen med <a href="#Begrep-publisert-av">Section 4.3.1</a>.</p>
-<p class="tableblock">(English) This property shall be within an <code>&lt;adminGrp&gt;</code> together with <a href="#Begrep-publisert-av">Section 4.3.1</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal være i en <code>&lt;adminGrp&gt;</code> sammen med <a href="#Begrep-publisert-av"> 4.3.1, &#8220;Begrep – publisert av &lt;dct:publisher&gt; (1..1)&#8221;</a>.</p>
+<p class="tableblock">(English) This property shall be within an <code>&lt;adminGrp&gt;</code> together with <a href="#Begrep-publisert-av"> 4.3.1, &#8220;Begrep – publisert av &lt;dct:publisher&gt; (1..1)&#8221;</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
@@ -1366,8 +1414,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;transacGrp&gt;</code> sammen med <a href="#Begrep-transaksjonsdato">Section 4.4.2</a>.</p>
-<p class="tableblock">(English) This property shall be used in a <code>&lt;transacGrp&gt;</code> together with <a href="#Begrep-transaksjonsdato">Section 4.4.2</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;transacGrp&gt;</code> sammen med <a href="#Begrep-transaksjonsdato"> 4.4.2, &#8220;Begrep – transaksjonsdato &lt;date&gt; (1..1)&#8221;</a>.</p>
+<p class="tableblock">(English) This property shall be used in a <code>&lt;transacGrp&gt;</code> together with <a href="#Begrep-transaksjonsdato"> 4.4.2, &#8220;Begrep – transaksjonsdato &lt;date&gt; (1..1)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1432,13 +1480,13 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;transacGrp&gt;</code> sammen med <a href="#Begrep-transaksjonstype">Section 4.4.1</a>.</p>
-<p class="tableblock">(English) This property shall be used in a <code>&lt;transacGrp&gt;</code> together with <a href="#Begrep-transaksjonstype">Section 4.4.1</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;transacGrp&gt;</code> sammen med <a href="#Begrep-transaksjonstype"> 4.4.1, &#8220;Begrep – transaksjonstype &lt;basic:transactionType&gt; (1..1)&#8221;</a>.</p>
+<p class="tableblock">(English) This property shall be used in a <code>&lt;transacGrp&gt;</code> together with <a href="#Begrep-transaksjonstype"> 4.4.1, &#8220;Begrep – transaksjonstype &lt;basic:transactionType&gt; (1..1)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i TBX-AP-NO (DCT style): Se under <a href="#Begrep-transaksjonstype">Section 4.4.1</a>.</p>
+<p>Eksempel i TBX-AP-NO (DCT style): Se under <a href="#Begrep-transaksjonstype"> 4.4.1, &#8220;Begrep – transaksjonstype &lt;basic:transactionType&gt; (1..1)&#8221;</a>.</p>
 </div>
 </div>
 </div>
@@ -1502,13 +1550,13 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-spesialiserer">Section 4.5.2</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-spesialiserer">Section 4.5.2</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-spesialiserer"> 4.5.2, &#8220;Begrep – spesialiserer &lt;xkos:specializes&gt; (0..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-spesialiserer"> 4.5.2, &#8220;Begrep – spesialiserer &lt;xkos:specializes&gt; (0..n)&#8221;</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-generisk-begrepsrelasjon">Section 4.12</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
-<p class="tableblock">(English) Use <a href="#Begrep-har-generisk-begrepsrelasjon">Section 4.12</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-generisk-begrepsrelasjon"> 4.12, &#8220;&lt;langSec&gt; | Generisk begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
+<p class="tableblock">(English) Use <a href="#Begrep-har-generisk-begrepsrelasjon"> 4.12, &#8220;&lt;langSec&gt; | Generisk begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1575,13 +1623,13 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-generaliserer">Section 4.5.1</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-generaliserer">Section 4.5.1</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-generaliserer"> 4.5.1, &#8220;Begrep – generaliserer &lt;xkos:generalizes&gt; (0..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-generaliserer"> 4.5.1, &#8220;Begrep – generaliserer &lt;xkos:generalizes&gt; (0..n)&#8221;</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-generisk-begrepsrelasjon">Section 4.12</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
-<p class="tableblock">(English) Use <a href="#Begrep-har-generisk-begrepsrelasjon">Section 4.12</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-generisk-begrepsrelasjon"> 4.12, &#8220;&lt;langSec&gt; | Generisk begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
+<p class="tableblock">(English) Use <a href="#Begrep-har-generisk-begrepsrelasjon"> 4.12, &#8220;&lt;langSec&gt; | Generisk begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1648,13 +1696,13 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-inneholder">Section 4.5.4</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-inneholder">Section 4.5.4</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-inneholder"> 4.5.4, &#8220;Begrep – inneholder &lt;xkos:hasPart&gt; (0..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-inneholder"> 4.5.4, &#8220;Begrep – inneholder &lt;xkos:hasPart&gt; (0..n)&#8221;</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-partitiv-begrepsrelasjon">Section 4.13</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
-<p class="tableblock">(English) Use <a href="#Begrep-har-partitiv-begrepsrelasjon">Section 4.13</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-partitiv-begrepsrelasjon"> 4.13, &#8220;&lt;langSec&gt; | Partitiv begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
+<p class="tableblock">(English) Use <a href="#Begrep-har-partitiv-begrepsrelasjon"> 4.13, &#8220;&lt;langSec&gt; | Partitiv begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1721,13 +1769,13 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-er-del-av">Section 4.5.3</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-er-del-av">Section 4.5.3</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-er-del-av"> 4.5.3, &#8220;Begrep – er del av &lt;xkos:isPartOf&gt; (0..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-er-del-av"> 4.5.3, &#8220;Begrep – er del av &lt;xkos:isPartOf&gt; (0..n)&#8221;</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-partitiv-begrepsrelasjon">Section 4.13</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
-<p class="tableblock">(English) Use <a href="#Begrep-har-partitiv-begrepsrelasjon">Section 4.13</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-partitiv-begrepsrelasjon"> 4.13, &#8220;&lt;langSec&gt; | Partitiv begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
+<p class="tableblock">(English) Use <a href="#Begrep-har-partitiv-begrepsrelasjon"> 4.13, &#8220;&lt;langSec&gt; | Partitiv begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1907,8 +1955,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-er-erstattet-av">Section 4.5.8</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-er-erstattet-av">Section 4.5.8</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-er-erstattet-av"> 4.5.8, &#8220;Begrep – er erstattet av &lt;dct:isReplacedBy&gt; (0..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-er-erstattet-av"> 4.5.8, &#8220;Begrep – er erstattet av &lt;dct:isReplacedBy&gt; (0..n)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1970,8 +2018,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-erstatter">Section 4.5.7</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-erstatter">Section 4.5.7</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-erstatter"> 4.5.7, &#8220;Begrep – erstatter &lt;dct:replaces&gt; (0..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-erstatter"> 4.5.7, &#8220;Begrep – erstatter &lt;dct:replaces&gt; (0..n)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2105,8 +2153,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-assosiativ-begrepsrelasjon">Section 4.11</a> når det er behov for å beskrive relasjonsrollen begrepet har.</p>
-<p class="tableblock">(English) Use <a href="#Begrep-har-assosiativ-begrepsrelasjon">Section 4.11</a> when there is need to describe the relation role that the concept has.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <a href="#Begrep-har-assosiativ-begrepsrelasjon"> 4.11, &#8220;&lt;langSec&gt; | Assosiativ begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> når det er behov for å beskrive relasjonsrollen begrepet har.</p>
+<p class="tableblock">(English) Use <a href="#Begrep-har-assosiativ-begrepsrelasjon"> 4.11, &#8220;&lt;langSec&gt; | Assosiativ begrepsrelasjon &lt;descripGrp&gt; (0..n)&#8221;</a> when there is need to describe the relation role that the concept has.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2161,13 +2209,13 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p>(norsk) <code>&lt;termSec&gt;</code> er obligatorisk og skal brukes til å beskrive termer i det gitte språk (<code>&lt;langSec&gt;</code>) for det gitte begrepet (<code>&lt;conceptEntry&gt;</code>).</p>
 </div>
 <div class="paragraph">
-<p>(norsk) Restriksjon: En <code>&lt;langSec&gt;</code> kan ha flere <code>&lt;termSec&gt;</code> men maks. én der <a href="#Term-betegnelsesstatus">Section 4.7.2.1</a> har verdi <code>basic:preferredTermAdmnSts</code>.</p>
+<p>(norsk) Restriksjon: En <code>&lt;langSec&gt;</code> kan ha flere <code>&lt;termSec&gt;</code> men maks. én der <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> har verdi <code>basic:preferredTermAdmnSts</code>.</p>
 </div>
 <div class="paragraph">
 <p>(Engelish) <code>&lt;termSec&gt;</code> is mandatory and shall be used to describes terms in that given language (<code>&lt;langSec&gt;<code>) for that given concept (</code>&lt;conceptEntry&gt;</code>).</p>
 </div>
 <div class="paragraph">
-<p>(English) Resctriction: A <code>&lt;langSec&gt;</code> may have several <code>&lt;termSec&gt;</code> but max. one where <a href="#Term-betegnelsesstatus">Section 4.7.2.1</a> has value <code>basic:preferredTermAdmnSts</code>.</p>
+<p>(English) Resctriction: A <code>&lt;langSec&gt;</code> may have several <code>&lt;termSec&gt;</code> but max. one where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code>.</p>
 </div>
 <div class="sect3">
 <h4 id="Term-tekst"><a class="anchor" href="#Term-tekst"></a>4.7.1. &lt;langSec&gt; | Term &lt;termSec&gt; | tekst &lt;term&gt; (1..1)</h4>
@@ -2359,7 +2407,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p>(norsk) Restriksjon 1: Det skal være min. én <code>&lt;langSec&gt;</code> som inneholder Definisjon (en slik <code>&lt;descripGrp&gt;</code>). Med andre ord: ethvert begrep skal ha minst én definisjon.</p>
 </div>
 <div class="paragraph">
-<p>(norsk) Restriksjon 2: Det kan oppgis maks. definisjon (denne <code>&lt;descripGrp&gt;</code>) per <a href="#Definisjon-målgruppe">Section 4.8.2</a> per skriftspråk (<code>&lt;langSec&gt;</code>).</p>
+<p>(norsk) Restriksjon 2: Det kan oppgis maks. definisjon (denne <code>&lt;descripGrp&gt;</code>) per <a href="#Definisjon-målgruppe"> 4.8.2, &#8220;&lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | målgruppe &lt;dct:audience&gt; (0..1)&#8221;</a> per skriftspråk (<code>&lt;langSec&gt;</code>).</p>
 </div>
 <div class="paragraph">
 <p>(English) This <code>&lt;descripGrp&gt;</code> is recommended and should be used to specify the definition of the concept in that given language.</p>
@@ -2368,7 +2416,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p>(English) Restriction 1: There shall be min. one <code>&lt;langSec&gt;</code> which contains a Definisjon (such a <code>&lt;descripGrp&gt;</code>). In other words, every concept shall have min. one definition.</p>
 </div>
 <div class="paragraph">
-<p>(Enligsh) Restriction 2: There may be max. one definition (this <code>&lt;descripGrp&gt;</code>) per <a href="#Definisjon-målgruppe">Section 4.8.2</a> per language (<code>&lt;langSec&gt;</code>).</p>
+<p>(Enligsh) Restriction 2: There may be max. one definition (this <code>&lt;descripGrp&gt;</code>) per <a href="#Definisjon-målgruppe"> 4.8.2, &#8220;&lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | målgruppe &lt;dct:audience&gt; (0..1)&#8221;</a> per language (<code>&lt;langSec&gt;</code>).</p>
 </div>
 <div class="sect3">
 <h4 id="Definisjon-tekst"><a class="anchor" href="#Definisjon-tekst"></a>4.8.1. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | tekst &lt;basic:definition&gt; (1..1)</h4>
@@ -2566,8 +2614,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;adminGrp&gt;</code> sammen med <a href="#Definisjon-kilde">Section 4.8.3.2</a>.</p>
-<p class="tableblock">(English) This property shall be used in an <code>&lt;adminGrp&gt;</code> together with <a href="#Definisjon-kilde">Section 4.8.3.2</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;adminGrp&gt;</code> sammen med <a href="#Definisjon-kilde"> 4.8.3.2, &#8220;Definisjon – kilde &lt;basic:source&gt; (0..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property shall be used in an <code>&lt;adminGrp&gt;</code> together with <a href="#Definisjon-kilde"> 4.8.3.2, &#8220;Definisjon – kilde &lt;basic:source&gt; (0..n)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2637,13 +2685,13 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;adminGrp&gt;</code> sammen med <a href="#Definisjon-forhold-til-kilde">Section 4.8.3.1</a>.</p>
-<p class="tableblock">(English) This property shall be used in an <code>&lt;adminGrp&gt;</code> together with <a href="#Definisjon-forhold-til-kilde">Section 4.8.3.1</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;adminGrp&gt;</code> sammen med <a href="#Definisjon-forhold-til-kilde"> 4.8.3.1, &#8220;Definisjon – forhold til kilde &lt;skosno:relationshipWithSource&gt; (0..1)&#8221;</a>.</p>
+<p class="tableblock">(English) This property shall be used in an <code>&lt;adminGrp&gt;</code> together with <a href="#Definisjon-forhold-til-kilde"> 4.8.3.1, &#8220;Definisjon – forhold til kilde &lt;skosno:relationshipWithSource&gt; (0..1)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i TBX-AP-NO (DCT style): Se under <a href="#Definisjon-forhold-til-kilde">Section 4.8.3.1</a>.</p>
+<p>Eksempel i TBX-AP-NO (DCT style): Se under <a href="#Definisjon-forhold-til-kilde"> 4.8.3.1, &#8220;Definisjon – forhold til kilde &lt;skosno:relationshipWithSource&gt; (0..1)&#8221;</a>.</p>
 </div>
 </div>
 </div>
@@ -3092,8 +3140,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>*Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;descripGrp&gt;</code> sammen med <a href="#Begrep-relasjonsrolle">Section 4.11.2</a>.</p>
-<p class="tableblock">(English) This property shall be used in a <code>&lt;descripGrp&gt;</code> together with <a href="#Begrep-relasjonsrolle">Section 4.11.2</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;descripGrp&gt;</code> sammen med <a href="#Begrep-relasjonsrolle"> 4.11.2, &#8220;Begrep – relasjonsrolle &lt;skosno:relationRole&gt; (1..1)&#8221;</a>.</p>
+<p class="tableblock">(English) This property shall be used in a <code>&lt;descripGrp&gt;</code> together with <a href="#Begrep-relasjonsrolle"> 4.11.2, &#8220;Begrep – relasjonsrolle &lt;skosno:relationRole&gt; (1..1)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3160,13 +3208,13 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;descripGrp&gt;</code> sammen med <a href="#Begrep-er-relatert-til-med-relasjonsrolle">Section 4.11.1</a>.</p>
-<p class="tableblock">(English) This property shall be used in a &lt;descripGrp&gt; together with er <a href="#Begrep-er-relatert-til-med-relasjonsrolle">Section 4.11.1</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Denne egenskapen skal brukes i en <code>&lt;descripGrp&gt;</code> sammen med <a href="#Begrep-er-relatert-til-med-relasjonsrolle"> 4.11.1, &#8220;Begrep – er relatert til &lt;skos:related&gt; (1..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property shall be used in a &lt;descripGrp&gt; together with er <a href="#Begrep-er-relatert-til-med-relasjonsrolle"> 4.11.1, &#8220;Begrep – er relatert til &lt;skos:related&gt; (1..n)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i TBX-AP-NO (DCT style): Se under <a href="#Begrep-er-relatert-til-med-relasjonsrolle">Section 4.11.1</a>.</p>
+<p>Eksempel i TBX-AP-NO (DCT style): Se under <a href="#Begrep-er-relatert-til-med-relasjonsrolle"> 4.11.1, &#8220;Begrep – er relatert til &lt;skos:related&gt; (1..n)&#8221;</a>.</p>
 </div>
 </div>
 </div>
@@ -3225,8 +3273,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / Note 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Selv om både denne og egenskapen <a href="#Begrep-spesialiserer-med-inndelingskriterium">Section 4.12.2</a> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (<code>&lt;descripGrp&gt;</code>).</p>
-<p class="tableblock">(English) Although both this property and the property <a href="#Begrep-spesialiserer-med-inndelingskriterium">Section 4.12.2</a> are mandatory, only one of these shall be used for a given generic relation  (<code>&lt;descripGrp&gt;</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Selv om både denne og egenskapen <a href="#Begrep-spesialiserer-med-inndelingskriterium"> 4.12.2, &#8220;Begrep – spesialiserer &lt;xkos:specializes&gt; (1..n)&#8221;</a> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (<code>&lt;descripGrp&gt;</code>).</p>
+<p class="tableblock">(English) Although both this property and the property <a href="#Begrep-spesialiserer-med-inndelingskriterium"> 4.12.2, &#8220;Begrep – spesialiserer &lt;xkos:specializes&gt; (1..n)&#8221;</a> are mandatory, only one of these shall be used for a given generic relation  (<code>&lt;descripGrp&gt;</code>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
@@ -3235,8 +3283,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-spesialiserer-med-inndelingskriterium">Section 4.12.2</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-spesialiserer-med-inndelingskriterium">Section 4.12.2</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-spesialiserer-med-inndelingskriterium"> 4.12.2, &#8220;Begrep – spesialiserer &lt;xkos:specializes&gt; (1..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-spesialiserer-med-inndelingskriterium"> 4.12.2, &#8220;Begrep – spesialiserer &lt;xkos:specializes&gt; (1..n)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3302,8 +3350,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / Note 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Selv om både denne og egenskapen <a href="#Begrep-generaliserer-med-inndelingskriterium">Section 4.12.1</a> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (<code>&lt;descripGrp&gt;</code>).</p>
-<p class="tableblock">(English) Although both this property and the property <a href="#Begrep-generaliserer-med-inndelingskriterium">Section 4.12.1</a> are mandatory, only one of these shall be used for a given generic relation (<code>&lt;descripGrp&gt;</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Selv om både denne og egenskapen <a href="#Begrep-generaliserer-med-inndelingskriterium"> 4.12.1, &#8220;Begrep – generaliserer &lt;xkos:generalizes&gt; (1..n)&#8221;</a> er obligatoriske, skal bare én av disse brukes for en gitt generisk relasjon (<code>&lt;descripGrp&gt;</code>).</p>
+<p class="tableblock">(English) Although both this property and the property <a href="#Begrep-generaliserer-med-inndelingskriterium"> 4.12.1, &#8220;Begrep – generaliserer &lt;xkos:generalizes&gt; (1..n)&#8221;</a> are mandatory, only one of these shall be used for a given generic relation (<code>&lt;descripGrp&gt;</code>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
@@ -3312,8 +3360,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-generaliserer-med-inndelingskriterium">Section 4.12.1</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-generaliserer-med-inndelingskriterium">Section 4.12.1</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-generaliserer-med-inndelingskriterium"> 4.12.1, &#8220;Begrep – generaliserer &lt;xkos:generalizes&gt; (1..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-generaliserer-med-inndelingskriterium"> 4.12.1, &#8220;Begrep – generaliserer &lt;xkos:generalizes&gt; (1..n)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3451,8 +3499,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / Note 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Selv om både denne og egenskapen <a href="#Begrep-inneholder-med-inndelingskriterium">Section 4.13.2</a> er obligatoriske, skal bare én av disse brukes for en gitt partitiv relasjon  (<code>&lt;descripGrp&gt;</code>).</p>
-<p class="tableblock">(English) Although both this property and the property <a href="#Begrep-inneholder-med-inndelingskriterium">Section 4.13.2</a> are mandatory, only one of these shall be used for a given partitive relation  (<code>&lt;descripGrp&gt;</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Selv om både denne og egenskapen <a href="#Begrep-inneholder-med-inndelingskriterium"> 4.13.2, &#8220;Begrep – inneholder &lt;xkos:hasPart&gt; (1..n)&#8221;</a> er obligatoriske, skal bare én av disse brukes for en gitt partitiv relasjon  (<code>&lt;descripGrp&gt;</code>).</p>
+<p class="tableblock">(English) Although both this property and the property <a href="#Begrep-inneholder-med-inndelingskriterium"> 4.13.2, &#8220;Begrep – inneholder &lt;xkos:hasPart&gt; (1..n)&#8221;</a> are mandatory, only one of these shall be used for a given partitive relation  (<code>&lt;descripGrp&gt;</code>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
@@ -3461,8 +3509,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-inneholder-med-inndelingskriterium">Section 4.13.2</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-inneholder-med-inndelingskriterium">Section 4.13.2</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-inneholder-med-inndelingskriterium"> 4.13.2, &#8220;Begrep – inneholder &lt;xkos:hasPart&gt; (1..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-inneholder-med-inndelingskriterium"> 4.13.2, &#8220;Begrep – inneholder &lt;xkos:hasPart&gt; (1..n)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3528,8 +3576,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / Note 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Selv om både denne og egenskapen <a href="#Begrep-er-del-av-med-inndelingskriterium">Section 4.13.1</a> er obligatoriske, skal bare én av disse brukes for en gitt partitiv relasjon (<code>&lt;descripGrp&gt;</code>).</p>
-<p class="tableblock">(English) Although both this property and the property <a href="#Begrep-er-del-av-med-inndelingskriterium">Section 4.13.1</a> are mandatory, only one of these shall be used for a given partitive relation (<code>&lt;descripGrp&gt;</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Selv om både denne og egenskapen <a href="#Begrep-er-del-av-med-inndelingskriterium"> 4.13.1, &#8220;Begrep – er del av &lt;xkos:isPartOf&gt; (1..n)&#8221;</a> er obligatoriske, skal bare én av disse brukes for en gitt partitiv relasjon (<code>&lt;descripGrp&gt;</code>).</p>
+<p class="tableblock">(English) Although both this property and the property <a href="#Begrep-er-del-av-med-inndelingskriterium"> 4.13.1, &#8220;Begrep – er del av &lt;xkos:isPartOf&gt; (1..n)&#8221;</a> are mandatory, only one of these shall be used for a given partitive relation (<code>&lt;descripGrp&gt;</code>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
@@ -3538,8 +3586,8 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-er-del-av-med-inndelingskriterium">Section 4.13.1</a>.</p>
-<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-er-del-av-med-inndelingskriterium">Section 4.13.1</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen/relasjonen er den inverse av <a href="#Begrep-er-del-av-med-inndelingskriterium"> 4.13.1, &#8220;Begrep – er del av &lt;xkos:isPartOf&gt; (1..n)&#8221;</a>.</p>
+<p class="tableblock">(English) This property/relation is the inverse of <a href="#Begrep-er-del-av-med-inndelingskriterium"> 4.13.1, &#8220;Begrep – er del av &lt;xkos:isPartOf&gt; (1..n)&#8221;</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -4292,7 +4340,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-28 12:29:00 UTC
+Sist oppdatert 2022-11-28 13:39:44 UTC
 </div>
 </div>
 </body>
