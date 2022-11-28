@@ -52,6 +52,23 @@ Eksempel i TBX-AP-NO (DCT style), NAVs begrep 975:
 </conceptEntry>
 -----
 
+==== Begrep – ansvarlig virksomhet <dct:creator> (0..1) [[Begrep-ansvarlig-virksomhet]]
+
+[cols="30s,70d"]
+|===
+| Navn / Name | ansvarlig virksomhet / responsible organization
+| Datakategori / Data category | dct:creator
+| PID | http://purl.org/dc/terms/creator
+| TBX-nivå / TBX level |conceptEntry
+| TBX-klassifisering / TBX Classification |admin
+| Verdiområde / Range |xref
+| Anvendelse / Usage note |Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <<Begrep-publisert-av>>.
+
+_This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <<Begrep-publisert-av>>._
+| Multiplisitet | 0..n
+| Kravnivå / Requirement level | Anbefalt / Recommended
+|===
+
 ==== Begrep – dato gyldig fra og med <euvoc:startDate> (0..1) [[Begrep-dato-gyldi-fra-og-med]]
 
 [cols="30s,70d"]
