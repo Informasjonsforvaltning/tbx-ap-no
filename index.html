@@ -822,7 +822,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p>Restriksjon: I henhold til TBX skal <code>&lt;conceptEntry&gt;</code>-start-taggen inneholde en <code>id</code> til begrepet.</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;conceptEntry&gt;` is mandatory and shall be used to represent one given concept. The various parts of <code>&lt;conceptEntry&gt;</code> will be specified in the following sections.</em></p>
+<p><code>&lt;conceptEntry&gt;</code> <em>is mandatory and shall be used to represent one given concept. The various parts of <code>&lt;conceptEntry&gt;</code> will be specified in the following sections.</em></p>
 </div>
 <div class="paragraph">
 <p><em>Restriction: According to TBX, the <code>&lt;conceptEntry&gt;</code> start tag shall contain an <code>id</code> to the concept entry.</em></p>
@@ -843,7 +843,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p><code>&lt;admin&gt;</code> brukes her til å oppgi ulike administrative opplysninger om begrepet.</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;admin&gt;` is used here to specify various administrative information about the concept.</em></p>
+<p><code>&lt;admin&gt;</code> <em>is used here to specify various administrative information about the concept.</em></p>
 </div>
 <div class="sect3">
 <h4 id="Begrep-identifikator"><a class="anchor" href="#Begrep-identifikator"></a>4.2.1. Begrep – identifikator &lt;dct:identifier&gt; (1..n)</h4>
@@ -1339,7 +1339,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p><code>&lt;transacGrp&gt;</code> her er anbefalt og bør brukes til å oppgi dato opprettet eller dato sist oppdatert som begge er anbefalte egenskaper.</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;transacGrp&gt;` here is recommended and should be used to specify date created or date last updated, which are recommended properties.</em></p>
+<p><code>&lt;transacGrp&gt;</code> <em>here is recommended and should be used to specify date created or date last updated, which are recommended properties.</em></p>
 </div>
 <div class="sect3">
 <h4 id="Begrep-transaksjonstype"><a class="anchor" href="#Begrep-transaksjonstype"></a>4.4.1. Begrep – transaksjonstype &lt;basic:transactionType&gt; (1..1)</h4>
@@ -1496,7 +1496,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p><code>&lt;descrip&gt;</code> her er valgfri og kan brukes til å beskrive ulike begrepsrelasjoner som alle er valgfrie egenskaper, når det ikke er behov for å beskrive relasjonene med ytterligere egenskaper. Bruk <code>&lt;descripGrp&gt;</code> i <code>&lt;langSec&gt;</code> når det er behov for ytterligere egenskaper for relasjonen.</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;descrip&gt;` here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use <code>&lt;descripGrp&gt;</code> in <code>&lt;langSec&gt;</code> when there is need for additional information about a concept relation.</em></p>
+<p><code>&lt;descrip&gt;</code> <em>here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use <code>&lt;descripGrp&gt;</code> in <code>&lt;langSec&gt;</code> when there is need for additional information about a concept relation.</em></p>
 </div>
 <div class="sect3">
 <h4 id="Begrep-generaliserer"><a class="anchor" href="#Begrep-generaliserer"></a>4.5.1. Begrep – generaliserer &lt;xkos:generalizes&gt; (0..n)</h4>
@@ -2185,7 +2185,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p>Restriksjon: Det skal være maks. én <code>&lt;langSec&gt;</code> per skriftspråk per begrep (&lt;conceptEntry&gt;).</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;langSec&gt;` is mandatory and shall be used to represent terms and definitions for a given concept in a given language. <code>&lt;langSec&gt;</code> may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of <code>&lt;langSec&gt;</code> is described in the following sections. The language code is specified in the start tag of <code>&lt;langSec&gt;</code> and will apply to the whole <code>&lt;langSec&gt;</code>, see the example below.</em></p>
+<p><code>&lt;langSec&gt;</code> <em>is mandatory and shall be used to represent terms and definitions for a given concept in a given language. <code>&lt;langSec&gt;</code> may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of <code>&lt;langSec&gt;</code> is described in the following sections. The language code is specified in the start tag of <code>&lt;langSec&gt;</code> and will apply to the whole <code>&lt;langSec&gt;</code>, see the example below.</em></p>
 </div>
 <div class="paragraph">
 <p><em>Restriction: There shall be max. one <code>&lt;langSec&gt;</code> per language per concept (&lt;conceptEntry&gt;).</em></p>
@@ -2212,7 +2212,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p>Restriksjon: En <code>&lt;langSec&gt;</code> kan ha flere <code>&lt;termSec&gt;</code> men maks. én der <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> har verdi <code>basic:preferredTermAdmnSts</code>.</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;termSec&gt;` is mandatory and shall be used to describes terms in that given language (<code>&lt;langSec&gt;<code>) for that given concept (</code>&lt;conceptEntry&gt;</code>).</em></p>
+<p><code>&lt;termSec&gt;</code> <em>is mandatory and shall be used to describes terms in that given language (<code>&lt;langSec&gt;<code>) for that given concept (</code>&lt;conceptEntry&gt;</code>).</em></p>
 </div>
 <div class="paragraph">
 <p><em>Resctriction: A <code>&lt;langSec&gt;</code> may have several <code>&lt;termSec&gt;</code> but max. one where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code>.</em></p>
@@ -2285,7 +2285,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p><code>&lt;termNote&gt;</code> brukes til å oppgi (obligatorisk) <a href="https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353">betegnelsesstatus</a> (anbefalt term, tillatt term, frarådd term eller datastrukturterm).</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;termNote&gt;` is used to specify (mandatory) the <a href="https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353">acceptability rating</a> of the term (preferred term, admitted term, deprecated term or data structure label).</em></p>
+<p><code>&lt;termNote&gt;</code> <em>is used to specify (mandatory) the <a href="https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353">acceptability rating</a> of the term (preferred term, admitted term, deprecated term or data structure label).</em></p>
 </div>
 <div class="sect4">
 <h5 id="Term-betegnelsesstatus"><a class="anchor" href="#Term-betegnelsesstatus"></a>4.7.2.1. Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)</h5>
@@ -2702,7 +2702,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p><code>&lt;admin&gt;</code> her er valgfri og kan brukes til å beskrive begrepets status eller versjonsnoter til begrepets aktuelle versjon.</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;admin&gt;` here optional and may be used to describe the status of the concept or version note(s) about the current version of the concept.</em></p>
+<p><code>&lt;admin&gt;</code> <em>here optional and may be used to describe the status of the concept or version note(s) about the current version of the concept.</em></p>
 </div>
 <div class="sect3">
 <h4 id="Begrep-status"><a class="anchor" href="#Begrep-status"></a>4.9.1. Begrep – status &lt;adms:status&gt; (0..1)</h4>
@@ -3714,7 +3714,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p>Denne standarden bruker bare <code>&lt;fileDesc&gt;</code>-delen av <code>&lt;tbxHeader&gt;</code>, og bare <code>&lt;titleStmt&gt;</code> og <code>&lt;sourceDesc&gt;</code> i <code>&lt;fileDesc&gt;</code>. <code>&lt;titleStmt&gt;</code> og <code>&lt;fileDesc&gt;</code> vil bli beskrevet i etterfølgende avsnitt.</p>
 </div>
 <div class="paragraph">
-<p><em>`&lt;tbx&gt;` is the root of a TBX-file. It is used to represent a concept collection.</em></p>
+<p><code>&lt;tbx&gt;</code> <em>is the root of a TBX-file. It is used to represent a concept collection.</em></p>
 </div>
 <div class="paragraph">
 <p><em>The following shall be used with the start tag of <code>&lt;tbx&gt;</code>:</em></p>
@@ -3722,16 +3722,16 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <div class="ulist">
 <ul>
 <li>
-<p><em>`xmlns="urn:iso:std:iso:30042:ed-2"` which refers to ISO 30042:2019</em></p>
+<p><code>xmlns="urn:iso:std:iso:30042:ed-2"</code> <em>which refers to ISO 30042:2019</em></p>
 </li>
 <li>
-<p><em>`style="dct"` or <code>style="dca"</code> which specifies the style used in the file</em></p>
+<p><code>style="dct"</code> or <code>style="dca"</code> <em>which specifies the style used in the file</em></p>
 </li>
 <li>
-<p><em>`type="TBX-AP-NO-v2"` which refers to this version of TBX-AP-NO</em></p>
+<p><code>type="TBX-AP-NO-v2"</code> <em>which refers to this version of TBX-AP-NO</em></p>
 </li>
 <li>
-<p><em>`xml:lang="nb"` for Norwegian bokmål, <code>"nn"</code> for Norwegian nynorsk, <code>"en"</code> for English etc., which specifies the main language that is used in the file, which may be overridden by the language code given in the `&lt;langSec&gt;`</em></p>
+<p><code>xml:lang="nb"</code> <em>for Norwegian bokmål, <code>"nn"</code> for Norwegian nynorsk, <code>"en"</code> for English etc., which specifies the main language that is used in the file, which may be overridden by the language code given in the `&lt;langSec&gt;`</em></p>
 </li>
 <li>
 <p><em>when <code>style="dct"</code> is used, name spaces for all prefixes that are used in the file shall be given, e.g., <code>xmlns:basic=http://www.tbxinfo.net/ns/basic</code>, see <a href="#Navnerom"><em>Vedlegg A - Navnerom som er brukt i denne standard</em></a> for all prefixes that are used in this standard with corresponding name spaces</em></p>
@@ -4340,7 +4340,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-28 14:43:49 UTC
+Sist oppdatert 2022-11-28 14:55:23 UTC
 </div>
 </div>
 </body>

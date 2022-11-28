@@ -21,14 +21,14 @@ Følgende skal tas med sammen med start-taggen av `<tbx>`:
 
 Denne standarden bruker bare `<fileDesc>`-delen av `<tbxHeader>`, og bare `<titleStmt>` og `<sourceDesc>` i `<fileDesc>`. `<titleStmt>` og `<fileDesc>` vil bli beskrevet i etterfølgende avsnitt.
 
-_`<tbx>` is the root of a TBX-file. It is used to represent a concept collection._
+`<tbx>` _is the root of a TBX-file. It is used to represent a concept collection._
 
 _The following shall be used with the start tag of `<tbx>`:_
 
-* _`xmlns="urn:iso:std:iso:30042:ed-2"` which refers to ISO 30042:2019_
-* _`style="dct"` or `style="dca"` which specifies the style used in the file_
-* _`type="TBX-AP-NO-v2"` which refers to this version of TBX-AP-NO_
-* _`xml:lang="nb"` for Norwegian bokmål, `"nn"` for Norwegian nynorsk, `"en"` for English etc., which specifies the main language that is used in the file, which may be overridden by the language code given in the `<langSec>`_
+* `xmlns="urn:iso:std:iso:30042:ed-2"` _which refers to ISO 30042:2019_
+* `style="dct"` or `style="dca"` _which specifies the style used in the file_
+* `type="TBX-AP-NO-v2"` _which refers to this version of TBX-AP-NO_
+* `xml:lang="nb"` _for Norwegian bokmål, `"nn"` for Norwegian nynorsk, `"en"` for English etc., which specifies the main language that is used in the file, which may be overridden by the language code given in the `<langSec>`_
 * _when `style="dct"` is used, name spaces for all prefixes that are used in the file shall be given, e.g., `xmlns:basic=http://www.tbxinfo.net/ns/basic`, see <<Navnerom>> for all prefixes that are used in this standard with corresponding name spaces_
 
 

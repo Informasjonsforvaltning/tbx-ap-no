@@ -9,7 +9,7 @@ image::images/TBX-AP-NO_conceptEntry.png[]
 
 Restriksjon: I henhold til TBX skal `<conceptEntry>`-start-taggen inneholde en `id` til begrepet.
 
-_`<conceptEntry>` is mandatory and shall be used to represent one given concept. The various parts of `<conceptEntry>` will be specified in the following sections._
+`<conceptEntry>` _is mandatory and shall be used to represent one given concept. The various parts of `<conceptEntry>` will be specified in the following sections._
 
 _Restriction: According to TBX, the `<conceptEntry>` start tag shall contain an `id` to the concept entry._
 
@@ -25,7 +25,7 @@ Eksempel i TBX-AP-NO (DCT style):
 
 `<admin>` brukes her til å oppgi ulike administrative opplysninger om begrepet.
 
-_`<admin>` is used here to specify various administrative information about the concept._
+`<admin>` _is used here to specify various administrative information about the concept._
 
 ==== Begrep – identifikator <dct:identifier> (1..n) [[Begrep-identifikator]]
 
@@ -251,7 +251,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 
 `<transacGrp>` her er anbefalt og bør brukes til å oppgi dato opprettet eller dato sist oppdatert som begge er anbefalte egenskaper.
 
-_`<transacGrp>` here is recommended and should be used to specify date created or date last updated, which are recommended properties._
+`<transacGrp>` _here is recommended and should be used to specify date created or date last updated, which are recommended properties._
 
 ==== Begrep – transaksjonstype <basic:transactionType> (1..1) [[Begrep-transaksjonstype]]
 
@@ -319,7 +319,7 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-transaksjonstype>>.
 
 `<descrip>` her er valgfri og kan brukes til å beskrive ulike begrepsrelasjoner som alle er valgfrie egenskaper, når det ikke er behov for å beskrive relasjonene med ytterligere egenskaper. Bruk `<descripGrp>` i `<langSec>` når det er behov for ytterligere egenskaper for relasjonen.
 
-_`<descrip>` here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use `<descripGrp>` in `<langSec>` when there is need for additional information about a concept relation._
+`<descrip>` _here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use `<descripGrp>` in `<langSec>` when there is need for additional information about a concept relation._
 
 ==== Begrep – generaliserer <xkos:generalizes> (0..n) [[Begrep-generaliserer]]
 

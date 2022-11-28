@@ -9,7 +9,7 @@ image::images/TBX-AP-NO_langSec.png[]
 
 Restriksjon: Det skal være maks. én `<langSec>` per skriftspråk per begrep (<conceptEntry>).
 
-_`<langSec>` is mandatory and shall be used to represent terms and definitions for a given concept in a given language. `<langSec>` may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of `<langSec>` is described in the following sections. The language code is specified in the start tag of `<langSec>` and will apply to the whole `<langSec>`, see the example below._
+`<langSec>` _is mandatory and shall be used to represent terms and definitions for a given concept in a given language. `<langSec>` may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of `<langSec>` is described in the following sections. The language code is specified in the start tag of `<langSec>` and will apply to the whole `<langSec>`, see the example below._
 
 _Restriction: There shall be max. one `<langSec>` per language per concept (<conceptEntry>)._
 
@@ -29,7 +29,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 
 Restriksjon: En `<langSec>` kan ha flere `<termSec>` men maks. én der <<Term-betegnelsesstatus>> har verdi `basic:preferredTermAdmnSts`.
 
-_`<termSec>` is mandatory and shall be used to describes terms in that given language (`<langSec>``) for that given concept (``<conceptEntry>`)._
+`<termSec>` _is mandatory and shall be used to describes terms in that given language (`<langSec>``) for that given concept (``<conceptEntry>`)._
 
 _Resctriction: A `<langSec>` may have several `<termSec>` but max. one where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts`._
 
@@ -67,7 +67,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 
 `<termNote>` brukes til å oppgi (obligatorisk) https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[betegnelsesstatus] (anbefalt term, tillatt term, frarådd term eller datastrukturterm).
 
-_`<termNote>` is used to specify (mandatory) the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[acceptability rating] of the term (preferred term, admitted term, deprecated term or data structure label)._
+`<termNote>` _is used to specify (mandatory) the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[acceptability rating] of the term (preferred term, admitted term, deprecated term or data structure label)._
 
 ===== Term - betegnelsesstatus <basic:administrativeStatus> (1..1) [[Term-betegnelsesstatus]]
 
@@ -265,7 +265,7 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Definisjon-forhold-til-kilde>>.
 
 `<admin>` her er valgfri og kan brukes til å beskrive begrepets status eller versjonsnoter til begrepets aktuelle versjon.
 
-_`<admin>` here optional and may be used to describe the status of the concept or version note(s) about the current version of the concept._
+`<admin>` _here optional and may be used to describe the status of the concept or version note(s) about the current version of the concept._
 
 ==== Begrep – status <adms:status> (0..1) [[Begrep-status]]
 
