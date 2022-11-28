@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.18">
 <meta name="description" content="TBX-AP-NO – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX">
 <meta name="author" content="Digitaliseringsdirektoratet (Digdir) / The Norwegian Digilitasation Agency">
 <title>TBX-AP-NO – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX</title>
@@ -86,10 +86,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -592,10 +592,10 @@ Dette dokumentet kan også lastes ned <a href="files/tbx-ap-no.pdf">som PDF</a>.
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <mark>Til høring</mark> <br>
-<strong>Versjon</strong>: <mark>Høringsversjon</mark><br>
-<strong>Publisert</strong>: 2022-09-08<br>
-<strong>Oppdatert</strong>: 2022-09-08<br>
+<p><strong>Status</strong>: <mark>under ferdigstilling</mark> <br>
+<strong>Versjon</strong>: <mark>utkast til v.2.0</mark><br>
+<strong>Publisert</strong>: <mark>under publisering</mark><br>
+<strong>Oppdatert</strong>: 2022-11-28<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/tbx-ap-no/" class="bare">https://data.norge.no/specification/tbx-ap-no/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/tbx-ap-no/" class="bare">https://informasjonsforvaltning.github.io/tbx-ap-no/</a><br></p>
 </div>
@@ -625,10 +625,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <i class="fa icon-important" title="Viktig"></i>
 </td>
 <td class="content">
-Dette er en høringsversjon, som skal erstatte:<br>
+Dette er <mark>redaktørens utkast</mark>, til kommende v.2.0 av denne standarden som skal erstatte:<br>
 <a href="https://data.norge.no/specification/tbx-ap-no/"><em>Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO)</em> v.1.0.2</a><br>
 <br>
-<strong>Vennligst bruk</strong> <a href="files/Mal-tilbakemeldinger.docx">denne malen for detaljerte tilbakemeldinger (Word)</a>.
+Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir håndtert av arbeidsgruppen.
 </td>
 </tr>
 </table>
@@ -2453,10 +2453,10 @@ Dette er en høringsversjon, som skal erstatte:<br>
 <p>Picklist:</p>
 </div>
 <div class="paragraph">
-<p>(norsk) Verdien skal velges fra kontrollert vokabular <a href="https://data.norge.no/vocabulary/audience-type">Målgruppetype</a> når verdien finnes på listen.</p>
+<p>Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/audience-type">Målgruppetype</a> passer til begrepets målgruppe, skal egenskapen referere til den aktuelle kategorien.</p>
 </div>
 <div class="paragraph">
-<p>(English) The value shall be chosen from the controlled vocabulary <a href="https://data.norge.no/vocabulary/audience-type">Audience type</a> when the value is on the list.</p>
+<p><em>When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary <a href="https://data.norge.no/vocabulary/audience-type">Audience type</a> is suitable for the audience of the concept, this property shall refer to that category.</em></p>
 </div></div></td>
 </tr>
 <tr>
@@ -2532,10 +2532,10 @@ Dette er en høringsversjon, som skal erstatte:<br>
 <p>Picklist:</p>
 </div>
 <div class="paragraph">
-<p>(norsk) Verdien skal velges fra det kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/relationship-with-source-type">Typer forhold til kilde</a>, når verdien finnes på listen.</p>
+<p>Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/relationship-with-source-type">Typer forhold til kilde</a> passer til begrepets forhold til kilde, skal egenskapen referere til den aktuelle kategorien.</p>
 </div>
 <div class="paragraph">
-<p>(English) The value shall be chosen from the controlled vocabulary <a href="https://data.norge.no/vocabulary/relationship-with-source-type">Types of relationship with source</a>, when the value is on the list.</p>
+<p><em>When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary <a href="https://data.norge.no/vocabulary/relationship-with-source-type">Types of relationship with source</a> is suitable for the concept&#8217;s relationship with source, this property shall refer to that category.</em></p>
 </div></div></td>
 </tr>
 <tr>
@@ -2690,8 +2690,8 @@ Dette er en høringsversjon, som skal erstatte:<br>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Verdien bør fortrinnsvis velges fra et kontrollert vokabular, f.eks. EUs <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status">concept status</a>.</p>
-<p class="tableblock">(English) The value should preferably be chosen from a controlled vocabulary, e.g. EU’s <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status">concept status</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status">Concept status</a> passer til begrepets status, skal egenskapen referere til den aktuelle kategorien.</p>
+<p class="tableblock"><em>When making the concept description available outside the organization, and if one of the categories in EU’s <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status">Concept status</a> is suitable for the status of the concept, this property shall refer to that category.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -4274,7 +4274,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-26 08:37:47 UTC
+Sist oppdatert 2022-11-28 10:41:12 UTC
 </div>
 </div>
 </body>

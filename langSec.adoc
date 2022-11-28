@@ -163,10 +163,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 | TBX-klassifisering / TBX Classification |descripNote
 | Verdiområde / Range a|Picklist:
 
-(norsk) Verdien skal velges fra kontrollert vokabular https://data.norge.no/vocabulary/audience-type[Målgruppetype] når verdien finnes på listen.
+Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet https://data.norge.no/vocabulary/audience-type[Målgruppetype] passer til begrepets målgruppe, skal egenskapen referere til den aktuelle kategorien.
 
-(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type] when the value is on the list.
-
+_When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type] is suitable for the audience of the concept, this property shall refer to that category._
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi målgruppen for definisjonen, oppgitt som kodet verdi.
 
 (English) This property is used to specify the audience of the definition, as coded value.
@@ -204,9 +203,9 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempel:
 | TBX-klassifisering / TBX Classification |admin
 | Verdiområde / Range a|Picklist:
 
-(norsk) Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde], når verdien finnes på listen.
+Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde] passer til begrepets forhold til kilde, skal egenskapen referere til den aktuelle kategorien.
 
-(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source], when the value is on the list.
+_When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source] is suitable for the concept's relationship with source, this property shall refer to that category._
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi definisjonens forhold til kilde.
 
 (English) This property is used to specify the definition’s relationship with the source(s).
@@ -276,9 +275,9 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Definisjon-forhold-til-kilde>>.
 (English) This property is used to specify the status of the concept.
 | Multiplisitet |0..1
 | Kravnivå / Requirement level |Valgfri / Optional
-| Merknad / Note |(norsk) Verdien bør fortrinnsvis velges fra et kontrollert vokabular, f.eks. EUs https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status].
+| Merknad / Note |Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[Concept status] passer til begrepets status, skal egenskapen referere til den aktuelle kategorien.
 
-(English) The value should preferably be chosen from a controlled vocabulary, e.g. EU’s https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status].
+_When making the concept description available outside the organization, and if one of the categories in EU’s https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[Concept status] is suitable for the status of the concept, this property shall refer to that category._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempel:
