@@ -393,6 +393,9 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 (English) This property is used to subject field(s) to the concept.
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Anbefalt / Recommended
+| Merknad / _Note_ | Fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, en tjenestekjede eller lignende.
+
+_A subject field may represent an academic discipline, an application area, a produkt, a service chain or suchlike._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
