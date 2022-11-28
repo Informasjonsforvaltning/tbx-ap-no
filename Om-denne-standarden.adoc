@@ -38,27 +38,27 @@ Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse ha
 
 Denne standarden bruker stilen DCT (Data Category as Tag). Se https://www.tbxinfo.net/dca-v-dct/[Data Category as Attribute / Data Category as Tag] for forskjellen mellom DCT og DCA, og https://www.tbxinfo.net/dca-dct-converter/[DCA-DCT Converter] for konvertering mellom disse.
 
-Alle krav i del 1 av _Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_ (som p.t. også er til høring sammen med denne, https://informasjonsforvaltning.github.io/skos-ap-no-begrep) er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.
+Kravene er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster er kursivert. De er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.
 
 [cols="30s,70"]
 |===
 |Ledetekst i tabellen|*Hensikt med raden i tabellen*
-|Navn / Name |Norsk og engelsk egenskapsnavn.
-|Datakategori / Data category |Datakategorinavn som skal brukes i utvekslingen, oppgitt i DCT-stilen.
+|Navn / _Name_ |Norsk og engelsk egenskapsnavn.
+|Datakategori / _Data category_ |Datakategorinavn som skal brukes i utvekslingen, oppgitt i DCT-stilen.
 
 Eksempel: basic:definition. Se <<Navnerom>> for hva prefiksen `basic:` står for.
 |PID |En persistent identifikator til egenskapen. Dette for at man skal kunne referere til en felles spesifikasjon, og dermed felles forståelse og bruk av egenskapen. NB! Ikke alle PID-lenker gir menneskevennlige visninger.
 
 Eksempel: http://www.datcatinfo.net/datcat/DC-168 er PID for `basic:definition`
-|TBX-nivå / TBX level |Nivå i TBX-strukturen egenskapen brukes på.
+|TBX-nivå / _TBX level_ |Nivå i TBX-strukturen egenskapen brukes på.
 |TBX-klassifisering / TBX classification | Elementet som er brukt til å klassifisere data kategorier som har tilsvarende hensikt.
 
 Eksempel: Elementet `<descrip>` inneholder primært beskrivende opplysninger om et begrep, og `<admin>` inneholder primært administrative opplysninger om et begrep.
-|Verdiområde / Range |Lovlige verdier som egenskapen kan ha.
-|Anvendelse / Usage note |Forklaring på norsk og engelsk, på hva egenskapen er ment å brukes til, i kontekst av denne standarden.
-| Multiplisitet |Minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
-|Kravnivå / Requirement level |Om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Kravnivåene>>.
-|Merknad / Note |Merknad på norsk og engelsk, knyttet til bruk av egenskapen, bl.a. om det er krav til bruk av kontrollerte vokabularer (picklist), osv.
+|Verdiområde / _Range_ |Lovlige verdier som egenskapen kan ha.
+|Anvendelse / _Usage note_ |Forklaring på norsk og engelsk, på hva egenskapen er ment å brukes til, i kontekst av denne standarden.
+| Multiplisitet / _Multiplicity_ |Minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
+|Kravnivå / _Requirement level_ |Om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Kravnivåene>>.
+|Merknad / _Note_ |Merknad på norsk og engelsk, knyttet til bruk av egenskapen, bl.a. om det er krav til bruk av kontrollerte vokabularer (picklist), osv.
 |===
 
 Hvordan den enkelte egenskapen brukes i TBX, er eksemplifisert under den aktuelle tabellen. Det gjøres oppmerksom på at ikke alle eksemplene i TBX er komplette, slik at de kan mangle verdi for obligatoriske egenskaper. Eksemplene kan også inneholde fiktive data.
