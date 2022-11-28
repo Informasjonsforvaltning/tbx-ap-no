@@ -2188,6 +2188,9 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <p>Restriksjon 2: For hvert begrep (<code>&lt;conceptEntry&gt;</code>) skal det finnes én <code>&lt;langSec&gt;</code> for bokmål og én <code>&lt;langSec&gt;</code> for nynorsk, og begge skal ha én term (<code>&lt;termSec&gt;</code>) der <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> har verdi <code>basic:preferredTermAdmnSts</code> (= anbefalt term). Dette fordi anbefalt term skal finnes på både bokmål og nynorsk.</p>
 </div>
 <div class="paragraph">
+<p>Restriksjon 3: Det skal være min. én <code>&lt;lagSec&gt;</code> som inneholder én term (<code>&lt;termSec&gt;</code>) der <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> har verdi <code>basic:preferredTermAdmnSts</code> (= anbefalt term) og som har definisjon.</p>
+</div>
+<div class="paragraph">
 <p><code>&lt;langSec&gt;</code> <em>is mandatory and shall be used to represent terms and definitions for a given concept in a given language. <code>&lt;langSec&gt;</code> may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of <code>&lt;langSec&gt;</code> is described in the following sections. The language code is specified in the start tag of <code>&lt;langSec&gt;</code> and will apply to the whole <code>&lt;langSec&gt;</code>, see the example below.</em></p>
 </div>
 <div class="paragraph">
@@ -2195,6 +2198,9 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 </div>
 <div class="paragraph">
 <p><em>Restriction 2: For each concept (<code>&lt;conceptEntry&gt;</code>) there shall be one <code>&lt;langSec&gt;</code> for Norwegian Bokmål and one <code>&lt;langSec&gt;</code> for Norwegian Nynorsk, and both shall have a term (<code>&lt;termSec&gt;</code>) where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code> (= preferred term). This is because "preferred term" shall be in both Norwegian Bokmål and in Norwegian Nynorsk.</em></p>
+</div>
+<div class="paragraph">
+<p><em>Restriction 3: There shall be min. one <code>&lt;langSec&gt;</code> which has a term (<code>&lt;termSec&gt;</code>) where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code> (= preferred term), and which has definition.</em></p>
 </div>
 <div class="paragraph">
 <p>Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:</p>
@@ -4349,7 +4355,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-28 15:31:59 UTC
+Sist oppdatert 2022-11-28 15:38:09 UTC
 </div>
 </div>
 </body>
