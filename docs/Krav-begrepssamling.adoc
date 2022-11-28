@@ -26,7 +26,7 @@ Denne standarden bruker bare `<fileDesc>`-delen av `<tbxHeader>`, og bare `<titl
 _The following shall be used with the start tag of `<tbx>`:_
 
 * `xmlns="urn:iso:std:iso:30042:ed-2"` _which refers to ISO 30042:2019_
-* `style="dct"` or `style="dca"` _which specifies the style used in the file_
+* `style="dct"` _or_ `style="dca"` _which specifies the style used in the file_
 * `type="TBX-AP-NO-v2"` _which refers to this version of TBX-AP-NO_
 * `xml:lang="nb"` _for Norwegian bokmål, `"nn"` for Norwegian nynorsk, `"en"` for English etc., which specifies the main language that is used in the file, which may be overridden by the language code given in the `<langSec>`_
 * _when `style="dct"` is used, name spaces for all prefixes that are used in the file shall be given, e.g., `xmlns:basic=http://www.tbxinfo.net/ns/basic`, see <<Navnerom>> for all prefixes that are used in this standard with corresponding name spaces_
