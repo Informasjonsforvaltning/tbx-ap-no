@@ -577,7 +577,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som g
 <conceptEntry id="BEGREP-625">
    <langSec xml:lang="nb">
       <descripGrp>
-         <xkos:generalizes>https://data.nav.no/begrep/BEGREP-974</xkos:generalizes>
+         <xkos:generalizes>https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55</xkos:generalizes>
       </descripGrp>
    </langSec>
 </conceptEntry>
@@ -619,7 +619,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode»)
 <conceptEntry id="BEGREP-974">
    <langSec xml:lang="nb">
       <descripGrp>
-         <xkos:specializes>https://data.nav.no/begrep/BEGREP-625</xkos:specializes>
+         <xkos:specializes>https://data.norge.no/concepts/680b83b6-46f5-30f2-96f7-e36c4e5cf3d1</xkos:specializes>
       </descripGrp>
    </langSec>
 </conceptEntry>
@@ -698,7 +698,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote») som er d
 <conceptEntry id="BEGREP-975">
    <langSec xml:lang="nb">
       <descripGrp>
-         <xkos:isPartOf>https://data.nav.no/begrep/BEGREP-974</xkos:isPartOf>
+         <xkos:isPartOf>https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55</xkos:isPartOf>
       </descripGrp>
    </langSec>
 </conceptEntry>
@@ -740,9 +740,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode»)
 <conceptEntry id="BEGREP-974">
    <langSec xml:lang="nb">
       <descripGrp>
-         <xkos:hasPart>https://data.nav.no/begrep/BEGREP-975</xkos:hasPart>
-         <xkos:hasPart>https://data.nav.no/begrep/BEGREP-976</xkos:hasPart>
-         <xkos:hasPart>https://data.nav.no/begrep/BEGREP-1467</xkos:hasPart>
+         <xkos:hasPart>https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5</xkos:hasPart>
+         <xkos:hasPart>https://data.norge.no/concepts/13a8697d-177b-499b-8d22-9cee6741c025</xkos:hasPart>
+         <xkos:hasPart>https://data.norge.no/concepts/32d18d0e-c9d4-4785-b1e8-3612ffca8fb7</xkos:hasPart>
       </descripGrp>
    </langSec>
 </conceptEntry>
