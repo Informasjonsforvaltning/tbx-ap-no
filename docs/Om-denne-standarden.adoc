@@ -43,7 +43,7 @@ Kravene er spesifisert i en tabell som inneholder syntaks og forklaring. Radene 
 [cols="30s,70"]
 |===
 |Ledetekst i tabellen|*Hensikt med raden i tabellen*
-|Navn / _Name_ |Norsk og engelsk egenskapsnavn.
+|Navn / _Name_ |Norsk og _engelsk_ egenskapsnavn.
 |Datakategori / _Data category_ |Datakategorinavn som skal brukes i utvekslingen, oppgitt i DCT-stilen.
 
 Eksempel: basic:definition. Se <<Navnerom>> for hva prefiksen `basic:` står for.
@@ -51,14 +51,14 @@ Eksempel: basic:definition. Se <<Navnerom>> for hva prefiksen `basic:` står for
 
 Eksempel: http://www.datcatinfo.net/datcat/DC-168 er PID for `basic:definition`
 |TBX-nivå / _TBX level_ |Nivå i TBX-strukturen egenskapen brukes på.
-|TBX-klassifisering / TBX classification | Elementet som er brukt til å klassifisere data kategorier som har tilsvarende hensikt.
+|TBX-klassifisering / _TBX classification_ | Elementet som er brukt til å klassifisere data kategorier som har tilsvarende hensikt.
 
 Eksempel: Elementet `<descrip>` inneholder primært beskrivende opplysninger om et begrep, og `<admin>` inneholder primært administrative opplysninger om et begrep.
 |Verdiområde / _Range_ |Lovlige verdier som egenskapen kan ha.
-|Anvendelse / _Usage note_ |Forklaring på norsk og engelsk, på hva egenskapen er ment å brukes til, i kontekst av denne standarden.
+|Anvendelse / _Usage note_ |Forklaring på norsk og _engelsk_, på hva egenskapen er ment å brukes til, i kontekst av denne standarden.
 | Multiplisitet / _Multiplicity_ |Minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
-|Kravnivå / _Requirement level_ |Om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Kravnivåene>>.
-|Merknad / _Note_ |Merknad på norsk og engelsk, knyttet til bruk av egenskapen, bl.a. om det er krav til bruk av kontrollerte vokabularer (picklist), osv.
+|Kravnivå / _Requirement level_ |Om egenskapen er obligatorisk/_mandatory_, anbefalt/_recommended_ eller valgfri/_optional_. Se også <<Kravnivåene>>.
+|Merknad / _Note_ |Merknad på norsk og _engelsk_, knyttet til bruk av egenskapen, bl.a. om det er krav til bruk av kontrollerte vokabularer (picklist), osv.
 |===
 
 Hvordan den enkelte egenskapen brukes i TBX, er eksemplifisert under den aktuelle tabellen. Det gjøres oppmerksom på at ikke alle eksemplene i TBX er komplette, slik at de kan mangle verdi for obligatoriske egenskaper. Eksemplene kan også inneholde fiktive data.
