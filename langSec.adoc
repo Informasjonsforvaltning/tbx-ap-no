@@ -3,7 +3,7 @@
 [Figur-langSec]
 .Begrep (<conceptEntry>) | <langSec> (basert på Fig. 3 i NS-ISO 30042:2019)_
 [link=images/TBX-AP-NO_langSec.png]
-image::images/TBX-AP-NO_langSec.png[]
+image::images/TBX-AP-NO_langSec.png[alt="Diagram med 32 bokser og piler i mellom. Innholdet er forklart i teksten."]
 
 `<langSec>` er obligatorisk og skal brukes til å representere termer og definisjoner for et gitt begrep i ett gitt skriftspråk. `<langSec>` kan også brukes til å representere valgfri begrepsrelasjoner der det er behov for mer detaljert beskrivelse av relasjonene. De enkelte delene i `<langSec>` er beskrevet i de etterfølgende avsnittene. Språkkoden skal oppgis i start-taggen til `<langSec>` og vil gjelde for hele `<langSec>`, se eksemplet under.
 

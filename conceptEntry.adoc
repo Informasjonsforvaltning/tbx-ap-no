@@ -3,7 +3,7 @@
 [Figur-conceptEntry]
 .Begrep (<conceptEntry>) (basert på Fig. 3 i NS-ISO 30042:2019)
 [link=images/TBX-AP-NO_conceptEntry.png]
-image::images/TBX-AP-NO_conceptEntry.png[]
+image::images/TBX-AP-NO_conceptEntry.png[alt="Diagram med 26 bokser og piler i mellom. Innholdet er forklart i teksten."]
 
 `<conceptEntry>` er obligatorisk og skal brukes til å representere ett gitt begrep. De ulike delene av `<conceptEntry>` vil bli spesifisert i de etterfølgende avsnittene.
 
