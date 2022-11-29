@@ -6,7 +6,7 @@
 [Figur-tbx]
 .Begrepssamling (<tbx>) (basert på Fig. 2 i NS-ISO 30042:2019)
 [link=images/TBX-AP-NO_Begrepssamling.png]
-image::images/TBX-AP-NO_Begrepssamling.png[]
+image::images/TBX-AP-NO_Begrepssamling.png[alt="Diagram med 15 bokser og piler i mellom. Innholdet er forklart i teksten."]
 
 
 `<tbx>` er roten til en TBX-fil. Den brukes til å representere en begrepssamling.
