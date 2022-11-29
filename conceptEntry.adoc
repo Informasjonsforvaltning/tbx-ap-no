@@ -44,11 +44,11 @@ _This property is used to specify an identifier to the concept, as a URI._
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |===
 
-Eksempel i TBX-AP-NO (DCT style), NAVs begrep 975:
+Eksempel i TBX-AP-NO (DCT style), NAVs begrep 975 («mødrekvote»):
 [source,xml]
 -----
 <conceptEntry id="BEGREP-975">
-   <dct:identifier>https://data.nav.no/begrep/BEGREP-975</dct:identifier>
+   <dct:identifier>https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5</dct:identifier>
 </conceptEntry>
 -----
 
@@ -355,7 +355,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som g
 [source,xml]
 -----
 <conceptEntry id="BEGREP-625">
-   <xkos:generalizes>https://data.nav.no/begrep/BEGREP-974</xkos:generalizes>
+   <xkos:generalizes>https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55</xkos:generalizes>
 </conceptEntry>
 -----
 
@@ -393,7 +393,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode»)
 [source,xml]
 -----
 <conceptEntry id="BEGREP-625">
-   <xkos:specializes>https://data.nav.no/begrep/BEGREP-625</xkos:specializes>
+   <xkos:specializes>https://data.norge.no/concepts/680b83b6-46f5-30f2-96f7-e36c4e5cf3d1</xkos:specializes>
 </conceptEntry>
 -----
 
@@ -431,7 +431,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote») som er d
 [source,xml]
 -----
 <conceptEntry id="BEGREP-975">
-   <xkos:isPartOf>https://data.nav.no/begrep/BEGREP-974</xkos:isPartOf>
+   <xkos:isPartOf>https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55</xkos:isPartOf>
 </conceptEntry>
 -----
 
@@ -469,9 +469,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode»)
 [source,xml]
 -----
 <conceptEntry id="BEGREP-974">
-   <xkos:hasPart>https://data.nav.no/begrep/BEGREP-975</xkos:hasPart>
-   <xkos:hasPart>https://data.nav.no/begrep/BEGREP-976</xkos:hasPart>
-   <xkos:hasPart>https://data.nav.no/begrep/BEGREP-1467</xkos:hasPart>
+   <xkos:hasPart>https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5</xkos:hasPart>
+   <xkos:hasPart>https://data.norge.no/concepts/13a8697d-177b-499b-8d22-9cee6741c025</xkos:hasPart>
+   <xkos:hasPart>https://data.norge.no/concepts/32d18d0e-c9d4-4785-b1e8-3612ffca8fb7</xkos:hasPart>
 </conceptEntry>
 -----
 
@@ -648,6 +648,6 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 170 («medlem i folketrygden»
 [source,xml]
 -----
 <conceptEntry id="BEGREP-170">
-   <skos:related>https://data.nav.no/begrep/BEGREP-1696</skos:related>
+   <skos:related>https://data.norge.no/concepts/d649801d-b47d-4d00-9470-35275c4ace00</skos:related>
 </conceptEntry>
 -----

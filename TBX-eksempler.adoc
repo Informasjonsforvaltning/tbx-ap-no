@@ -7,11 +7,11 @@ _Vedlegget er descriptivt_.
 
 [stripes=even]
 |===
-a| *Eksempel på minimumsinnhold*, hentet fra NAV 2022-08-23, for begrepet https://data.nav.no/begrep/BEGREP-975[«mødrekvote»]:
+a| *Eksempel på minimumsinnhold*, hentet fra Felles datakatalog 2022-11-25, for begrepet «mødrekvote»:
 
 * *anbefalt term*: «mødrekvote» (bokmål)
 * *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
-* *identifikator*: https://data.nav.no/begrep/BEGREP-975
+* *identifikator*: https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5
 * *publisert av*: 889640782 (organisasjonsnummer til NAV)
 * *kontaktpunkt*: begrepskatalogen@nav.no
 
@@ -32,7 +32,7 @@ xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
            </vcard:Organization>
         </dcat:contactPoint>
       </adminGrp>
-      <dct:identifier>https://data.nav.no/begrep/BEGREP-975</dct:identifier>
+      <dct:identifier>https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5</dct:identifier>
       <langSec xml:lang="nb">
          <descripGrp>
             <basic:definition>den delen av foreldrepengeperioden som er forbeholdt mor</basic:definition>
