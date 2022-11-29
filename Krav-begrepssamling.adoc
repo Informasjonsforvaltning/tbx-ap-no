@@ -75,7 +75,7 @@ Egenskapen brukes til å oppgi beskrivelse av begrepssamlingen. Egenskapen bør 
 
 _This property is used to specify the description of the concept collection. The property should be repeated when the text is in several languages._
 | Multiplisitet / _Multiplicity_ |0..n
-| Kravnivå / _Requirement level_ |Anbefalt / Recommended
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
