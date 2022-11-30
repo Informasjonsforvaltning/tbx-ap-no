@@ -1,6 +1,6 @@
 include::locale/attributes-nb.adoc[]
 = TBX-AP-NO – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX
-Digitaliseringsdirektoratet (Digdir) / The Norwegian Digilitasation Agency
+Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency
 :description: TBX-AP-NO – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX
 :doctype: book
 :docinfo: shared
@@ -21,7 +21,7 @@ include::shared/download.adoc[]
 *Status*: #under ferdigstilling#  +
 *Versjon*: #utkast til v.2.0# +
 *Publisert*: #under publisering# +
-*Oppdatert*: 2022-11-29 +
+*Oppdatert*: 2022-11-30 +
 *Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
 
