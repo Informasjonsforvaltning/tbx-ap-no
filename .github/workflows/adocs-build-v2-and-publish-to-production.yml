@@ -44,6 +44,6 @@ jobs:
             docs/index.html text/html nb
             docs/files/tbx-ap-no.pdf application/pdf nb files/tbx-ap-no.pdf
             docs/images/Digdir.png image/png nb images/Digdir.png
-            docs/images/TBX-AP-NO_Begrepssamling.png nb images/TBX-AP-NO_Begrepssamling.png
-            docs/images/TBX-AP-NO_conceptEntry.png nb images/TBX-AP-NO_conceptEntry.png
-            docs/images/TBX-AP-NO_langSec.png nb TBX-AP-NO_langSec.png
+            docs/images/TBX-AP-NO_Begrepssamling.png image/png nb images/TBX-AP-NO_Begrepssamling.png
+            docs/images/TBX-AP-NO_conceptEntry.png image/png nb images/TBX-AP-NO_conceptEntry.png
+            docs/images/TBX-AP-NO_langSec.png image/png nb TBX-AP-NO_langSec.png
