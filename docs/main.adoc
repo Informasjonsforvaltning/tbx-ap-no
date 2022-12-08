@@ -23,6 +23,7 @@ include::shared/download.adoc[]
 *Publisert*: #under publisering# +
 *Oppdatert*: 2022-12-08 +
 *Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
+*Forrige versjon*: https://data.norge.no/specification/tbx-ap-no/v1 + 
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
 
 NOTE: *Innmelding av feil og mangler:* +
