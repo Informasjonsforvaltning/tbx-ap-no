@@ -1,11 +1,5 @@
 == Forord [[Forord]]
 
-IMPORTANT: Dette er #redaktørens utkast#, til kommende v.2.0 av denne standarden som skal erstatte: +
-https://data.norge.no/specification/tbx-ap-no/[_Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO)_ v.1.0.2] +
- + 
-Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir håndtert av arbeidsgruppen. 
-
-
-Som en anbefalt standard inngår denne standarden bruksområdet https://www.digdir.no/digitalisering-og-samordning/omgrepsanalyse-og-definisjonsarbeid/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_. https://www.digdir.no/digitalisering-og-samordning/referansekatalogen-it-standarder/1480[_Referansekatalogen_] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.
+Som en anbefalt standard inngår denne standarden i bruksområdet https://www.digdir.no/digitalisering-og-samordning/omgrepsanalyse-og-definisjonsarbeid/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_. https://www.digdir.no/digitalisering-og-samordning/referansekatalogen-it-standarder/1480[_Referansekatalogen_] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.
 
 Denne standarden er utarbeidet i henhold til arbeidsmetodikken til Arkitektur- og standardiseringsrådet, av en arbeidsgruppe ledet av Digitaliseringsdirektoratet.
