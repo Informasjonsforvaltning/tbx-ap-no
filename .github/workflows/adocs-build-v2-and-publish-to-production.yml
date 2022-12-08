@@ -1,9 +1,9 @@
-name: build adocs and publish v1 to staging
+name: Build adocs and publish v2 to production
 
 on:
   push:
     branches:
-      - v1
+      - v2
     paths:
       - "docs/**"
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          ref: v1
+          ref: v2
 
       - name: Build html
         id: adocbuild
@@ -38,9 +38,12 @@ jobs:
         with:
           ontology-type: "specification"
           ontology: "tbx-ap-no"
-          host: "https://staging.fellesdatakatalog.digdir.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
+          host: "https://fellesdatakatalog.digdir.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
           files: |
             docs/index.html text/html nb
             docs/files/tbx-ap-no.pdf application/pdf nb files/tbx-ap-no.pdf
-            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
+            docs/images/Digdir.png image/png nb images/Digdir.png
+            docs/images/TBX-AP-NO_Begrepssamling.png nb images/TBX-AP-NO_Begrepssamling.png
+            docs/images/TBX-AP-NO_conceptEntry.png nb images/TBX-AP-NO_conceptEntry.png
+            docs/images/TBX-AP-NO_langSec.png nb TBX-AP-NO_langSec.png
