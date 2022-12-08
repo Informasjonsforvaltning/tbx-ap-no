@@ -14,7 +14,7 @@
 |owl | `\http://www.w3.org/2002/07/owl#` | https://www.w3.org/OWL/[Web Ontology Language (OWL)]
 |rdfs | `\http://www.w3.org/2000/01/rdf-schema#` | https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
 |skos | `\http://www.w3.org/2004/02/skos/core#` | https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
-|skosno | `\https://data.norge.no/vocabulary/skosno#`  | Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep) (#p.t. under høring#, https://informasjonsforvaltning.github.io/skos-ap-no-begrep/)
+|skosno | `\https://data.norge.no/vocabulary/skosno#`  | https://data.norge.no/specification/skos-ap-no-begrep[Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)]
 |uneskos | `\http://purl.org/umu/uneskos#` | https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
 |vcard | `\http://www.w3.org/2006/vcard/ns#` | https://www.w3.org/TR/vcard-rdf/[vCard Ontology - for describing People and Organizations]
 |xkos | `\http://rdf-vocabulary.ddialliance.org/xkos#` | https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
