@@ -32,7 +32,7 @@ Digdir håndterer mindre endringer. Ved behov for større endringer vil Digdir s
 
 === Kravnivåene i denne standarden [[Kravnivåene]]
 
-Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende https://data.norge.no/specification/dcat-ap-no/#Om-kravene[betydning som i DCAT-AP-NO] og gjentas derfor ikke her.
+Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og forklaringene gjentas derfor ikke her.
 
 === Hvordan du leser denne standarden [[Hvordan-du-leser-denne-standarden]]
 
@@ -46,7 +46,7 @@ Kravene er spesifisert i en tabell som inneholder syntaks og forklaring. Radene 
 |Navn / _Name_ |Norsk og _engelsk_ egenskapsnavn.
 |Datakategori / _Data category_ |Datakategorinavn som skal brukes i utvekslingen, oppgitt i DCT-stilen.
 
-Eksempel: basic:definition. Se <<Navnerom>> for hva prefiksen `basic:` står for.
+Eksempel: basic:definition (<<Navnerom>> viser hva prefiksen `basic:` står for)
 |PID |En persistent identifikator til egenskapen. Dette for at man skal kunne referere til en felles spesifikasjon, og dermed felles forståelse og bruk av egenskapen. NB! Ikke alle PID-lenker gir menneskevennlige visninger.
 
 Eksempel: http://www.datcatinfo.net/datcat/DC-168 er PID for `basic:definition`

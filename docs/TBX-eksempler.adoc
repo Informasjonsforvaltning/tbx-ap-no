@@ -9,7 +9,7 @@ _Vedlegget er descriptivt_.
 |===
 a| *Eksempel på minimumsinnhold*, hentet fra Felles datakatalog 2022-11-25, for begrepet «mødrekvote»:
 
-* *anbefalt term*: «mødrekvote» (bokmål)
+* *anbefalt term*: «mødrekvote» (bokmål), «mødrekvote» (nynorsk)
 * *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
 * *identifikator*: https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5
 * *publisert av*: 889640782 (organisasjonsnummer til NAV)
@@ -37,6 +37,12 @@ xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
          <descripGrp>
             <basic:definition>den delen av foreldrepengeperioden som er forbeholdt mor</basic:definition>
          </descripGrp>
+         <termSec>
+            <term>mødrekvote</term>
+            <min:administrativeStatus>basic:preferredTermAdmnSts</min:administrativeStatus>
+         </termSec>
+      </langSec>
+      <langSec xml:lang="nn">
          <termSec>
             <term>mødrekvote</term>
             <min:administrativeStatus>basic:preferredTermAdmnSts</min:administrativeStatus>
@@ -88,8 +94,10 @@ xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
       <body>
           <!-- concepts that are included in the TBX-file, one <conceptEntry> for each concept -->
           <conceptEntry cid="1">
+            ...
           </conceptEntry>
           <conceptEntry cid="2">
+            ...
           </conceptEntry>
       </body>
    </text>

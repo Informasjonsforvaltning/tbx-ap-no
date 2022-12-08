@@ -1,4 +1,4 @@
 == Normative referanser [[Normative-referanser]]
 
-* Del 1 av _Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_ (som p.t. også er til høring sammen med denne, https://informasjonsforvaltning.github.io/skos-ap-no-begrep): Standardends del 1 stiller krav til hva som skal/bør/kan tas med når et begrep eller en begrepssamling beskrives.
+* #Del 1# av _Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_ (#som p.t. også er til høring sammen med denne, https://informasjonsforvaltning.github.io/skos-ap-no-begrep#): Standardends del 1 stiller krav til hva som skal/bør/kan tas med når et begrep eller en begrepssamling beskrives.
 * https://standard.no/no/Nettbutikk/produktkatalogen/Produktpresentasjon/?ProductID=1035256[NS-ISO 30042:2019 _Forvaltning av terminologiressurser - Utvekslingsformat for termbaser (TBX)_]: Standarden definerer et rammeverk for bl.a. hvordan (samlinger av) begrepsbeskrivelser skal kunne utveksles i maskinlesbare formater.
