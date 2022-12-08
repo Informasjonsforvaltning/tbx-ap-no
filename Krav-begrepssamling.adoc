@@ -9,7 +9,7 @@
 image::images/TBX-AP-NO_Begrepssamling.png[alt="Diagram med 15 bokser og piler i mellom. Innholdet er forklart i teksten."]
 
 
-`<tbx>` er roten til en TBX-fil. Den brukes til å representere en begrepssamling.
+`<tbx>` er roten til en TBX-fil. Den skal brukes til å representere en begrepssamling.
 
 Følgende skal tas med sammen med start-taggen av `<tbx>`:
 
@@ -21,7 +21,7 @@ Følgende skal tas med sammen med start-taggen av `<tbx>`:
 
 Denne standarden bruker bare `<fileDesc>`-delen av `<tbxHeader>`, og bare `<titleStmt>` og `<sourceDesc>` i `<fileDesc>`. `<titleStmt>` og `<fileDesc>` vil bli beskrevet i etterfølgende avsnitt.
 
-`<tbx>` _is the root of a TBX-file. It is used to represent a concept collection._
+`<tbx>` _is the root of a TBX-file. It shall be used to represent a concept collection._
 
 _The following shall be used with the start tag of `<tbx>`:_
 
@@ -51,9 +51,9 @@ _The name and description of the concept collection is specified in `<titleStmt>
 | TBX-klassifisering / _TBX Classification_ |p
 | Verdiområde / _Range_ |String
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å oppgi navnet til begrepssamlingen. Egenskapen bør gjentas når navnet er i flere språk.
+Egenskapen brukes til å oppgi navnet til begrepssamlingen. Egenskapen bør gjentas når navnet er på flere språk.
 
-_This property is used to specify the name of the concept collection. The property should be repeated when the name is in several languages._
+_This property is used to specify the name of the concept collection. The property should be repeated for parallel language versions of the name._
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk /  _Mandatory_ 
 |===
@@ -71,9 +71,9 @@ Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
 | TBX-klassifisering / _TBX Classification_ |p
 | Verdiområde / _Range_ |String
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å oppgi beskrivelse av begrepssamlingen. Egenskapen bør gjentas når teksten er i flere språk.
+Egenskapen brukes til å oppgi beskrivelse av begrepssamlingen. Egenskapen bør gjentas når teksten er på flere språk.
 
-_This property is used to specify the description of the concept collection. The property should be repeated when the text is in several languages._
+_This property is used to specify the description of the concept collection. The property should be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
@@ -123,9 +123,9 @@ _This property is used to refer to the publisher of the concept collection._
 | Multiplisitet / _Multiplicity_ |1..1
 | Kravnivå / _Requirement level_ |Obligatorisk /  _Mandatory_ 
 | Merknad / Note |
-Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
+Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[Enhetsregisterets organisasjonsnummer].
 
-_The organization’s identifier should be used, e.g. in accordance to https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[the organization number registered in the Central Coordinating Register for Legal Entities (CCR)]._
+_The organization’s identifier should be used, e.g. https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[the organization number registered in the Central Coordinating Register for Legal Entities (CCR)]._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
@@ -141,9 +141,9 @@ Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
 | TBX-klassifisering / _TBX Classification_ |p
 | Verdiområde / _Range_ |vcard:Organization or vcard:Group
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved spørsmål vedrørende begrepssamlingen. Det skal være maks. ett kontaktpunkt per språk, hvis det er ulike kontaktpunkter for f.eks. norske vs. internasjonale kontakter.
+Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved spørsmål om begrepssamlingen. Det skal være maks. ett kontaktpunkt per språk, hvis det er ulike kontaktpunkter for f.eks. norske vs. internasjonale kontakter.
 
-_This property is used to specify contact point which may be reached regarding the concept collection. There shall be maximum one contact point per language, when there are different contact points for e.g. Norwegian vs. international contacts._
+_This property is used to specify contact point that may be reached regarding the concept collection. There shall be maximum one contact point per language, when there are different contact points for e.g. Norwegian vs. international contacts._
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk /  _Mandatory_ 
 |===

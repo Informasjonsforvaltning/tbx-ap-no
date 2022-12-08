@@ -64,7 +64,7 @@ Eksempel i TBX-AP-NO (DCT style), NAVs begrep 975 («mødrekvote»):
 | Verdiområde / _Range_ |xref
 | Anvendelse / _Usage note_ |Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <<Begrep-publisert-av>>.
 
-_This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <<Begrep-publisert-av>>._
+_This property is used to refer to the organization responsible for the description of the concept and which is not the same as <<Begrep-publisert-av>>._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_| Anbefalt / _Recommended_
 |===
@@ -79,7 +79,7 @@ _This property is used to refer to the organization which is responsible for the
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |admin
 | Verdiområde / _Range_ |String
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato begrepet er gyldig fra og med.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi hvilken dato begrepet er gyldig fra og med.
 
  _This property is used to specify the date (inclusive) from which the concept is valid._
 | Multiplisitet / _Multiplicity_ |0..1
@@ -104,7 +104,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |admin
 | Verdiområde / _Range_ |String
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato begrepet er gyldig til og med.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi hvilken dato begrepet er gyldig til og med.
 
 _This property is used to specify the date (inclusively) through which the concept is valid._
 | Multiplisitet / _Multiplicity_ |0..1
@@ -171,9 +171,9 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 
 === <conceptEntry> | <adminGrp> (1..1) [[conceptEntry-adminGrp]]
 
-Denne `<adminGrp>` er obligatorisk og skal brukes til å oppgi opplysninger om virksomheten som har publisert begrepet og inkl. kontaktpunkt til virksomheten.
+Denne `<adminGrp>` er obligatorisk og skal brukes til å oppgi opplysninger om virksomheten som har publisert begrepet, inkl. kontaktpunkt til virksomheten.
 
-_This `<adminGrp>` is mandatory and shall be used til specify information about the organization which has published the concept and contact point to the organization._
+_This `<adminGrp>` is mandatory and shall be used til specify information about the organization which has published the concept, incl. contact point to the organization._
 
 ==== Begrep – publisert av <dct:publisher> (1..1) [[Begrep-publisert-av]]
 
@@ -183,7 +183,7 @@ _This `<adminGrp>` is mandatory and shall be used til specify information about 
 | Datakategori / _Data category_ |dct:publisher
 | PID |http://purl.org/dc/terms/publisher[http://purl.org/dc/terms/publisher]
 | TBX-nivå / _TBX level_ |conceptEntry
-| TBX-klassifisering / _TBX Classification_ |Admin
+| TBX-klassifisering / _TBX Classification_ |admin
 | Verdiområde / _Range_ |String
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til utgiveren av begrepet.
 
@@ -195,9 +195,9 @@ Denne egenskapen skal være i en `<adminGrp>` sammen med <<Begrep-kontaktpunkt>>
 
 _This property shall be within an `<adminGrp>` together with <<Begrep-kontaktpunkt>>._
 | Merknad 2 / _Note 2_|
-Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
+Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[Enhetsregisterets organisasjonsnummer].
 
-_The organization’s identifier should be used, e.g. in accordance to https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[the organization number registered in the Central Coordinating Register for Legal Entities (CCR)]._
+_The organization’s identifier should be used, e.g. https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[the organization number registered in the Central Coordinating Register for Legal Entities (CCR)]._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
@@ -219,7 +219,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 | TBX-klassifisering / _TBX Classification_ |adminNote
 | Verdiområde / _Range_ |vcard:Organization or vcard:Group
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved f.eks. spørsmål vedrørende begrepet.
+Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved f.eks. spørsmål om begrepet.
 
 _This property is used to specify a contact point which may be reached in case of e.g. questions about the concept._
 | Multiplisitet / _Multiplicity_ |1..n
@@ -249,9 +249,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 === <conceptEntry> | <transacGrp> (0..2) [[conceptEntry-transacGrp]]
 
 
-`<transacGrp>` her er anbefalt og bør brukes til å oppgi dato opprettet eller dato sist oppdatert som begge er anbefalte egenskaper.
+`<transacGrp>` her er anbefalt og brukes til å oppgi datoen når begrepet ble opprettet eller datoen da begrepet sist ble oppdatert, som begge er anbefalte egenskaper.
 
-`<transacGrp>` _here is recommended and should be used to specify date created or date last updated, which are recommended properties._
+`<transacGrp>` _here is recommended and is used to specify the date when the concept was created or the date when the concept was last modified, which are recommended properties._
 
 ==== Begrep – transaksjonstype <basic:transactionType> (1..1) [[Begrep-transaksjonstype]]
 
@@ -265,9 +265,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 | Verdiområde / _Range_ a|Picklist:
 
 * basic:origination
-** (PID http://datcatinfo.termweb.eu/datcat/DC-303) for dato opprettet / _date created_
+** (PID http://datcatinfo.termweb.eu/datcat/DC-303) for dato opprettet / _for date created_
 * basic:modification
-** (PID http://datcatinfo.termweb.eu/datcat/DC-305) for dato sist oppdatert / _date last updated_
+** (PID http://datcatinfo.termweb.eu/datcat/DC-305) for dato sist oppdatert / _for date last modified_
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi type transaksjon.
 
@@ -319,7 +319,7 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-transaksjonstype>>.
 
 `<descrip>` her er valgfri og kan brukes til å beskrive ulike begrepsrelasjoner som alle er valgfrie egenskaper, når det ikke er behov for å beskrive relasjonene med ytterligere egenskaper. Bruk `<descripGrp>` i `<langSec>` når det er behov for ytterligere egenskaper for relasjonen.
 
-`<descrip>` _here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use `<descripGrp>` in `<langSec>` when there is need for additional information about a concept relation._
+`<descrip>` _here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use `<descripGrp>` in `<langSec>` when there is a need for additional information about a concept relation._
 
 ==== Begrep – generaliserer <xkos:generalizes> (0..n) [[Begrep-generaliserer]]
 
@@ -342,13 +342,13 @@ Egenskapen/relasjonen kan også leses som «har spesifikt begrep».
 
 _This property/relation may also be read as “has specific concept”._
 | Merknad 2 / _Note 2_|
-Egenskapen/relasjonen er den inverse av <<Begrep-spesialiserer>>.
+Egenskapen/relasjonen er den motsatte av <<Begrep-spesialiserer>>.
 
 _This property/relation is the inverse of <<Begrep-spesialiserer>>._
 | Merknad 3 / _Note 3_|
 Bruk <<Begrep-har-generisk-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-_Use <<Begrep-har-generisk-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
+_Use <<Begrep-har-generisk-begrepsrelasjon>> when there is a need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som generaliserer begrep 974 («foreldrepengeperiode»):
@@ -380,13 +380,13 @@ Egenskapen/relasjonen kan også leses som «har generisk begrep».
 
 _This property/relation may also be read as “has generic concept”._
 | Merknad 2 / _Note 2_|
-Egenskapen/relasjonen er den inverse av <<Begrep-generaliserer>>.
+Egenskapen/relasjonen er den motsatte av <<Begrep-generaliserer>>.
 
 _This property/relation is the inverse of <<Begrep-generaliserer>>._
 | Merknad 3 / _Note 3_|
 Bruk <<Begrep-har-generisk-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-_Use <<Begrep-har-generisk-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
+_Use <<Begrep-har-generisk-begrepsrelasjon>> when there is a need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode») som spesifiserer begrep 625 («ytelsesperiode»):
@@ -418,13 +418,13 @@ Egenskapen/relasjonen kan også leses som «har helhetsbegrep».
 
 _This property/relation may also be read as “has comprehensive concept”._
 | Merknad 2 / _Note 2_|
- Denne egenskapen/relasjonen er den inverse av <<Begrep-inneholder>>.
+ Denne egenskapen/relasjonen er den motsatte av <<Begrep-inneholder>>.
 
 _This property/relation is the inverse of <<Begrep-inneholder>>._
 | Merknad 3 / _Note 3_|
 Bruk <<Begrep-har-partitiv-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-_Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
+_Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is a need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote») som er del av begrepet 974 («foreldrepengeperiode»):
@@ -456,13 +456,13 @@ Egenskapen/relasjonen kan også leses som «har delbegrep».
 
 _This property/relation may also be read as “has partitive concept”._
 | Merknad 2 / _Note 2_|
-Denne egenskapen/relasjonen er den inverse av <<Begrep-er-del-av>>.
+Denne egenskapen/relasjonen er den motsatte av <<Begrep-er-del-av>>.
 
 _This property/relation is the inverse of <<Begrep-er-del-av>>._
 | Merknad 3 / _Note 3_|
 Bruk <<Begrep-har-partitiv-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-_Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
+_Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is a need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode») som inneholder begrep 975 («mødrekvote»), begrep 976 («fellesperiode») og begrep 1467 («fedrekvote»):
@@ -488,7 +488,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode»)
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å referere til et annet begrep der det er nært samsvar mellom disse begrepene.
 
-_This property is used to refer to another concept where there is a close match between this and the other concept._
+_This property is used to refer to another concept where there is a close match between the two concepts._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 |===
@@ -514,7 +514,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å referere til et annet begrep der det er eksakt samsvar mellom disse begrepene.
 
-_This property is used to refer to another concept where this is an exact match between this and the other concept._
+_This property is used to refer to another concept where this is an exact match between the two concepts._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 |===
@@ -544,7 +544,7 @@ _This property is used to refer to a concept that this concept replaces._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad / _Note_ |
-Denne egenskapen/relasjonen er den inverse av <<Begrep-er-erstattet-av>>.
+Denne egenskapen/relasjonen er den motsatte av <<Begrep-er-erstattet-av>>.
 
 _This property/relation is the inverse of <<Begrep-er-erstattet-av>>._
 |===
@@ -574,7 +574,7 @@ _This property is used to refer to a concept that this concept is replaced by._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad / _Note_ |
-Denne egenskapen/relasjonen er den inverse av <<Begrep-erstatter>>.
+Denne egenskapen/relasjonen er den motsatte av <<Begrep-erstatter>>.
 
 _This property/relation is the inverse of <<Begrep-erstatter>>._
 |===
@@ -627,7 +627,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi et annet begrep som begrepet er relatert til.
 
-_This property is used to refer to a concept which this concept is related to._
+_This property is used to refer to a concept that this concept is related to._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad 1 / _Note 1_|
@@ -641,7 +641,7 @@ _Use rather one of the other semantically more precise associative concept relat
 | Merknad 3 / _Note 3_|
 Bruk <<Begrep-har-assosiativ-begrepsrelasjon>> når det er behov for å beskrive relasjonsrollen begrepet har.
 
-_Use <<Begrep-har-assosiativ-begrepsrelasjon>> when there is need to describe the relation role that the concept has._
+_Use <<Begrep-har-assosiativ-begrepsrelasjon>> when there is a need to describe the relation role that the concept has._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 170 («medlem i folketrygden») som er relatert til begrep 1696 («trygdeavgift»):

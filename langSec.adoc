@@ -11,13 +11,13 @@ Restriksjon 1: Det skal være maks. én `<langSec>` per skriftspråk per begrep 
 
 Restriksjon 2: For hvert begrep (`<conceptEntry>`) skal det finnes én `<langSec>` for bokmål og én `<langSec>` for nynorsk, og begge skal ha én term (`<termSec>`) der <<Term-betegnelsesstatus>> har verdi `basic:preferredTermAdmnSts` (= anbefalt term). Dette fordi anbefalt term skal finnes på både bokmål og nynorsk. 
 
-Restriksjon 3: Det skal være min. én `<lagSec>` som inneholder én term (`<termSec>`) der <<Term-betegnelsesstatus>> har verdi `basic:preferredTermAdmnSts` (= anbefalt term) og som har definisjon. 
+Restriksjon 3: Det skal være min. én `<lagSec>` som inneholder én term (`<termSec>`) der <<Term-betegnelsesstatus>> har verdi `basic:preferredTermAdmnSts` (= anbefalt term), og som har definisjon. 
 
-`<langSec>` _is mandatory and shall be used to represent terms and definitions for a given concept in a given language. `<langSec>` may also be used to represent optional concept relations when there is need to describe the relations with details. The various parts of `<langSec>` is described in the following sections. The language code is specified in the start tag of `<langSec>` and will apply to the whole `<langSec>`, see the example below._
+`<langSec>` _is mandatory and shall be used to represent terms and definitions for a given concept in a given language. `<langSec>` may also be used to represent optional concept relations when there is a need to describe the relations with details. The various parts of `<langSec>` is described in the following sections. The language code is specified in the start tag of `<langSec>` and will apply to the whole `<langSec>`, see the example below._
 
 _Restriction 1: There shall be max. one `<langSec>` per language per concept (`<conceptEntry>`)._
 
-_Restriction 2: For each concept (`<conceptEntry>`) there shall be one `<langSec>` for Norwegian Bokmål and one `<langSec>` for Norwegian Nynorsk, and both shall have a term (`<termSec>`) where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts` (= preferred term). This is because "preferred term" shall be in both Norwegian Bokmål and in Norwegian Nynorsk._
+_Restriction 2: For each concept (`<conceptEntry>`) there shall be one `<langSec>` for Norwegian bokmål and one `<langSec>` for Norwegian nynorsk, and both shall have a term (`<termSec>`) where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts` (= preferred term). This is because "preferred term" shall be in both Norwegian bokmål and in Norwegian nynorsk._
 
 _Restriction 3: There shall be min. one `<langSec>` which has a term (`<termSec>`) where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts` (= preferred term), and which has definition._
 
@@ -38,11 +38,11 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 
 `<termSec>` er obligatorisk og skal brukes til å beskrive termer i det gitte språk (`<langSec>`) for det gitte begrepet (`<conceptEntry>`).
 
-Restriksjon: En `<langSec>` kan ha flere `<termSec>` men maks. én der <<Term-betegnelsesstatus>> har verdi `basic:preferredTermAdmnSts`.
+Restriksjon: En `<langSec>` kan ha flere `<termSec>` men maks. én der <<Term-betegnelsesstatus>> har verdi `basic:preferredTermAdmnSts` (= anbefalt term).
 
-`<termSec>` _is mandatory and shall be used to describes terms in that given language (`<langSec>``) for that given concept (``<conceptEntry>`)._
+`<termSec>` _is mandatory and shall be used to describe terms in that given language (`<langSec>`) for that given concept (`<conceptEntry>`)._
 
-_Resctriction: A `<langSec>` may have several `<termSec>` but max. one where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts`._
+_Resctriction: A `<langSec>` may have several `<termSec>` but max. one where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts` (= preferred term)._
 
 ==== <langSec> | Term <termSec> | tekst <term> (1..1) [[Term-tekst]]
 
@@ -76,9 +76,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 
 ==== <langSec> | Term <termSec>| <termNote> (1..1) [[termSec-termNote]]
 
-`<termNote>` brukes til å oppgi (obligatorisk) https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[betegnelsesstatus] (anbefalt term, tillatt term, frarådd term eller datastrukturterm).
+`<termNote>` her er obligatorisk, og skal brukes til å oppgi https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[betegnelsesstatus] (anbefalt term, tillatt term, frarådd term eller datastrukturterm).
 
-`<termNote>` _is used to specify (mandatory) the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[acceptability rating] of the term (preferred term, admitted term, deprecated term or data structure label)._
+`<termNote>` _here is mandatory, and shall be used to specify the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35353[acceptability rating] of the term (preferred term, admitted term, deprecated term or data structure label)._
 
 ===== Term - betegnelsesstatus <basic:administrativeStatus> (1..1) [[Term-betegnelsesstatus]]
 
@@ -92,13 +92,13 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 | Verdiområde / _Range_  a|Picklist:
 
 * basic:preferredTermAdmnSts
-** PID http://datcatinfo.termweb.eu/datcat/DC-72, for anbefalt term / _preferred term_
+** PID http://datcatinfo.termweb.eu/datcat/DC-72, for anbefalt term / _for preferred term_
 * basic:admittedTermAdmnSts
-** PID http://datcatinfo.termweb.eu/datcat/DC-73, for tillatt term / _admitted term_
+** PID http://datcatinfo.termweb.eu/datcat/DC-73, for tillatt term / _for admitted term_
 * basic:deprecatedTermAdmnSts
-** PID http://datcatinfo.termweb.eu/datcat/DC-74, for frarådd term / _deprecated (not recommended) term_
+** PID http://datcatinfo.termweb.eu/datcat/DC-74, for frarådd term / _for deprecated (not recommended) term_
 * skosno:dataStructureTerm
-** PID https://data.norge.no/vocabulary/skosno#dataStructureTerm, for datastrukturterm / _data structure term_
+** PID https://data.norge.no/vocabulary/skosno#dataStructureTerm, for datastrukturterm / _for data structure term_
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi betegnelsesstatus til termen, dvs. om termen er en anbefalt term, tillatt term, frarådd term eller datastrukturterm.
 
@@ -125,13 +125,13 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 «mødrekvote»:
 
 Denne `<descripGrp>` er anbefalt og bør brukes til å oppgi definisjon til begrepet i det gitte skriftspråket.
 
-Restriksjon 1: Det skal være min. én `<langSec>` som inneholder Definisjon (en slik `<descripGrp>`). Med andre ord: ethvert begrep skal ha minst én definisjon.
+Restriksjon 1: Det skal være min. én `<langSec>` som inneholder Definisjon (denne `<descripGrp>`). Med andre ord: ethvert begrep skal ha minst én definisjon.
 
-Restriksjon 2: Det kan oppgis maks. definisjon (denne `<descripGrp>`) per <<Definisjon-målgruppe>> per skriftspråk (`<langSec>`).
+Restriksjon 2: Det kan oppgis maks. én definisjon (denne `<descripGrp>`) per <<Definisjon-målgruppe>> per skriftspråk (`<langSec>`).
 
 _This `<descripGrp>` is recommended and should be used to specify the definition of the concept in that given language._
 
-_Restriction 1: There shall be min. one `<langSec>` which contains a Definisjon (such a `<descripGrp>`). In other words, every concept shall have min. one definition._
+_Restriction 1: There shall be min. one `<langSec>` which contains a Definisjon (this `<descripGrp>`). In other words, every concept shall have min. one definition._
 
 _Restriction 2: There may be max. one definition (this `<descripGrp>`) per <<Definisjon-målgruppe>> per language (`<langSec>`)._
 
@@ -148,7 +148,7 @@ _Restriction 2: There may be max. one definition (this `<descripGrp>`) per <<Def
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi definisjonen i det gitte språket.
 
-_This property is used to specify the definition in the given language._
+_This property is used to specify the definition in that given language._
 | Multiplisitet / _Multiplicity_  |1..1
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |===
@@ -182,7 +182,7 @@ _When making the concept description available outside the organization, and if 
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi målgruppen for definisjonen, oppgitt som kodet verdi.
 
-_This property is used to specify the audience of the definition, as coded value._
+_This property is used to specify the audience of the definition, as a coded value._
 | Multiplisitet / _Multiplicity_  |0..1
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -280,7 +280,7 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Definisjon-forhold-til-kilde>>.
 
 `<admin>` her er valgfri og kan brukes til å beskrive begrepets status eller versjonsnoter til begrepets aktuelle versjon.
 
-`<admin>` _here optional and may be used to describe the status of the concept or version note(s) about the current version of the concept._
+`<admin>` _here is optional and may be used to describe the status of the concept or version note(s) about the current version of the concept._
 
 ==== Begrep – status <adms:status> (0..1) [[Begrep-status]]
 
@@ -360,7 +360,7 @@ _This `<descrip>` here is used to describe the following information about the c
 | TBX-klassifisering / _TBX Classification_  |descrip
 | Verdiområde / _Range_  |String
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å oppgi eksempel på begrepet.
+Egenskapen brukes til å oppgi eksempler på begrepet.
 
 _This property is used to specify examples of the concept._
 | Multiplisitet / _Multiplicity_  |0..n
@@ -388,7 +388,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | TBX-klassifisering / _TBX Classification_  |descrip
 | Verdiområde / _Range_  |String
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å oppgi merknad(er) til begrepet.
+Egenskapen brukes til å oppgi utfyllende forklaring til begrepet til begrepet.
 
 _This property is used to specify notes regarding the concept._
 | Multiplisitet / _Multiplicity_  |0..n
@@ -418,13 +418,13 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi fagområde(r) til begrepet.
 
-_This property is used to subject field(s) to the concept._
+_This property is used to specify subject field(s) to the concept._
 | Multiplisitet / _Multiplicity_  |0..n
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 | Merknad / _Note_ | 
 Fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, en tjenestekjede eller lignende.
 
-_A subject field may represent an academic discipline, an application area, a produkt, a service chain or suchlike._
+_A subject field may represent an academic discipline, an application area, a product, a service chain or suchlike._
 |===
 
 Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
@@ -471,7 +471,7 @@ Eksempel i TBX-AP-NO (DCT style), for SSBs begrep «sivilstand»:
 
 Denne `<descripGrp>` er valgfri og kan brukes til å beskrive en assosiativ relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å beskrive relasjonen med relasjonsrollen begrepet har.
 
-_This `<descripGrp>` are optional and may be used to describe an associative relation that the current concept has with other concepts, when there is need to describe the relation with the relation role that the concept has._
+_This `<descripGrp>` is optional and may be used to describe an associative relation that the current concept has with other concepts, when there is a need to describe the relation with the relation role that the concept has._
 
 ==== Begrep – er relatert til <skos:related> (1..n) [[Begrep-er-relatert-til-med-relasjonsrolle]]
 
@@ -486,7 +486,7 @@ _This `<descripGrp>` are optional and may be used to describe an associative rel
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi et annet begrep som begrepet er relater til.
 
-_This property is used to refer to a concept which this concept is related to._
+_This property is used to refer to another concept that this concept is related to._
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 | *Merknad / _Note_ |
@@ -517,7 +517,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksemeplbegrep:
 | PID |https://data.norge.no/vocabulary/skosno#relationRole
 | TBX-nivå / _TBX level_  |langSec
 | TBX-klassifisering / _TBX Classification_  |descripNote
-| Verdiområde / _Range_  |String or picklist
+| Verdiområde / _Range_  |String or Picklist
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi relasjonsrollen begrepet har i den aktuelle assosiative relasjonen, enten som kodet verdi eller som tekst.
 
@@ -538,7 +538,7 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-er-relatert-til-med-relasjon
 
 Denne `<descripGrp>` er valgfri og kan brukes til å beskrive en generisk relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å beskrive relasjonen med https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-_This `<descripGrp>` is optional and may be used to describe a generic relation that the current concept has with other concepts, when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
+_This `<descripGrp>` is optional and may be used to describe a generic relation that the current concept has with other concepts, when there is a need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 
 
 ==== Begrep – generaliserer <xkos:generalizes> (1..n) [[Begrep-generaliserer-med-inndelingskriterium]]
@@ -554,7 +554,7 @@ _This `<descripGrp>` is optional and may be used to describe a generic relation 
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi et annet begrep som begrepet generaliserer.
 
-_This property is used to refer to a concept which this concept generalizes._
+_This property is used to refer to another concept that this concept generalizes._
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | 
@@ -566,7 +566,7 @@ Egenskapen/relasjonen kan også leses som «har spesifikt begrep».
 
 _This property/relation may also be read as “has specific concept”._
 | Merknad 3 / _Note 3_ |
-Egenskapen/relasjonen er den inverse av <<Begrep-spesialiserer-med-inndelingskriterium>>.
+Egenskapen/relasjonen er den motsatte av <<Begrep-spesialiserer-med-inndelingskriterium>>.
 
 _This property/relation is the inverse of <<Begrep-spesialiserer-med-inndelingskriterium>>._
 |===
@@ -596,7 +596,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som g
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi et annet begrep som begrepet spesialiserer.
 
-_This property is used to refer to a concept that this concept specializes._
+_This property is used to refer to another concept that this concept specializes._
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ |
@@ -608,7 +608,7 @@ Egenskapen/relasjonen kan også leses som «har generisk begrep».
 
 _This property/relation may also be read as “has generic concept”._
 | Merknad 3 / _Note 3_ |
-Egenskapen/relasjonen er den inverse av <<Begrep-generaliserer-med-inndelingskriterium>>.
+Egenskapen/relasjonen er den motsatte av <<Begrep-generaliserer-med-inndelingskriterium>>.
 
 _This property/relation is the inverse of <<Begrep-generaliserer-med-inndelingskriterium>>._
 |===
@@ -660,7 +660,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 
 Denne `<descripGrp>` er valgfri og kan brukes til å beskrive en partitiv relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å beskrive  https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-_This `<descripGrp>` is optional and may be used to describe a partitive relation that the concept has with other concepts, when there is need to describe https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
+_This `<descripGrp>` is optional and may be used to describe a partitive relation that the current concept has with other concepts, when there is a need to describe https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 
 ==== Begrep – er del av <xkos:isPartOf> (1..n) [[Begrep-er-del-av-med-inndelingskriterium]]
 
@@ -675,7 +675,7 @@ _This `<descripGrp>` is optional and may be used to describe a partitive relatio
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi et annet begrep som begrepet er del av.
 
-_This property is used to refer to a concept which this concept is part of._
+_This property is used to refer to another concept that this concept is part of._
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ |
@@ -687,12 +687,12 @@ Egenskapen/relasjonen kan også leses som «har helhetsbegrep».
 
 _This property/relation may also be read as “has comprehensive concept”._
 | Merknad 3 / _Note 3_ |
-Egenskapen/relasjonen er den inverse av <<Begrep-inneholder-med-inndelingskriterium>>.
+Egenskapen/relasjonen er den motsatte av <<Begrep-inneholder-med-inndelingskriterium>>.
 
 _This property/relation is the inverse of <<Begrep-inneholder-med-inndelingskriterium>>._
 |===
 
-Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote») som er del av begrep 974(«foreldrepengeperiode»):
+Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote») som er del av begrep 974 («foreldrepengeperiode»):
 [source,xml]
 -----
 <conceptEntry id="BEGREP-975">
@@ -717,7 +717,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote») som er d
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi et annet begrep som begrepet inneholder (består av).
 
-_This property is used to refer to a concept which this concept has as part._
+_This property is used to refer to another concept that this concept has as part._
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ |
@@ -729,7 +729,7 @@ Egenskapen/relasjonen kan også leses som «har delbegrep».
 
 _This property/relation may also be read as “has partitive concept”._
 | Merknad 3 / _Note 3_ |
-Egenskapen/relasjonen er den inverse av <<Begrep-er-del-av-med-inndelingskriterium>>.
+Egenskapen/relasjonen er den motsatte av <<Begrep-er-del-av-med-inndelingskriterium>>.
 
 _This property/relation is the inverse of <<Begrep-er-del-av-med-inndelingskriterium>>._
 |===
