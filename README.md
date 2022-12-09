@@ -1,6 +1,6 @@
 # TBX-AP-NO - Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX
 
-For revisjon av _Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX_.
+For forvaltning av TBX-AP-NO.
 
 Gjeldende versjon av standarden blir publisert til <https://data.norge.no/specification/tbx-ap-no/>
 
