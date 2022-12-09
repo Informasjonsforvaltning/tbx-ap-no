@@ -64,7 +64,7 @@ Eksempel i TBX-AP-NO (DCT style), NAVs begrep 975 («mødrekvote»):
 | Verdiområde / _Range_ |xref
 | Anvendelse / _Usage note_ |Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <<Begrep-publisert-av>>.
 
-_This property is used to refer to the organization responsible for the description of the concept and which is not the same as <<Begrep-publisert-av>>._
+_This property is used to refer to the organization responsible for the description of the concept, which is not the same as <<Begrep-publisert-av>>._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_| Anbefalt / _Recommended_
 |===
@@ -75,7 +75,7 @@ _This property is used to refer to the organization responsible for the descript
 |===
 | Navn / _Name_ |dato gyldig fra og med / _date valid from, inclusive_
 | Datakategori / _Data category_ |euvoc:startDate
-| PID |http://publications.europa.eu/startDate
+| PID | https://showvoc.op.europa.eu/#/datasets/OP_EuVoc_Ontology/data?resId=http:%2F%2Fpublications.europa.eu%2Fontology%2Feuvoc%23startDate[http://publications.europa.eu/startDate]
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |admin
 | Verdiområde / _Range_ |String
@@ -100,7 +100,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 |===
 | Navn / _Name_ |dato gyldig til og med / _date valid through, inclusive_
 | Datakategori / _Data category_ |euvoc:endDate
-| PID |http://publications.europa.eu/endDate
+| PID | https://showvoc.op.europa.eu/#/datasets/OP_EuVoc_Ontology/data?resId=http:%2F%2Fpublications.europa.eu%2Fontology%2Feuvoc%23endDate[http://publications.europa.eu/endDate]
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |admin
 | Verdiområde / _Range_ |String
@@ -125,13 +125,13 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 |===
 | Navn / _Name_ |versjonsnummer / _version number_
 | Datakategori / _Data category_ |owl:versionInfo
-| PID |https://www.w3.org/TR/owl-ref/#versionInfo-def[https://www.w3.org/TR/owl-ref/#versionInfo-def]
+| PID |https://www.w3.org/TR/owl-ref/#versionInfo-def[http://www.w3.org/2002/07/owl#versionInfo]
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |admin
 | Verdiområde / _Range_ |String
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi versjonsnummeret til begrepet.
 
-_This property is used to specify the version number to the concept._
+_This property is used to specify the version number of the concept._
 | Multiplisitet / _Multiplicity_ |0..1
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 |===
@@ -156,7 +156,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Verdiområde / _Range_ |ref or xref
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til begrepssamlingen begrepet inngår i.
 
-_This property is used to refer to the concept collection which the concept is a member of._
+_This property is used to refer to the concept collection that the concept is a member of._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 |===
@@ -173,7 +173,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 
 Denne `<adminGrp>` er obligatorisk og skal brukes til å oppgi opplysninger om virksomheten som har publisert begrepet, inkl. kontaktpunkt til virksomheten.
 
-_This `<adminGrp>` is mandatory and shall be used til specify information about the organization which has published the concept, incl. contact point to the organization._
+_This `<adminGrp>` is mandatory and shall be used til specify information about the organization that has published the concept, incl. contact point to the organization._
 
 ==== Begrep – publisert av <dct:publisher> (1..1) [[Begrep-publisert-av]]
 
@@ -214,7 +214,7 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 |===
 | Navn / _Name_ |kontaktpunkt / _contact point_
 | Datakategori / _Data category_ |dcat:contactPoint
-| PID |http://www.w3.org/ns/dcat#contactPoint
+| PID | https://www.w3.org/TR/vocab-dcat-2/#Property:resource_contact_point[http://www.w3.org/ns/dcat#contactPoint]
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |adminNote
 | Verdiområde / _Range_ |vcard:Organization or vcard:Group
@@ -249,9 +249,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 === <conceptEntry> | <transacGrp> (0..2) [[conceptEntry-transacGrp]]
 
 
-`<transacGrp>` her er anbefalt og brukes til å oppgi datoen når begrepet ble opprettet eller datoen da begrepet sist ble oppdatert, som begge er anbefalte egenskaper.
+Denne `<transacGrp>` er anbefalt og brukes til å oppgi datoen da begrepet ble opprettet eller datoen da begrepet sist ble oppdatert, som begge er anbefalte egenskaper.
 
-`<transacGrp>` _here is recommended and is used to specify the date when the concept was created or the date when the concept was last modified, which are recommended properties._
+_This `<transacGrp>` is recommended and is used to specify the date when the concept was created or the date when the concept was last modified, which are recommended properties._
 
 ==== Begrep – transaksjonstype <basic:transactionType> (1..1) [[Begrep-transaksjonstype]]
 
@@ -259,15 +259,15 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 |===
 | Navn / _Name_ |transaksjonstype / _transaction type_
 | Datakategori / _Data category_ |basic:transactionType
-| PID |http://datcatinfo.termweb.eu/datcat/DC-1689
+| PID | `\http://datcatinfo.termweb.eu/datcat/DC-1689`
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |transac
 | Verdiområde / _Range_ a|Picklist:
 
 * basic:origination
-** (PID http://datcatinfo.termweb.eu/datcat/DC-303) for dato opprettet / _for date created_
+** (PID `\http://datcatinfo.termweb.eu/datcat/DC-303`) for dato opprettet / _for date created_
 * basic:modification
-** (PID http://datcatinfo.termweb.eu/datcat/DC-305) for dato sist oppdatert / _for date last modified_
+** (PID `\http://datcatinfo.termweb.eu/datcat/DC-305`) for dato sist oppdatert / _for date last modified_
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi type transaksjon.
 
@@ -297,7 +297,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 |===
 | Navn / _Name_ |transaksjonsdato / _transaction date_
 | Datakategori / _Data category_ |date
-| PID |http://datcatinfo.termweb.eu/datcat/DC-4335
+| PID | `\http://datcatinfo.termweb.eu/datcat/DC-4335`
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |date
 | Verdiområde / _Range_ |String
@@ -319,7 +319,7 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-transaksjonstype>>.
 
 `<descrip>` her er valgfri og kan brukes til å beskrive ulike begrepsrelasjoner som alle er valgfrie egenskaper, når det ikke er behov for å beskrive relasjonene med ytterligere egenskaper. Bruk `<descripGrp>` i `<langSec>` når det er behov for ytterligere egenskaper for relasjonen.
 
-`<descrip>` _here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use `<descripGrp>` in `<langSec>` when there is a need for additional information about a concept relation._
+_The `<descrip>` here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use `<descripGrp>` in `<langSec>` when there is a need for additional information about the concept relation._
 
 ==== Begrep – generaliserer <xkos:generalizes> (0..n) [[Begrep-generaliserer]]
 
@@ -332,9 +332,9 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-transaksjonstype>>.
 | TBX-klassifisering / _TBX Classification_ |descrip
 | Verdiområde / _Range_ |ref or xref
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å referere til et annet begrep som dette begrepet generaliserer. Begrepet er https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36721[det generiske begrepet] og det andre begrepet er https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36722[det spesifikke begrepet], i en generisk relasjon mellom disse.
+Egenskapen brukes til å referere til et annet begrep som dette begrepet generaliserer. Begrepet er https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet] og det andre begrepet er https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet], i en generisk relasjon mellom disse.
 
-_This property is used to refer to another concept that this concept generalizes. This concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36721[generic concept] and the other concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36722[specific concept], in a generic concept relation between the two concepts._
+_This property is used to refer to another concept that this concept generalizes. This concept is the https://termbasen.standard.no/term/165575654205842/eng[generic concept] and the other concept is the https://termbasen.standard.no/term/165575654205860/eng[specific concept], in a generic concept relation between the two concepts._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad 1 / _Note 1_|
@@ -370,9 +370,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 625 («ytelsesperiode») som g
 | TBX-klassifisering / _TBX Classification_ |descrip
 | Verdiområde / _Range_ |ref or xref
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å referere til et annet begrep som dette begrepet spesialiserer. Begrepet er https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36722[det spesifikke begrepet] og det andre begrepet er https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36721[det generiske begrepet], i en generisk relasjon mellom disse.
+Egenskapen brukes til å referere til et annet begrep som dette begrepet spesialiserer. Begrepet er https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet] og det andre begrepet er https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet], i en generisk relasjon mellom disse.
 
-_This property is used to refer to another concept that this concept specializes. This concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36722[specific concept] and the other concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36721[generic concept], in a generic concept relation between the two concepts._
+_This property is used to refer to another concept that this concept specializes. This concept is the https://termbasen.standard.no/term/165575654205860/eng[specific concept] and the other concept is the https://termbasen.standard.no/term/165575654205842/eng[generic concept], in a generic concept relation between the two concepts._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad 1 / _Note 1_|
@@ -408,9 +408,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 974 («foreldrepengeperiode»)
 | TBX-klassifisering / _TBX Classification_ |descrip
 | Verdiområde / _Range_ |ref or xref
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å referere til et annet begrep som dette begrepet er en el del av. Begrepet er et https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35343[delbegrep] og det andre begrepet https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35342[helhetsbegrepet], i en partitiv relasjon mellom disse.
+Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er del av. Begrepet er et https://termbasen.standard.no/term/165575551206237/nob[delbegrep], og det andre begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet], i en partitiv relasjon mellom disse.
 
-_This property is used to refer to another concept that this concept is a part of. This concept is a https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35343[partitive concept] and the other concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35342[comprehensive concept], in a partitive concept relation between the two concepts._
+_This property is used to refer to the concept that this concept is a part of. This concept is a https://termbasen.standard.no/term/165575551206237/eng[partitive concept] and the other concept is the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept], in a partitive concept relation between the two concepts._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad 1 / _Note 1_|
@@ -446,9 +446,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote») som er d
 | TBX-klassifisering / _TBX Classification_ |descrip
 | Verdiområde / _Range_ |ref or xref
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35342[helhetsbegrepet] og det andre begrepet https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35343[delbegrepet], i en partitiv relasjon mellom disse.
+Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet] og det andre begrepet https://termbasen.standard.no/term/165575551206237/nob[delbegrepet], i en partitiv relasjon mellom disse.
 
-_This property is used to refer to another concept that this concept has as a part. This concept is the https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35342[comprehensive concept] and the other concept is a https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=35343[partitive concept], in a partitive concept relation between the two concepts._
+_This property is used to refer to the concept that this concept has as a part. This concept is the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept] and the other concept is the https://termbasen.standard.no/term/165575551206237/eng[partitive concept], in a partitive concept relation between the two concepts._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad 1 / _Note 1_|
@@ -514,7 +514,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å referere til et annet begrep der det er eksakt samsvar mellom disse begrepene.
 
-_This property is used to refer to another concept where this is an exact match between the two concepts._
+_This property is used to refer to another concept where there is an exact match between the two concepts._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 |===
@@ -540,7 +540,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å referere til et annet begrep som dette begrepet erstatter.
 
-_This property is used to refer to a concept that this concept replaces._
+_This property is used to refer to another concept that this concept replaces._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad / _Note_ |
@@ -570,7 +570,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å referere til et annet begrep som dette begrepet er erstattet av.
 
-_This property is used to refer to a concept that this concept is replaced by._
+_This property is used to refer to another concept that this concept is replaced by._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 | Merknad / _Note_ |
@@ -593,7 +593,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 |===
 | Navn / _Name_ |se også / _see also_
 | Datakategori / _Data category_ |rdfs:seeAlso
-| PID |http://www.w3.org/2000/01/rdf-schema#seeAlso
+| PID | https://www.w3.org/TR/rdf-schema/#ch_seealso[http://www.w3.org/2000/01/rdf-schema#seeAlso]
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |descrip
 | Verdiområde / _Range_ |ref or xref
@@ -625,7 +625,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | TBX-klassifisering / _TBX Classification_ |descrip
 | Verdiområde / _Range_ |ref or xref
 | Anvendelse / _Usage note_ |
-Egenskapen brukes til å oppgi et annet begrep som begrepet er relatert til.
+Egenskapen brukes til å referere til et annet begrep som begrepet er relatert til.
 
 _This property is used to refer to a concept that this concept is related to._
 | Multiplisitet / _Multiplicity_ |0..n
