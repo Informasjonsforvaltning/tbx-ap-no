@@ -16,8 +16,8 @@ Følgende skal tas med sammen med start-taggen av `<tbx>`:
 * `xmlns="urn:iso:std:iso:30042:ed-2"` som refererer til ISO 30042:2019
 * `style="dct"` eller `style="dca"` som forteller hvilken stil som er brukt i filen
 * `type="TBX-AP-NO-v2"`, som refererer denne versjonen av TBX-AP-NO
-* `xml:lang="nb"` for bokmål, `"nn"` for nynorsk, `"en"` for engelsk osv., som forteller hvilket hovedspråk som er brukt i filen, som kan overstyres av språkkoden oppgitt i den enkelte `<langSec>`
-* når `style="dct"` er brukt, skal navnerom oppgis for alle prefiksene som er brukt i filen, f.eks. `xmlns:basic=http://www.tbxinfo.net/ns/basic`, se <<Navnerom>> for alle prefiksene som er brukt i denne standarden, med tilhørende navnerom
+* `xml:lang="nb"` for bokmål, `"nn"` for nynorsk, `"en"` for engelsk osv., som forteller hvilket hovedspråk som er brukt i filen (språkkoden oppgitt her kan overstyres av språkkoden oppgitt i den enkelte `<langSec>`)
+* hvis `style="dct"` brukes, skal navnerom oppgis for alle prefiksene som er brukt i filen, f.eks. `xmlns:basic=http://www.tbxinfo.net/ns/basic`, se <<Navnerom>> for alle prefiksene som er brukt i denne standarden med tilhørende navnerom
 
 Denne standarden bruker bare `<fileDesc>`-delen av `<tbxHeader>`, og bare `<titleStmt>` og `<sourceDesc>` i `<fileDesc>`. `<titleStmt>` og `<fileDesc>` vil bli beskrevet i etterfølgende avsnitt.
 
@@ -28,17 +28,17 @@ _The following shall be used with the start tag of `<tbx>`:_
 * `xmlns="urn:iso:std:iso:30042:ed-2"` _which refers to ISO 30042:2019_
 * `style="dct"` _or_ `style="dca"` _which specifies the style used in the file_
 * `type="TBX-AP-NO-v2"` _which refers to this version of TBX-AP-NO_
-* `xml:lang="nb"` _for Norwegian bokmål, `"nn"` for Norwegian nynorsk, `"en"` for English etc., which specifies the main language that is used in the file, which may be overridden by the language code given in the_ `<langSec>`
-* _when `style="dct"` is used, name spaces for all prefixes that are used in the file shall be given, e.g., `xmlns:basic=http://www.tbxinfo.net/ns/basic`, see <<Navnerom>> for all prefixes that are used in this standard with corresponding name spaces_
+* `xml:lang="nb"` _for Norwegian bokmål, `"nn"` for Norwegian nynorsk, `"en"` for English etc., which specifies the main language that is used in the file (the language code specified here may be overridden by the language code given in the_ `<langSec>`)
+* _if `style="dct"` is used, name spaces for all prefixes that are used in the file shall be given, e.g., `xmlns:basic=http://www.tbxinfo.net/ns/basic`, see <<Navnerom>> for all prefixes that are used in this standard with corresponding name spaces_
 
 
 _This standard only uses the `<fileDesc>`-part of `<tbxHeader>`, and only `<titleStmt>` and `<sourceDesc>` in `<fileDesc>`. `<titleStmt>` and `<sourceDesc>` will be described in the following sections._
 
 === <titleStmt> (1..1) [[titleStmt]]
 
-Navn og beskrivelse til begrepssamlingen oppgis i `<titleStmt>`.
+`<titleStmt>` er obligatorisk. Navn og beskrivelse til begrepssamlingen oppgis i `<titleStmt>`.
 
-_The name and description of the concept collection is specified in `<titleStmt>`._
+`<titleStmt>` _is mandatory. The name and description of the concept collection is specified in `<titleStmt>`._
 
 ==== Begrepssamling – navn <dct:title> (1..n) [[Begrepssamling-navn]]
 
@@ -82,9 +82,9 @@ Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
 
 === <sourceDesc> (1..1) [[sourceDesc]]
 
-Begrepssamlingens identifikator, virksomheten som publiserte begrepssamlingen og kontaktpunkt(er) til virksomheten oppgis i `<sourceDesc>`.
+`<sourceDesc>` er obligatorisk. Begrepssamlingens identifikator, virksomheten som publiserte begrepssamlingen og kontaktpunkt(er) til virksomheten oppgis i `<sourceDesc>`.
 
-_The concept collection's identifier, publisher and contact point to the publisher are specified in `<sourceDesc>`._
+`<sourceDesc>` _is mandatory. The concept collection's identifier, publisher and contact point to the publisher are specified in `<sourceDesc>`._
 
 ==== Begrepssamling – identifikator <dct:identifier> (1..1) [[Begrepssamling-identifikator]]
 
