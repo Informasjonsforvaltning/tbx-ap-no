@@ -14,11 +14,11 @@ Standarden skal sikre at begreper som forvaltes av offentlig forvaltning, beskri
 
 === Omfang og avgrensinger [[Omfang-og-avgrensinger]]
 
-Standarden spesifiserer hvordan begrepsbeskrivelser som er utformet i henhold til kravene i kapittel 2 i https://data.norge.no/specification/skos-ap-no-begrep[_Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_], gjøres tilgjengelige i maskinlesbare formater i henhold til ISO-standarden TBX. Standarden spesifiserer ikke krav til et eventuelt IT-system for å forvalte begrepsbeskrivelser.
+Standarden spesifiserer hvordan begrepsbeskrivelser som er utformet i henhold til kravene i https://data.norge.no/specification/skos-ap-no-begrep#Del1[kapittel 2 i _Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_], gjøres tilgjengelige i maskinlesbare formater i henhold til ISO-standarden TBX. Standarden spesifiserer ikke krav til et eventuelt IT-system for å forvalte begrepsbeskrivelser.
 
-Standarden brukes når en virksomhet skal tilgjengeliggjøre begrepsbeskrivelser som de selv forvalter, i et maskinlesbart format og i henhold til TBX-standarden. Standarden er basert på og ikke en direkte oversettelse av ISO-standarden TBX. Standarden er en norsk applikasjonsprofil av TBX, derfor kortnavnet TBX-AP-NO. Engelske navn og tekster som er tatt med i standarden, er ikke alle nødvendigvis ordrett sitat fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet). Engelske navn og tekster er primært ment for engelsktalende utviklere av verktøystøtte.
+Standarden brukes når en virksomhet skal tilgjengeliggjøre begrepsbeskrivelser som de selv forvalter, i et maskinlesbart format og i henhold til TBX-standarden. Standarden er basert på og ikke en direkte oversettelse av ISO-standarden TBX. Standarden er en norsk applikasjonsprofil av TBX, derfor kortnavnet TBX-AP-NO. Engelske navn og tekster som er tatt med i standarden, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet). Engelske navn og tekster er primært ment for engelsktalende utviklere av verktøystøtte.
 
-Se ellers bruksområdet https://www.digdir.no/digitalisering-og-samordning/omgrepsanalyse-og-definisjonsarbeid/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_ for andre aktuelle standarder og veiledere, bl.a. kapittel 3 i https://data.norge.no/specification/skos-ap-no-begrep[_Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_] som spesifiserer hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til RDF/SKOS. 
+Se ellers bruksområdet https://www.digdir.no/digitalisering-og-samordning/omgrepsanalyse-og-definisjonsarbeid/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_ for andre aktuelle standarder og veiledere, bl.a. https://data.norge.no/specification/skos-ap-no-begrep#Del2[kapittel 3 i _Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)_] som spesifiserer hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til RDF/SKOS. 
 
 === Målgrupper [[Målgrupper]]
 
@@ -32,9 +32,11 @@ Digdir håndterer mindre endringer. Ved behov for større endringer vil Digdir s
 
 === Kravnivåene i denne standarden [[Kravnivåene]]
 
-Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og forklaringene gjentas derfor ikke her.
+Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og forklaringene gjentas ikke her.
 
 === Hvordan du leser denne standarden [[Hvordan-du-leser-denne-standarden]]
+
+Standarden bruker ordet «skriftspråk». Norsk har to skriftspråk: bokmål og nynorsk. Disse skriftspråkene er likeverdige, og i offentlig sektor er de likestilte.
 
 Denne standarden bruker stilen DCT (Data Category as Tag). Se https://www.tbxinfo.net/dca-v-dct/[Data Category as Attribute / Data Category as Tag] for forskjellen mellom DCT og DCA, og https://www.tbxinfo.net/dca-dct-converter/[DCA-DCT Converter] for konvertering mellom disse.
 
@@ -46,10 +48,10 @@ Kravene er spesifisert i en tabell som inneholder syntaks og forklaring. Radene 
 |Navn / _Name_ |Norsk og _engelsk_ egenskapsnavn.
 |Datakategori / _Data category_ |Datakategorinavn som skal brukes i utvekslingen, oppgitt i DCT-stilen.
 
-Eksempel: basic:definition (<<Navnerom>> viser hva prefiksen `basic:` står for)
+Eksempel: `basic:definition` (<<Navnerom>> viser hva prefiksen `basic:` står for)
 |PID |En persistent identifikator til egenskapen. Dette for at man skal kunne referere til en felles spesifikasjon, og dermed felles forståelse og bruk av egenskapen. NB! Ikke alle PID-lenker gir menneskevennlige visninger.
 
-Eksempel: http://www.datcatinfo.net/datcat/DC-168 er PID for `basic:definition`
+Eksempel: `\http://www.datcatinfo.net/datcat/DC-168` er PID for `basic:definition`
 |TBX-nivå / _TBX level_ |Nivå i TBX-strukturen egenskapen brukes på.
 |TBX-klassifisering / _TBX classification_ | Elementet som er brukt til å klassifisere data kategorier som har tilsvarende hensikt.
 
@@ -61,4 +63,4 @@ Eksempel: Elementet `<descrip>` inneholder primært beskrivende opplysninger om 
 |Merknad / _Note_ |Merknad på norsk og _engelsk_, knyttet til bruk av egenskapen, bl.a. om det er krav til bruk av kontrollerte vokabularer (picklist), osv.
 |===
 
-Hvordan den enkelte egenskapen brukes i TBX, er eksemplifisert under den aktuelle tabellen. Det gjøres oppmerksom på at ikke alle eksemplene i TBX er komplette, slik at de kan mangle verdi for obligatoriske egenskaper. Eksemplene kan også inneholde fiktive data.
+Hvordan den enkelte egenskapen brukes i TBX, er eksemplifisert under den aktuelle tabellen. Eksemplene er deskriptive. Ikke alle eksempler er komplette, slik at de kan mangle verdi for obligatoriske egenskaper. Eksemplene kan også inneholde fiktive data.
