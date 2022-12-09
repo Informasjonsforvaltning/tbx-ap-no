@@ -17,7 +17,6 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 include::shared/download.adoc[]
 
-
 *Status*: Gjeldende +
 *Versjon*: 2.0.0 +
 *Publisert*: 2022-12-09 +
