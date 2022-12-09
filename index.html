@@ -595,7 +595,7 @@ Dette dokumentet kan også lastes ned <a href="files/tbx-ap-no.pdf">som PDF</a>.
 <p><strong>Status</strong>: <mark>under ferdigstilling</mark> <br>
 <strong>Versjon</strong>: <mark>utkast til v.2.0</mark><br>
 <strong>Publisert</strong>: <mark>under publisering</mark><br>
-<strong>Oppdatert</strong>: 2022-12-08<br>
+<strong>Oppdatert</strong>: 2022-12-09<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/tbx-ap-no/" class="bare">https://data.norge.no/specification/tbx-ap-no/</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/tbx-ap-no/v1" class="bare">https://data.norge.no/specification/tbx-ap-no/v1</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/tbx-ap-no/" class="bare">https://informasjonsforvaltning.github.io/tbx-ap-no/</a><br></p>
@@ -1146,7 +1146,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til begrepssamlingen begrepet inngår i.</p>
-<p class="tableblock"><em>This property is used to refer to the concept collection which the concept is a member of.</em></p></td>
+<p class="tableblock"><em>This property is used to refer to the concept collection that the concept is a member of.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -1176,7 +1176,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Denne <code>&lt;adminGrp&gt;</code> er obligatorisk og skal brukes til å oppgi opplysninger om virksomheten som har publisert begrepet, inkl. kontaktpunkt til virksomheten.</p>
 </div>
 <div class="paragraph">
-<p><em>This <code>&lt;adminGrp&gt;</code> is mandatory and shall be used til specify information about the organization which has published the concept, incl. contact point to the organization.</em></p>
+<p><em>This <code>&lt;adminGrp&gt;</code> is mandatory and shall be used til specify information about the organization that has published the concept, incl. contact point to the organization.</em></p>
 </div>
 <div class="sect3">
 <h4 id="Begrep-publisert-av"><a class="anchor" href="#Begrep-publisert-av"></a>4.3.1. Begrep – publisert av &lt;dct:publisher&gt; (1..1)</h4>
@@ -2186,7 +2186,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>Restriction 2: For each concept (<code>&lt;conceptEntry&gt;</code>) there shall be one <code>&lt;langSec&gt;</code> for Norwegian bokmål and one <code>&lt;langSec&gt;</code> for Norwegian nynorsk, and both shall have a term (<code>&lt;termSec&gt;</code>) where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code> (= preferred term). This is because "preferred term" shall be in both Norwegian bokmål and in Norwegian nynorsk.</em></p>
 </div>
 <div class="paragraph">
-<p><em>Restriction 3: There shall be min. one <code>&lt;langSec&gt;</code> which has a term (<code>&lt;termSec&gt;</code>) where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code> (= preferred term), and which has definition.</em></p>
+<p><em>Restriction 3: There shall be min. one <code>&lt;langSec&gt;</code> that has a term (<code>&lt;termSec&gt;</code>) where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code> (= preferred term), and that has definition.</em></p>
 </div>
 <div class="paragraph">
 <p>Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:</p>
@@ -2414,7 +2414,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>This <code>&lt;descripGrp&gt;</code> is recommended and should be used to specify the definition of the concept in that given language.</em></p>
 </div>
 <div class="paragraph">
-<p><em>Restriction 1: There shall be min. one <code>&lt;langSec&gt;</code> which contains a Definisjon (this <code>&lt;descripGrp&gt;</code>). In other words, every concept shall have min. one definition.</em></p>
+<p><em>Restriction 1: There shall be min. one <code>&lt;langSec&gt;</code> that contains a Definisjon (this <code>&lt;descripGrp&gt;</code>). In other words, every concept shall have min. one definition.</em></p>
 </div>
 <div class="paragraph">
 <p><em>Restriction 2: There may be max. one definition (this <code>&lt;descripGrp&gt;</code>) per <a href="#Definisjon-målgruppe"> 4.8.2, &#8220;&lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | målgruppe &lt;dct:audience&gt; (0..1)&#8221;</a> per language (<code>&lt;langSec&gt;</code>).</em></p>
@@ -4354,7 +4354,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-08 15:26:25 UTC
+Sist oppdatert 2022-12-09 06:48:11 UTC
 </div>
 </div>
 </body>

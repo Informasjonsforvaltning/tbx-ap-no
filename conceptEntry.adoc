@@ -156,7 +156,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 | Verdiområde / _Range_ |ref or xref
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til begrepssamlingen begrepet inngår i.
 
-_This property is used to refer to the concept collection which the concept is a member of._
+_This property is used to refer to the concept collection that the concept is a member of._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_|Valgfri / _Optional_
 |===
@@ -173,7 +173,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 
 Denne `<adminGrp>` er obligatorisk og skal brukes til å oppgi opplysninger om virksomheten som har publisert begrepet, inkl. kontaktpunkt til virksomheten.
 
-_This `<adminGrp>` is mandatory and shall be used til specify information about the organization which has published the concept, incl. contact point to the organization._
+_This `<adminGrp>` is mandatory and shall be used til specify information about the organization that has published the concept, incl. contact point to the organization._
 
 ==== Begrep – publisert av <dct:publisher> (1..1) [[Begrep-publisert-av]]
 

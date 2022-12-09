@@ -19,7 +19,7 @@ _Restriction 1: There shall be max. one `<langSec>` per language per concept (`<
 
 _Restriction 2: For each concept (`<conceptEntry>`) there shall be one `<langSec>` for Norwegian bokmål and one `<langSec>` for Norwegian nynorsk, and both shall have a term (`<termSec>`) where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts` (= preferred term). This is because "preferred term" shall be in both Norwegian bokmål and in Norwegian nynorsk._
 
-_Restriction 3: There shall be min. one `<langSec>` which has a term (`<termSec>`) where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts` (= preferred term), and which has definition._
+_Restriction 3: There shall be min. one `<langSec>` that has a term (`<termSec>`) where <<Term-betegnelsesstatus>> has value `basic:preferredTermAdmnSts` (= preferred term), and that has definition._
 
 Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 [source,xml]
@@ -131,7 +131,7 @@ Restriksjon 2: Det kan oppgis maks. én definisjon (denne `<descripGrp>`) per <<
 
 _This `<descripGrp>` is recommended and should be used to specify the definition of the concept in that given language._
 
-_Restriction 1: There shall be min. one `<langSec>` which contains a Definisjon (this `<descripGrp>`). In other words, every concept shall have min. one definition._
+_Restriction 1: There shall be min. one `<langSec>` that contains a Definisjon (this `<descripGrp>`). In other words, every concept shall have min. one definition._
 
 _Restriction 2: There may be max. one definition (this `<descripGrp>`) per <<Definisjon-målgruppe>> per language (`<langSec>`)._
 
