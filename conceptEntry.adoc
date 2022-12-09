@@ -125,7 +125,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 |===
 | Navn / _Name_ |versjonsnummer / _version number_
 | Datakategori / _Data category_ |owl:versionInfo
-| PID |https://www.w3.org/TR/owl-ref/#versionInfo-def[https://www.w3.org/TR/owl-ref/#versionInfo-def]
+| PID |https://www.w3.org/TR/owl-ref/#versionInfo-def[http://www.w3.org/2002/07/owl#versionInfo]
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |admin
 | Verdiområde / _Range_ |String
