@@ -18,9 +18,9 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 include::shared/download.adoc[]
 
 
-*Status*: #under ferdigstilling#  +
-*Versjon*: #utkast til v.2.0# +
-*Publisert*: #under publisering# +
+*Status*: Gjeldende +
+*Versjon*: 2.0.0 +
+*Publisert*: 2022-12-09 +
 *Oppdatert*: 2022-12-09 +
 *Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
 *Forrige versjon*: https://data.norge.no/specification/tbx-ap-no/v1 + 
@@ -51,7 +51,7 @@ include::Krav-begrep.adoc[]
 
 include::Krav-begrepssamling.adoc[]
 
-// section number off
+// Appendix, section number off
 :sectnums!:
 
 include::Navnerom.adoc[]
