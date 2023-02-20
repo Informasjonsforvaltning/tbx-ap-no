@@ -136,7 +136,7 @@ Eksempel i TBX-AP-NO (DCT style), se under <<TBX-eksempel-begrepssamling>>.
 |===
 | Navn / _Name_ |kontaktpunkt / _contact point_
 | Datakategori / _Data category_ |dcat:contactPoint
-|*PID*|http://purl.org/dc/terms/publisher[http://purl.org/dc/terms/publisher]
+|*PID*|https://www.w3.org/TR/vocab-dcat-2/#Property:resource_contact_point[http://www.w3.org/ns/dcat#contactPoint]
 | TBX-nivå / _TBX level_ |sourceDesc
 | TBX-klassifisering / _TBX Classification_ |p
 | Verdiområde / _Range_ |vcard:Organization or vcard:Group
