@@ -3,6 +3,12 @@
 
 _Vedlegget er deskriptivt_.
 
+=== Endringer fra v.2.0.0 til v.2.0.x
+
+Kun redaksjonelle endringer. 
+
+=== Endringer fra v.1.0.x til v.2.0.0
+
 Denne versjonen erstatter følgende versjon:
 
 * https://data.norge.no/specification/tbx-ap-no/v1[_Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX (TBX-AP-NO)_, v. 1.0.2]
