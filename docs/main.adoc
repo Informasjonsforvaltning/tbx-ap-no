@@ -18,7 +18,7 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 *Status*: Gjeldende +
 *Versjon*: 2.0.1 +
 *Publisert*: 2022-12-09 (v.2.0.0) +
-*Oppdatert*: 2023-02-20 (v.2.0.1) +
+*Oppdatert*: 2023-02-22 (v.2.0.1, se <<Endringslogg, endringslogg>>) +
 *Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
 *Forrige versjon*: https://data.norge.no/specification/tbx-ap-no/v1 + 
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
