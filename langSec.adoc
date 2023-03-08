@@ -97,8 +97,8 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 ** PID `\http://datcatinfo.termweb.eu/datcat/DC-73`, for tillatt term / _for admitted term_
 * basic:deprecatedTermAdmnSts
 ** PID `\http://datcatinfo.termweb.eu/datcat/DC-74`, for frarådd term / _for deprecated (not recommended) term_
-* skosno:dataStructureTerm
-** PID https://data.norge.no/vocabulary/skosno#dataStructureTerm, for datastrukturterm / _for data structure label_
+* skosno:dataStructureLabel
+** PID https://data.norge.no/vocabulary/skosno#dataStructureLabel, for datastrukturterm / _for data structure label_
 | Anvendelse / _Usage note_ |
 Egenskapen brukes til å oppgi betegnelsesstatus til termen, dvs. om termen er en anbefalt term, tillatt term, frarådd term eller datastrukturterm.
 
