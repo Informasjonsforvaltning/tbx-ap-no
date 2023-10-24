@@ -5,7 +5,8 @@ _Vedlegget er deskriptivt_.
 
 === Endringer fra v.2.0.0 til v.2.0.x
 
-Kun redaksjonelle endringer. 
+Kun redaksjonelle oppdateringer, for å rette opp skrivefeil, lenkefeil, uoverensstemmelser mellom tekst og tegning, upresise formuleringer og lignende.
+ 
 
 === Endringer fra v.1.0.x til v.2.0.0
 
