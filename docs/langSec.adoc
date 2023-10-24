@@ -76,9 +76,9 @@ Eksempel i TBX-AP-NO (DCT style), for NAVs begrep 975 («mødrekvote»):
 
 ==== <langSec> | Term <termSec>| <termNote> (1..1) [[termSec-termNote]]
 
-`<termNote>` her er obligatorisk, og skal brukes til å oppgi https://termbasen.standard.no/term/167505073802723/nb?origin=%2Fsearch-results%3FsearchText%3Dbetegnelsesstatus%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[betegnelsesstatus] (anbefalt term, tillatt term, frarådd term eller datastrukturterm).
+`<termNote>` her er obligatorisk, og skal brukes til å oppgi https://termbasen.standard.no/term/168204711306175/nb[betegnelsesstatus] (anbefalt term, tillatt term, frarådd term eller datastrukturterm).
 
-`<termNote>` _here is mandatory, and shall be used to specify the https://termbasen.standard.no/term/167505073802723/nb?origin=%2Fsearch-results%3FsearchText%3Dbetegnelsesstatus%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[acceptability rating] of the term (preferred term, admitted term, deprecated term or data structure label)._
+`<termNote>` _here is mandatory, and shall be used to specify the https://termbasen.standard.no/term/168204711306175/en[acceptability rating] of the term (preferred term, admitted term, deprecated term or data structure label)._
 
 ===== Term - betegnelsesstatus <basic:administrativeStatus> (1..1) [[Term-betegnelsesstatus]]
 
@@ -536,9 +536,9 @@ Eksempel i TBX-AP-NO (DCT style): Se under <<Begrep-er-relatert-til-med-relasjon
 === <langSec> | Generisk begrepsrelasjon <descripGrp> (0..n) [[Begrep-har-generisk-begrepsrelasjon]]
 
 
-Denne `<descripGrp>` er valgfri, og brukes til å beskrive en generisk relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å oppgi https://termbasen.standard.no/term/167505058508031/nb?origin=%2Fsearch-results%3FsearchText%3Dinndelingskriterium%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[inndelingskriterium].
+Denne `<descripGrp>` er valgfri, og brukes til å beskrive en generisk relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å oppgi https://termbasen.standard.no/term/168204529703821/nb[inndelingskriterium].
 
-_This `<descripGrp>` is optional, and is used to describe a generic relation that the current concept has with other concepts, when there is a need to specify the https://termbasen.standard.no/term/167505058508031/nb?origin=%2Fsearch-results%3FsearchText%3Dinndelingskriterium%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[criterion of subdivision]._
+_This `<descripGrp>` is optional, and is used to describe a generic relation that the current concept has with other concepts, when there is a need to specify the https://termbasen.standard.no/term/168204529703821/en[criterion of subdivision]._
 
 
 ==== Begrep – generaliserer <xkos:generalizes> (1..n) [[Begrep-generaliserer-med-inndelingskriterium]]
@@ -658,9 +658,9 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 
 === <langSec> | Partitiv begrepsrelasjon <descripGrp> (0..n) [[Begrep-har-partitiv-begrepsrelasjon]]
 
-Denne `<descripGrp>` er valgfri, og brukes til å beskrive en partitiv relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å oppgi  https://termbasen.standard.no/term/167505058508031/nb?origin=%2Fsearch-results%3FsearchText%3Dinndelingskriterium%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[inndelingskriterium].
+Denne `<descripGrp>` er valgfri, og brukes til å beskrive en partitiv relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å oppgi  https://termbasen.standard.no/term/168204529703821/nb[inndelingskriterium].
 
-_This `<descripGrp>` is optional, and is used to describe a partitive relation that the current concept has with other concepts, when there is a need to specify https://termbasen.standard.no/term/167505058508031/nb?origin=%2Fsearch-results%3FsearchText%3Dinndelingskriterium%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[criterion of subdivision]._
+_This `<descripGrp>` is optional, and is used to describe a partitive relation that the current concept has with other concepts, when there is a need to specify https://termbasen.standard.no/term/168204529703821/en[criterion of subdivision]._
 
 ==== Begrep – er del av <xkos:isPartOf> (1..n) [[Begrep-er-del-av-med-inndelingskriterium]]
 
