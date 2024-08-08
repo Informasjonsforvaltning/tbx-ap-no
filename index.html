@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <meta name="description" content="TBX-AP-NO – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX">
 <meta name="author" content="Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency">
 <title>TBX-AP-NO – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på TBX</title>
@@ -142,7 +142,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -164,6 +164,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -329,7 +330,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -619,7 +620,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Forord"><a class="anchor" href="#Forord"></a>Forord</h2>
+<h2 id="Forord"><a class="link" href="#Forord">Forord</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Som en anbefalt standard inngår denne standarden i bruksområdet <a href="https://www.digdir.no/digitalisering-og-samordning/omgrepsanalyse-og-definisjonsarbeid/1483">Omgrepsanalyse og definisjonsarbeid</a> i <em>Referansekatalogen</em>. <a href="https://www.digdir.no/digitalisering-og-samordning/referansekatalogen-it-standarder/1480"><em>Referansekatalogen</em></a> er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.</p>
@@ -630,10 +631,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Om-denne-standarden"><a class="anchor" href="#Om-denne-standarden"></a>1. Om denne standarden</h2>
+<h2 id="Om-denne-standarden"><a class="link" href="#Om-denne-standarden">1. Om denne standarden</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="Formål"><a class="anchor" href="#Formål"></a>1.1. Formål</h3>
+<h3 id="Formål"><a class="link" href="#Formål">1.1. Formål</a></h3>
 <div class="paragraph">
 <p>Det er et uttrykt ønske, både fra regjeringshold og fra offentlig sektor, at ulike deler av forvaltningen skal kunne gjenbruke hverandres informasjon i større grad. I <a href="https://www.regjeringen.no/no/dokumenter/en-digital-offentlig-sektor/id2653874/?ch=4">regjeringens digitaliseringsstrategi for offentlig sektor 2019–2025</a> leser vi:</p>
 </div>
@@ -652,7 +653,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Omfang-og-avgrensinger"><a class="anchor" href="#Omfang-og-avgrensinger"></a>1.2. Omfang og avgrensinger</h3>
+<h3 id="Omfang-og-avgrensinger"><a class="link" href="#Omfang-og-avgrensinger">1.2. Omfang og avgrensinger</a></h3>
 <div class="paragraph">
 <p>Standarden spesifiserer hvordan begrepsbeskrivelser som er utformet i henhold til kravene i <a href="https://data.norge.no/specification/skos-ap-no-begrep#Del1">kapittel 2 i <em>Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)</em></a>, gjøres tilgjengelige i maskinlesbare formater i henhold til ISO-standarden TBX. Standarden spesifiserer ikke krav til et eventuelt IT-system for å forvalte begrepsbeskrivelser.</p>
 </div>
@@ -664,13 +665,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Målgrupper"><a class="anchor" href="#Målgrupper"></a>1.3. Målgrupper</h3>
+<h3 id="Målgrupper"><a class="link" href="#Målgrupper">1.3. Målgrupper</a></h3>
 <div class="paragraph">
 <p>Standarden er primært for deg som skal utvikle/tilpasse verktøystøtte for tilgjengeliggjøring av begrepsbeskrivelser i henhold ISO-standarden TBX.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Forvaltningsregime"><a class="anchor" href="#Forvaltningsregime"></a>1.4. Forvaltningsregime</h3>
+<h3 id="Forvaltningsregime"><a class="link" href="#Forvaltningsregime">1.4. Forvaltningsregime</a></h3>
 <div class="paragraph">
 <p>Standarden forvaltes av <a href="https://digdir.no/">Digitaliseringsdirektoratet (Digdir)</a>.</p>
 </div>
@@ -679,13 +680,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Kravnivåene"><a class="anchor" href="#Kravnivåene"></a>1.5. Kravnivåene i denne standarden</h3>
+<h3 id="Kravnivåene"><a class="link" href="#Kravnivåene">1.5. Kravnivåene i denne standarden</a></h3>
 <div class="paragraph">
 <p>Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene">DCAT-AP-NO</a> og forklaringene gjentas ikke her.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Hvordan-du-leser-denne-standarden"><a class="anchor" href="#Hvordan-du-leser-denne-standarden"></a>1.6. Hvordan du leser denne standarden</h3>
+<h3 id="Hvordan-du-leser-denne-standarden"><a class="link" href="#Hvordan-du-leser-denne-standarden">1.6. Hvordan du leser denne standarden</a></h3>
 <div class="paragraph">
 <p>Standarden bruker ordet «skriftspråk». Norsk har to skriftspråk: bokmål og nynorsk. Disse skriftspråkene er likeverdige, og i offentlig sektor er de likestilte.</p>
 </div>
@@ -757,7 +758,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Normative-referanser"><a class="anchor" href="#Normative-referanser"></a>2. Normative referanser</h2>
+<h2 id="Normative-referanser"><a class="link" href="#Normative-referanser">2. Normative referanser</a></h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -772,7 +773,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Generelle-krav"><a class="anchor" href="#Generelle-krav"></a>3. Generelle krav til bruk av standardiserte formater</h2>
+<h2 id="Generelle-krav"><a class="link" href="#Generelle-krav">3. Generelle krav til bruk av standardiserte formater</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Det anbefales å bruke standardiserte formater til å representere følgende datatyper, i intern lagring og maskinell tilgjengeliggjøring eksternt:</p>
@@ -796,10 +797,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Krav-begrep"><a class="anchor" href="#Krav-begrep"></a>4. Krav til TBX-representasjon av et begrep</h2>
+<h2 id="Krav-begrep"><a class="link" href="#Krav-begrep">4. Krav til TBX-representasjon av et begrep</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="conceptEntry"><a class="anchor" href="#conceptEntry"></a>4.1. &lt;conceptEntry&gt; (1..n)</h3>
+<h3 id="conceptEntry"><a class="link" href="#conceptEntry">4.1. &lt;conceptEntry&gt; (1..n)</a></h3>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="images/TBX-AP-NO_conceptEntry.png"><img src="images/TBX-AP-NO_conceptEntry.png" alt="Diagram med 26 bokser og piler i mellom. Innholdet er forklart i teksten."></a>
@@ -829,7 +830,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="conceptEntry-admin"><a class="anchor" href="#conceptEntry-admin"></a>4.2. &lt;conceptEntry&gt; | &lt;admin&gt; (1..n)</h3>
+<h3 id="conceptEntry-admin"><a class="link" href="#conceptEntry-admin">4.2. &lt;conceptEntry&gt; | &lt;admin&gt; (1..n)</a></h3>
 <div class="paragraph">
 <p><code>&lt;admin&gt;</code> brukes her til å oppgi ulike administrative opplysninger om begrepet.</p>
 </div>
@@ -837,7 +838,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><code>&lt;admin&gt;</code> <em>is used here to specify various administrative information about the concept.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-identifikator"><a class="anchor" href="#Begrep-identifikator"></a>4.2.1. Begrep – identifikator &lt;dct:identifier&gt; (1..n)</h4>
+<h4 id="Begrep-identifikator"><a class="link" href="#Begrep-identifikator">4.2.1. Begrep – identifikator &lt;dct:identifier&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -895,7 +896,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-ansvarlig-virksomhet"><a class="anchor" href="#Begrep-ansvarlig-virksomhet"></a>4.2.2. Begrep – ansvarlig virksomhet &lt;dct:creator&gt; (0..1)</h4>
+<h4 id="Begrep-ansvarlig-virksomhet"><a class="link" href="#Begrep-ansvarlig-virksomhet">4.2.2. Begrep – ansvarlig virksomhet &lt;dct:creator&gt; (0..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -943,7 +944,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="sect3">
-<h4 id="Begrep-dato-gyldi-fra-og-med"><a class="anchor" href="#Begrep-dato-gyldi-fra-og-med"></a>4.2.3. Begrep – dato gyldig fra og med &lt;euvoc:startDate&gt; (0..1)</h4>
+<h4 id="Begrep-dato-gyldi-fra-og-med"><a class="link" href="#Begrep-dato-gyldi-fra-og-med">4.2.3. Begrep – dato gyldig fra og med &lt;euvoc:startDate&gt; (0..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1001,7 +1002,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-dato-gyldig-til-og-med"><a class="anchor" href="#Begrep-dato-gyldig-til-og-med"></a>4.2.4. Begrep – dato gyldig til og med &lt;euvoc:endDate&gt; (0..1)</h4>
+<h4 id="Begrep-dato-gyldig-til-og-med"><a class="link" href="#Begrep-dato-gyldig-til-og-med">4.2.4. Begrep – dato gyldig til og med &lt;euvoc:endDate&gt; (0..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1059,7 +1060,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-versjonsnummer"><a class="anchor" href="#Begrep-versjonsnummer"></a>4.2.5. Begrep – versjonsnummer &lt;owl:versionInfo&gt; (0..1)</h4>
+<h4 id="Begrep-versjonsnummer"><a class="link" href="#Begrep-versjonsnummer">4.2.5. Begrep – versjonsnummer &lt;owl:versionInfo&gt; (0..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1117,7 +1118,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-inngår-i"><a class="anchor" href="#Begrep-inngår-i"></a>4.2.6. Begrep – inngår i begrepssamling &lt;uneskos:memberOf&gt; (0..n)</h4>
+<h4 id="Begrep-inngår-i"><a class="link" href="#Begrep-inngår-i">4.2.6. Begrep – inngår i begrepssamling &lt;uneskos:memberOf&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1176,7 +1177,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="conceptEntry-adminGrp"><a class="anchor" href="#conceptEntry-adminGrp"></a>4.3. &lt;conceptEntry&gt; | &lt;adminGrp&gt; (1..1)</h3>
+<h3 id="conceptEntry-adminGrp"><a class="link" href="#conceptEntry-adminGrp">4.3. &lt;conceptEntry&gt; | &lt;adminGrp&gt; (1..1)</a></h3>
 <div class="paragraph">
 <p>Denne <code>&lt;adminGrp&gt;</code> er obligatorisk og skal brukes til å oppgi opplysninger om virksomheten som har publisert begrepet, inkl. kontaktpunkt til virksomheten.</p>
 </div>
@@ -1184,7 +1185,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>This <code>&lt;adminGrp&gt;</code> is mandatory and shall be used til specify information about the organization that has published the concept, incl. contact point to the organization.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-publisert-av"><a class="anchor" href="#Begrep-publisert-av"></a>4.3.1. Begrep – publisert av &lt;dct:publisher&gt; (1..1)</h4>
+<h4 id="Begrep-publisert-av"><a class="link" href="#Begrep-publisert-av">4.3.1. Begrep – publisert av &lt;dct:publisher&gt; (1..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1252,7 +1253,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-kontaktpunkt"><a class="anchor" href="#Begrep-kontaktpunkt"></a>4.3.2. Begrep – kontaktpunkt &lt;dcat:contactPoint&gt; (1..n)</h4>
+<h4 id="Begrep-kontaktpunkt"><a class="link" href="#Begrep-kontaktpunkt">4.3.2. Begrep – kontaktpunkt &lt;dcat:contactPoint&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1325,7 +1326,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="conceptEntry-transacGrp"><a class="anchor" href="#conceptEntry-transacGrp"></a>4.4. &lt;conceptEntry&gt; | &lt;transacGrp&gt; (0..2)</h3>
+<h3 id="conceptEntry-transacGrp"><a class="link" href="#conceptEntry-transacGrp">4.4. &lt;conceptEntry&gt; | &lt;transacGrp&gt; (0..2)</a></h3>
 <div class="paragraph">
 <p>Denne <code>&lt;transacGrp&gt;</code> er anbefalt og brukes til å oppgi datoen da begrepet ble opprettet eller datoen da begrepet sist ble oppdatert, som begge er anbefalte egenskaper.</p>
 </div>
@@ -1333,7 +1334,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>This <code>&lt;transacGrp&gt;</code> is recommended and is used to specify the date when the concept was created or the date when the concept was last modified, which are recommended properties.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-transaksjonstype"><a class="anchor" href="#Begrep-transaksjonstype"></a>4.4.1. Begrep – transaksjonstype &lt;basic:transactionType&gt; (1..1)</h4>
+<h4 id="Begrep-transaksjonstype"><a class="link" href="#Begrep-transaksjonstype">4.4.1. Begrep – transaksjonstype &lt;basic:transactionType&gt; (1..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1425,7 +1426,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-transaksjonsdato"><a class="anchor" href="#Begrep-transaksjonsdato"></a>4.4.2. Begrep – transaksjonsdato &lt;date&gt; (1..1)</h4>
+<h4 id="Begrep-transaksjonsdato"><a class="link" href="#Begrep-transaksjonsdato">4.4.2. Begrep – transaksjonsdato &lt;date&gt; (1..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1482,7 +1483,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="conceptEnetry-descrip"><a class="anchor" href="#conceptEnetry-descrip"></a>4.5. &lt;conceptEntry&gt; | &lt;descrip&gt; (0..n)</h3>
+<h3 id="conceptEnetry-descrip"><a class="link" href="#conceptEnetry-descrip">4.5. &lt;conceptEntry&gt; | &lt;descrip&gt; (0..n)</a></h3>
 <div class="paragraph">
 <p><code>&lt;descrip&gt;</code> her er valgfri og kan brukes til å beskrive ulike begrepsrelasjoner som alle er valgfrie egenskaper, når det ikke er behov for å beskrive relasjonene med ytterligere egenskaper. Bruk <code>&lt;descripGrp&gt;</code> i <code>&lt;langSec&gt;</code> når det er behov for ytterligere egenskaper for relasjonen.</p>
 </div>
@@ -1490,7 +1491,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>The <code>&lt;descrip&gt;</code> here is optional and may be used to specify various concept relations which are all optional, when there is no need to describe the relations with additional information. Use <code>&lt;descripGrp&gt;</code> in <code>&lt;langSec&gt;</code> when there is a need for additional information about the concept relation.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-generaliserer"><a class="anchor" href="#Begrep-generaliserer"></a>4.5.1. Begrep – generaliserer &lt;xkos:generalizes&gt; (0..n)</h4>
+<h4 id="Begrep-generaliserer"><a class="link" href="#Begrep-generaliserer">4.5.1. Begrep – generaliserer &lt;xkos:generalizes&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1563,7 +1564,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-spesialiserer"><a class="anchor" href="#Begrep-spesialiserer"></a>4.5.2. Begrep – spesialiserer &lt;xkos:specializes&gt; (0..n)</h4>
+<h4 id="Begrep-spesialiserer"><a class="link" href="#Begrep-spesialiserer">4.5.2. Begrep – spesialiserer &lt;xkos:specializes&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1636,7 +1637,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-er-del-av"><a class="anchor" href="#Begrep-er-del-av"></a>4.5.3. Begrep – er del av &lt;xkos:isPartOf&gt; (0..n)</h4>
+<h4 id="Begrep-er-del-av"><a class="link" href="#Begrep-er-del-av">4.5.3. Begrep – er del av &lt;xkos:isPartOf&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1709,7 +1710,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-inneholder"><a class="anchor" href="#Begrep-inneholder"></a>4.5.4. Begrep – inneholder &lt;xkos:hasPart&gt; (0..n)</h4>
+<h4 id="Begrep-inneholder"><a class="link" href="#Begrep-inneholder">4.5.4. Begrep – inneholder &lt;xkos:hasPart&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1784,7 +1785,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-har-nært-samsvar-med"><a class="anchor" href="#Begrep-har-nært-samsvar-med"></a>4.5.5. Begrep – har nært samsvar med &lt;skos:closeMatch&gt; (0..n)</h4>
+<h4 id="Begrep-har-nært-samsvar-med"><a class="link" href="#Begrep-har-nært-samsvar-med">4.5.5. Begrep – har nært samsvar med &lt;skos:closeMatch&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1842,7 +1843,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-har-eksakt-samsvar-med"><a class="anchor" href="#Begrep-har-eksakt-samsvar-med"></a>4.5.6. Begrep – har eksakt samsvar med &lt;skos:exactMatch&gt; (0..n)</h4>
+<h4 id="Begrep-har-eksakt-samsvar-med"><a class="link" href="#Begrep-har-eksakt-samsvar-med">4.5.6. Begrep – har eksakt samsvar med &lt;skos:exactMatch&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1900,7 +1901,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-erstatter"><a class="anchor" href="#Begrep-erstatter"></a>4.5.7. Begrep – erstatter &lt;dct:replaces&gt; (0..n)</h4>
+<h4 id="Begrep-erstatter"><a class="link" href="#Begrep-erstatter">4.5.7. Begrep – erstatter &lt;dct:replaces&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1963,7 +1964,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-er-erstattet-av"><a class="anchor" href="#Begrep-er-erstattet-av"></a>4.5.8. Begrep – er erstattet av &lt;dct:isReplacedBy&gt; (0..n)</h4>
+<h4 id="Begrep-er-erstattet-av"><a class="link" href="#Begrep-er-erstattet-av">4.5.8. Begrep – er erstattet av &lt;dct:isReplacedBy&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2026,7 +2027,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-se-også"><a class="anchor" href="#Begrep-se-også"></a>4.5.9. Begrep – se også &lt;rdfs:seeAlso&gt; (0..n)</h4>
+<h4 id="Begrep-se-også"><a class="link" href="#Begrep-se-også">4.5.9. Begrep – se også &lt;rdfs:seeAlso&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2088,7 +2089,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-er-relatert-til"><a class="anchor" href="#Begrep-er-relatert-til"></a>4.5.10. Begrep – er relatert til &lt;skos:related&gt; (0..n)</h4>
+<h4 id="Begrep-er-relatert-til"><a class="link" href="#Begrep-er-relatert-til">4.5.10. Begrep – er relatert til &lt;skos:related&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2162,7 +2163,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="langSec"><a class="anchor" href="#langSec"></a>4.6. &lt;langSec&gt; (2..n)</h3>
+<h3 id="langSec"><a class="link" href="#langSec">4.6. &lt;langSec&gt; (2..n)</a></h3>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="images/TBX-AP-NO_langSec.png"><img src="images/TBX-AP-NO_langSec.png" alt="Diagram med 32 bokser og piler i mellom. Innholdet er forklart i teksten."></a>
@@ -2210,7 +2211,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Term"><a class="anchor" href="#Term"></a>4.7. &lt;langSec&gt; | Term &lt;termSec&gt; (1..n)</h3>
+<h3 id="Term"><a class="link" href="#Term">4.7. &lt;langSec&gt; | Term &lt;termSec&gt; (1..n)</a></h3>
 <div class="paragraph">
 <p><code>&lt;termSec&gt;</code> er obligatorisk og skal brukes til å beskrive termer på det gitte skriftspråk (<code>&lt;langSec&gt;</code>) for det gitte begrepet (<code>&lt;conceptEntry&gt;</code>).</p>
 </div>
@@ -2224,7 +2225,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>Resctriction: A <code>&lt;langSec&gt;</code> may have several <code>&lt;termSec&gt;</code> but max. one where <a href="#Term-betegnelsesstatus"> 4.7.2.1, &#8220;Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)&#8221;</a> has value <code>basic:preferredTermAdmnSts</code> (= preferred term).</em></p>
 </div>
 <div class="sect3">
-<h4 id="Term-tekst"><a class="anchor" href="#Term-tekst"></a>4.7.1. &lt;langSec&gt; | Term &lt;termSec&gt; | tekst &lt;term&gt; (1..1)</h4>
+<h4 id="Term-tekst"><a class="link" href="#Term-tekst">4.7.1. &lt;langSec&gt; | Term &lt;termSec&gt; | tekst &lt;term&gt; (1..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2286,7 +2287,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="termSec-termNote"><a class="anchor" href="#termSec-termNote"></a>4.7.2. &lt;langSec&gt; | Term &lt;termSec&gt;| &lt;termNote&gt; (1..1)</h4>
+<h4 id="termSec-termNote"><a class="link" href="#termSec-termNote">4.7.2. &lt;langSec&gt; | Term &lt;termSec&gt;| &lt;termNote&gt; (1..1)</a></h4>
 <div class="paragraph">
 <p><code>&lt;termNote&gt;</code> her er obligatorisk, og skal brukes til å oppgi <a href="https://termbasen.standard.no/term/168204711306175/nb">betegnelsesstatus</a> (anbefalt term, tillatt term, frarådd term eller datastrukturterm).</p>
 </div>
@@ -2294,7 +2295,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><code>&lt;termNote&gt;</code> <em>here is mandatory, and shall be used to specify the <a href="https://termbasen.standard.no/term/168204711306175/en">acceptability rating</a> of the term (preferred term, admitted term, deprecated term or data structure label).</em></p>
 </div>
 <div class="sect4">
-<h5 id="Term-betegnelsesstatus"><a class="anchor" href="#Term-betegnelsesstatus"></a>4.7.2.1. Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)</h5>
+<h5 id="Term-betegnelsesstatus"><a class="link" href="#Term-betegnelsesstatus">4.7.2.1. Term - betegnelsesstatus &lt;basic:administrativeStatus&gt; (1..1)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2405,7 +2406,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_langsec_definisjon_descripgrp_0_n"><a class="anchor" href="#_langsec_definisjon_descripgrp_0_n"></a>4.8. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n)</h3>
+<h3 id="_langsec_definisjon_descripgrp_0_n"><a class="link" href="#_langsec_definisjon_descripgrp_0_n">4.8. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n)</a></h3>
 <div class="paragraph">
 <p>Denne <code>&lt;descripGrp&gt;</code> er anbefalt og brukes til å oppgi definisjon til begrepet på det gitte skriftspråket.</p>
 </div>
@@ -2425,7 +2426,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>Restriction 2: There may be max. one definition (this <code>&lt;descripGrp&gt;</code>) per <a href="#Definisjon-målgruppe"> 4.8.2, &#8220;&lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | målgruppe &lt;dct:audience&gt; (0..1)&#8221;</a> per language (<code>&lt;langSec&gt;</code>).</em></p>
 </div>
 <div class="sect3">
-<h4 id="Definisjon-tekst"><a class="anchor" href="#Definisjon-tekst"></a>4.8.1. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | tekst &lt;basic:definition&gt; (1..1)</h4>
+<h4 id="Definisjon-tekst"><a class="link" href="#Definisjon-tekst">4.8.1. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | tekst &lt;basic:definition&gt; (1..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2487,7 +2488,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Definisjon-målgruppe"><a class="anchor" href="#Definisjon-målgruppe"></a>4.8.2. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | målgruppe &lt;dct:audience&gt; (0..1)</h4>
+<h4 id="Definisjon-målgruppe"><a class="link" href="#Definisjon-målgruppe">4.8.2. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (0..n) | målgruppe &lt;dct:audience&gt; (0..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2558,7 +2559,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Definisjon-kildebeskrivelse"><a class="anchor" href="#Definisjon-kildebeskrivelse"></a>4.8.3. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (1..n) | kildebeskrivelse &lt;adminGrp&gt; (0..1)</h4>
+<h4 id="Definisjon-kildebeskrivelse"><a class="link" href="#Definisjon-kildebeskrivelse">4.8.3. &lt;langSec&gt; | Definisjon &lt;descripGrp&gt; (1..n) | kildebeskrivelse &lt;adminGrp&gt; (0..1)</a></h4>
 <div class="paragraph">
 <p>Denne <code>&lt;adminGrp&gt;</code> er anbefalt, og brukes til å beskrive kilden(e) til definisjonen.</p>
 </div>
@@ -2566,7 +2567,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>This <code>&lt;adminGrp&gt;</code> is recommended, and is used to describe the source(s) for the definition.</em></p>
 </div>
 <div class="sect4">
-<h5 id="Definisjon-forhold-til-kilde"><a class="anchor" href="#Definisjon-forhold-til-kilde"></a>4.8.3.1. Definisjon – forhold til kilde &lt;skosno:relationshipWithSource&gt; (0..1)</h5>
+<h5 id="Definisjon-forhold-til-kilde"><a class="link" href="#Definisjon-forhold-til-kilde">4.8.3.1. Definisjon – forhold til kilde &lt;skosno:relationshipWithSource&gt; (0..1)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2645,7 +2646,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect4">
-<h5 id="Definisjon-kilde"><a class="anchor" href="#Definisjon-kilde"></a>4.8.3.2. Definisjon – kilde &lt;basic:source&gt; (0..n)</h5>
+<h5 id="Definisjon-kilde"><a class="link" href="#Definisjon-kilde">4.8.3.2. Definisjon – kilde &lt;basic:source&gt; (0..n)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2708,7 +2709,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="langSec-admin"><a class="anchor" href="#langSec-admin"></a>4.9. &lt;langSec&gt; | &lt;admin&gt; (0..2)</h3>
+<h3 id="langSec-admin"><a class="link" href="#langSec-admin">4.9. &lt;langSec&gt; | &lt;admin&gt; (0..2)</a></h3>
 <div class="paragraph">
 <p><code>&lt;admin&gt;</code> her er valgfri, og brukes til å beskrive begrepets status eller versjonsnoter til begrepets aktuelle versjon.</p>
 </div>
@@ -2716,7 +2717,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><code>&lt;admin&gt;</code> <em>here is optional, and is used to describe the status of the concept or version note(s) about the current version of the concept.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-status"><a class="anchor" href="#Begrep-status"></a>4.9.1. Begrep – status &lt;euvoc:status&gt; (0..1)</h4>
+<h4 id="Begrep-status"><a class="link" href="#Begrep-status">4.9.1. Begrep – status &lt;euvoc:status&gt; (0..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2781,7 +2782,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-versjonsnote"><a class="anchor" href="#Begrep-versjonsnote"></a>4.9.2. Begrep – versjonsnote &lt;adms:versionNotes&gt; (0..n)</h4>
+<h4 id="Begrep-versjonsnote"><a class="link" href="#Begrep-versjonsnote">4.9.2. Begrep – versjonsnote &lt;adms:versionNotes&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2842,7 +2843,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="langSec-descrip"><a class="anchor" href="#langSec-descrip"></a>4.10. &lt;langSec&gt; | &lt;descrip&gt; (0..n)</h3>
+<h3 id="langSec-descrip"><a class="link" href="#langSec-descrip">4.10. &lt;langSec&gt; | &lt;descrip&gt; (0..n)</a></h3>
 <div class="paragraph">
 <p>Denne <code>&lt;descrip&gt;</code> brukes til å beskrive følgende opplysninger om begrepet: (valgfri) eksempel, (anbefalt) merknad, (anbefalt) fagområde eller (valgfri) verdiområde.</p>
 </div>
@@ -2850,7 +2851,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>The <code>&lt;descrip&gt;</code> here is used to describe the following information about the concept: (optional) example, (recommended) note, (recommended) subject field or (optional) value range.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-eksempel"><a class="anchor" href="#Begrep-eksempel"></a>4.10.1. Begrep – eksempel &lt;skos:example&gt; (0..n)</h4>
+<h4 id="Begrep-eksempel"><a class="link" href="#Begrep-eksempel">4.10.1. Begrep – eksempel &lt;skos:example&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2910,7 +2911,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-merknad"><a class="anchor" href="#Begrep-merknad"></a>4.10.2. Begrep – merknad &lt;basic:note&gt; (0..n)</h4>
+<h4 id="Begrep-merknad"><a class="link" href="#Begrep-merknad">4.10.2. Begrep – merknad &lt;basic:note&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2970,7 +2971,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-fagområde"><a class="anchor" href="#Begrep-fagområde"></a>4.10.3. Begrep – fagområde &lt;basic:subjectField&gt; (0..n)</h4>
+<h4 id="Begrep-fagområde"><a class="link" href="#Begrep-fagområde">4.10.3. Begrep – fagområde &lt;basic:subjectField&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3035,7 +3036,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-verdiområde"><a class="anchor" href="#Begrep-verdiområde"></a>4.10.4. Begrep – verdiområde &lt;skosno:valueRange&gt; (0..n)</h4>
+<h4 id="Begrep-verdiområde"><a class="link" href="#Begrep-verdiområde">4.10.4. Begrep – verdiområde &lt;skosno:valueRange&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3097,7 +3098,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Begrep-har-assosiativ-begrepsrelasjon"><a class="anchor" href="#Begrep-har-assosiativ-begrepsrelasjon"></a>4.11. &lt;langSec&gt; | Assosiativ begrepsrelasjon &lt;descripGrp&gt; (0..n)</h3>
+<h3 id="Begrep-har-assosiativ-begrepsrelasjon"><a class="link" href="#Begrep-har-assosiativ-begrepsrelasjon">4.11. &lt;langSec&gt; | Assosiativ begrepsrelasjon &lt;descripGrp&gt; (0..n)</a></h3>
 <div class="paragraph">
 <p>Denne <code>&lt;descripGrp&gt;</code> er valgfri, og brukes til å beskrive en assosiativ relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å beskrive relasjonen med relasjonsrollen begrepet har.</p>
 </div>
@@ -3105,7 +3106,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>This <code>&lt;descripGrp&gt;</code> is optional, and is used to describe an associative relation that the current concept has with other concepts, when there is a need to describe the relation with the relation role that the concept has.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-er-relatert-til-med-relasjonsrolle"><a class="anchor" href="#Begrep-er-relatert-til-med-relasjonsrolle"></a>4.11.1. Begrep – er relatert til &lt;skos:related&gt; (1..n)</h4>
+<h4 id="Begrep-er-relatert-til-med-relasjonsrolle"><a class="link" href="#Begrep-er-relatert-til-med-relasjonsrolle">4.11.1. Begrep – er relatert til &lt;skos:related&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3173,7 +3174,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-relasjonsrolle"><a class="anchor" href="#Begrep-relasjonsrolle"></a>4.11.2. Begrep – relasjonsrolle &lt;skosno:relationRole&gt; (1..1)</h4>
+<h4 id="Begrep-relasjonsrolle"><a class="link" href="#Begrep-relasjonsrolle">4.11.2. Begrep – relasjonsrolle &lt;skosno:relationRole&gt; (1..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3230,7 +3231,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Begrep-har-generisk-begrepsrelasjon"><a class="anchor" href="#Begrep-har-generisk-begrepsrelasjon"></a>4.12. &lt;langSec&gt; | Generisk begrepsrelasjon &lt;descripGrp&gt; (0..n)</h3>
+<h3 id="Begrep-har-generisk-begrepsrelasjon"><a class="link" href="#Begrep-har-generisk-begrepsrelasjon">4.12. &lt;langSec&gt; | Generisk begrepsrelasjon &lt;descripGrp&gt; (0..n)</a></h3>
 <div class="paragraph">
 <p>Denne <code>&lt;descripGrp&gt;</code> er valgfri, og brukes til å beskrive en generisk relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å oppgi <a href="https://termbasen.standard.no/term/168204529703821/nb">inndelingskriterium</a>.</p>
 </div>
@@ -3238,7 +3239,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>This <code>&lt;descripGrp&gt;</code> is optional, and is used to describe a generic relation that the current concept has with other concepts, when there is a need to specify the <a href="https://termbasen.standard.no/term/168204529703821/en">criterion of subdivision</a>.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-generaliserer-med-inndelingskriterium"><a class="anchor" href="#Begrep-generaliserer-med-inndelingskriterium"></a>4.12.1. Begrep – generaliserer &lt;xkos:generalizes&gt; (1..n)</h4>
+<h4 id="Begrep-generaliserer-med-inndelingskriterium"><a class="link" href="#Begrep-generaliserer-med-inndelingskriterium">4.12.1. Begrep – generaliserer &lt;xkos:generalizes&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3315,7 +3316,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-spesialiserer-med-inndelingskriterium"><a class="anchor" href="#Begrep-spesialiserer-med-inndelingskriterium"></a>4.12.2. Begrep – spesialiserer &lt;xkos:specializes&gt; (1..n)</h4>
+<h4 id="Begrep-spesialiserer-med-inndelingskriterium"><a class="link" href="#Begrep-spesialiserer-med-inndelingskriterium">4.12.2. Begrep – spesialiserer &lt;xkos:specializes&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3392,7 +3393,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-generisk-begrepsrelasjon-inndelingskriterium"><a class="anchor" href="#Begrep-generisk-begrepsrelasjon-inndelingskriterium"></a>4.12.3. Begrep – generisk begrepsrelasjon – inndelingskriterium &lt;dct:description&gt; (0..1)</h4>
+<h4 id="Begrep-generisk-begrepsrelasjon-inndelingskriterium"><a class="link" href="#Begrep-generisk-begrepsrelasjon-inndelingskriterium">4.12.3. Begrep – generisk begrepsrelasjon – inndelingskriterium &lt;dct:description&gt; (0..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3456,7 +3457,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Begrep-har-partitiv-begrepsrelasjon"><a class="anchor" href="#Begrep-har-partitiv-begrepsrelasjon"></a>4.13. &lt;langSec&gt; | Partitiv begrepsrelasjon &lt;descripGrp&gt; (0..n)</h3>
+<h3 id="Begrep-har-partitiv-begrepsrelasjon"><a class="link" href="#Begrep-har-partitiv-begrepsrelasjon">4.13. &lt;langSec&gt; | Partitiv begrepsrelasjon &lt;descripGrp&gt; (0..n)</a></h3>
 <div class="paragraph">
 <p>Denne <code>&lt;descripGrp&gt;</code> er valgfri, og brukes til å beskrive en partitiv relasjon som det aktuelle begrepet har med andre begreper, når det er behov for å oppgi  <a href="https://termbasen.standard.no/term/168204529703821/nb">inndelingskriterium</a>.</p>
 </div>
@@ -3464,7 +3465,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><em>This <code>&lt;descripGrp&gt;</code> is optional, and is used to describe a partitive relation that the current concept has with other concepts, when there is a need to specify <a href="https://termbasen.standard.no/term/168204529703821/en">criterion of subdivision</a>.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrep-er-del-av-med-inndelingskriterium"><a class="anchor" href="#Begrep-er-del-av-med-inndelingskriterium"></a>4.13.1. Begrep – er del av &lt;xkos:isPartOf&gt; (1..n)</h4>
+<h4 id="Begrep-er-del-av-med-inndelingskriterium"><a class="link" href="#Begrep-er-del-av-med-inndelingskriterium">4.13.1. Begrep – er del av &lt;xkos:isPartOf&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3541,7 +3542,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-inneholder-med-inndelingskriterium"><a class="anchor" href="#Begrep-inneholder-med-inndelingskriterium"></a>4.13.2. Begrep – inneholder &lt;xkos:hasPart&gt; (1..n)</h4>
+<h4 id="Begrep-inneholder-med-inndelingskriterium"><a class="link" href="#Begrep-inneholder-med-inndelingskriterium">4.13.2. Begrep – inneholder &lt;xkos:hasPart&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3620,7 +3621,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-partitiv-begrepsrelasjon-inndelingskriterium"><a class="anchor" href="#Begrep-partitiv-begrepsrelasjon-inndelingskriterium"></a>4.13.3. Begrep – partitiv begrepsrelasjon – inndelingskriterium &lt;dct:description&gt; (0..1)</h4>
+<h4 id="Begrep-partitiv-begrepsrelasjon-inndelingskriterium"><a class="link" href="#Begrep-partitiv-begrepsrelasjon-inndelingskriterium">4.13.3. Begrep – partitiv begrepsrelasjon – inndelingskriterium &lt;dct:description&gt; (0..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3686,10 +3687,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Krav-begrepssamling"><a class="anchor" href="#Krav-begrepssamling"></a>5. Krav til TBX-representasjon av en begrepssamling</h2>
+<h2 id="Krav-begrepssamling"><a class="link" href="#Krav-begrepssamling">5. Krav til TBX-representasjon av en begrepssamling</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_begrepssamling_tbx_1_1"><a class="anchor" href="#_begrepssamling_tbx_1_1"></a>5.1. Begrepssamling &lt;tbx&gt; (1..1)</h3>
+<h3 id="_begrepssamling_tbx_1_1"><a class="link" href="#_begrepssamling_tbx_1_1">5.1. Begrepssamling &lt;tbx&gt; (1..1)</a></h3>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="images/TBX-AP-NO_Begrepssamling.png"><img src="images/TBX-AP-NO_Begrepssamling.png" alt="Diagram med 15 bokser og piler i mellom. Innholdet er forklart i teksten."></a>
@@ -3754,7 +3755,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="titleStmt"><a class="anchor" href="#titleStmt"></a>5.2. &lt;titleStmt&gt; (1..1)</h3>
+<h3 id="titleStmt"><a class="link" href="#titleStmt">5.2. &lt;titleStmt&gt; (1..1)</a></h3>
 <div class="paragraph">
 <p><code>&lt;titleStmt&gt;</code> er obligatorisk. Navn og beskrivelse til begrepssamlingen oppgis i <code>&lt;titleStmt&gt;</code>.</p>
 </div>
@@ -3762,7 +3763,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><code>&lt;titleStmt&gt;</code> <em>is mandatory. The name and description of the concept collection is specified in <code>&lt;titleStmt&gt;</code>.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrepssamling-navn"><a class="anchor" href="#Begrepssamling-navn"></a>5.2.1. Begrepssamling – navn &lt;dct:title&gt; (1..n)</h4>
+<h4 id="Begrepssamling-navn"><a class="link" href="#Begrepssamling-navn">5.2.1. Begrepssamling – navn &lt;dct:title&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3813,7 +3814,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrepssamling-beskrivelse"><a class="anchor" href="#Begrepssamling-beskrivelse"></a>5.2.2. Begrepssamling – beskrivelse &lt;dct:description&gt; (0..n)</h4>
+<h4 id="Begrepssamling-beskrivelse"><a class="link" href="#Begrepssamling-beskrivelse">5.2.2. Begrepssamling – beskrivelse &lt;dct:description&gt; (0..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3865,7 +3866,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="sourceDesc"><a class="anchor" href="#sourceDesc"></a>5.3. &lt;sourceDesc&gt; (1..1)</h3>
+<h3 id="sourceDesc"><a class="link" href="#sourceDesc">5.3. &lt;sourceDesc&gt; (1..1)</a></h3>
 <div class="paragraph">
 <p><code>&lt;sourceDesc&gt;</code> er obligatorisk. Begrepssamlingens identifikator, virksomheten som publiserte begrepssamlingen og kontaktpunkt(er) til virksomheten oppgis i <code>&lt;sourceDesc&gt;</code>.</p>
 </div>
@@ -3873,7 +3874,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><code>&lt;sourceDesc&gt;</code> <em>is mandatory. The concept collection&#8217;s identifier, publisher and contact point to the publisher are specified in <code>&lt;sourceDesc&gt;</code>.</em></p>
 </div>
 <div class="sect3">
-<h4 id="Begrepssamling-identifikator"><a class="anchor" href="#Begrepssamling-identifikator"></a>5.3.1. Begrepssamling – identifikator &lt;dct:identifier&gt; (1..1)</h4>
+<h4 id="Begrepssamling-identifikator"><a class="link" href="#Begrepssamling-identifikator">5.3.1. Begrepssamling – identifikator &lt;dct:identifier&gt; (1..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3924,7 +3925,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrepssamling-publisert-av"><a class="anchor" href="#Begrepssamling-publisert-av"></a>5.3.2. Begrepssamling – publisert av &lt;dct:publisher&gt; (1..1)</h4>
+<h4 id="Begrepssamling-publisert-av"><a class="link" href="#Begrepssamling-publisert-av">5.3.2. Begrepssamling – publisert av &lt;dct:publisher&gt; (1..1)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3980,7 +3981,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrepssamling-kontaktpunkt"><a class="anchor" href="#Begrepssamling-kontaktpunkt"></a>5.3.3. Begrepssamling – kontaktpunkt &lt;dcat:contactPoint&gt; (1..n)</h4>
+<h4 id="Begrepssamling-kontaktpunkt"><a class="link" href="#Begrepssamling-kontaktpunkt">5.3.3. Begrepssamling – kontaktpunkt &lt;dcat:contactPoint&gt; (1..n)</a></h4>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4034,7 +4035,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Navnerom"><a class="anchor" href="#Navnerom"></a>Vedlegg A - Navnerom som er brukt i denne standard</h2>
+<h2 id="Navnerom"><a class="link" href="#Navnerom">Vedlegg A - Navnerom som er brukt i denne standard</a></h2>
 <div class="sectionbody">
 <table id="Tabell-navnerom" class="tableblock frame-all grid-all stripes-odd stretch">
 <caption class="title">Tabell 1. Oversikt over navnerom som er brukt i denne standarden (tabellen er deskriptiv)</caption>
@@ -4141,13 +4142,13 @@ xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
 </div>
 </div>
 <div class="sect1">
-<h2 id="TBX-AP-NO-Eksempler"><a class="anchor" href="#TBX-AP-NO-Eksempler"></a>Vedlegg B – Eksempler i TBX-AP-NO</h2>
+<h2 id="TBX-AP-NO-Eksempler"><a class="link" href="#TBX-AP-NO-Eksempler">Vedlegg B – Eksempler i TBX-AP-NO</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Vedlegget er descriptivt</em>.</p>
 </div>
 <div class="sect2">
-<h3 id="Eksempel-minimum"><a class="anchor" href="#Eksempel-minimum"></a>Eksempel på en TBX-representasjon av en minimum beskrivelse av et begrep</h3>
+<h3 id="Eksempel-minimum"><a class="link" href="#Eksempel-minimum">Eksempel på en TBX-representasjon av en minimum beskrivelse av et begrep</a></h3>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -4223,7 +4224,7 @@ xmlns:vcard="http://www.w3.org/2006/vcard/ns#"&gt;
 </table>
 </div>
 <div class="sect2">
-<h3 id="TBX-eksempel-begrepssamling"><a class="anchor" href="#TBX-eksempel-begrepssamling"></a>Eksempel på en TBX-representasjon av en begrepssamling</h3>
+<h3 id="TBX-eksempel-begrepssamling"><a class="link" href="#TBX-eksempel-begrepssamling">Eksempel på en TBX-representasjon av en begrepssamling</a></h3>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -4303,19 +4304,19 @@ xmlns:vcard="http://www.w3.org/2006/vcard/ns#"&gt;
 </div>
 </div>
 <div class="sect1">
-<h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Vedlegg C – Endingslogg</h2>
+<h2 id="Endringslogg"><a class="link" href="#Endringslogg">Vedlegg C – Endingslogg</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Vedlegget er deskriptivt</em>.</p>
 </div>
 <div class="sect2">
-<h3 id="_endringer_fra_v_2_0_0_til_v_2_0_x"><a class="anchor" href="#_endringer_fra_v_2_0_0_til_v_2_0_x"></a>Endringer fra v.2.0.0 til v.2.0.x</h3>
+<h3 id="_endringer_fra_v_2_0_0_til_v_2_0_x"><a class="link" href="#_endringer_fra_v_2_0_0_til_v_2_0_x">Endringer fra v.2.0.0 til v.2.0.x</a></h3>
 <div class="paragraph">
 <p>Kun redaksjonelle oppdateringer, for å rette opp skrivefeil, lenkefeil, uoverensstemmelser mellom tekst og tegning, upresise formuleringer og lignende.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_endringer_fra_v_1_0_x_til_v_2_0_0"><a class="anchor" href="#_endringer_fra_v_1_0_x_til_v_2_0_0"></a>Endringer fra v.1.0.x til v.2.0.0</h3>
+<h3 id="_endringer_fra_v_1_0_x_til_v_2_0_0"><a class="link" href="#_endringer_fra_v_1_0_x_til_v_2_0_0">Endringer fra v.1.0.x til v.2.0.0</a></h3>
 <div class="paragraph">
 <p>Denne versjonen erstatter følgende versjon:</p>
 </div>
@@ -4368,7 +4369,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-10-24 12:41:40 UTC
+Sist oppdatert 2024-08-08 13:27:30 UTC
 </div>
 </div>
 </body>
