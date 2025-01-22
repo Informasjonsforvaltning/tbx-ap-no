@@ -25,13 +25,11 @@ image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 *Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
 
-// include::shared/download.adoc[]
-
 // markere denne som "utgått" med fixed textbox her kodet direkte i html
 ++++
 <div style="position: fixed; top: 40%; left: 50%; transform: translateX(-50%); background-color: #ffffff; border: 1px solid black; padding: 15px; box-shadow: 15px 15px 15px red; opacity: 0.85">
-  <p> <b>NB! Denne versjonen av TBX-AP-NO er utfaset og vil ikke bli vedlikeholdt (inkl. ev. kjente feil/mangler). <br>
-   Vi oppfordrer sterkt til å bruke <a href=https://data.norge.no/specification/tbx-ap-no>den til enhver tid gjeldende versjon av TBX-AP-NO</a>.</b> </p>
+  <p> <strong>NB! Denne versjonen av TBX-AP-NO er utfaset og vil ikke bli vedlikeholdt (inkl. ev. kjente feil/mangler). <br>
+   Vi oppfordrer sterkt til å bruke <a href=https://data.norge.no/specification/tbx-ap-no>den til enhver tid gjeldende versjon av TBX-AP-NO</a>.</strong> </p>
 </div>
 ++++
 
