@@ -59,4 +59,5 @@ include::TBX-eksempler.adoc[]
 
 include::Endringslogg.adoc[]
 
-//include::shared/stats.adoc[]
+// Analytics
+include::shared/analytics.adoc[]
