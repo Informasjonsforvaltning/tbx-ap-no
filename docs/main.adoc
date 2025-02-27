@@ -54,4 +54,4 @@ include::vedlegg-a.adoc[]
 
 include::vedlegg-b.adoc[]
 
-include::shared/stats.adoc[]
+//include::shared/stats.adoc[]
