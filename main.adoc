@@ -23,7 +23,7 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 *Forrige versjon*: https://data.norge.no/specification/tbx-ap-no/v1 + 
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
 
-include::shared/download.adoc[]
+include::download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/tbx-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
@@ -59,4 +59,5 @@ include::TBX-eksempler.adoc[]
 
 include::Endringslogg.adoc[]
 
-include::shared/stats.adoc[]
+// Analytics
+include::shared/analytics.adoc[]
