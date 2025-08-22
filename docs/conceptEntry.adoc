@@ -150,7 +150,7 @@ Eksempel i TBX-AP-NO (DCT style), for et fiktivt eksempelbegrep:
 |===
 | Navn / _Name_ |inngår i begrepssamling / _member of_
 | Datakategori / _Data category_ |uneskos:memberOf
-| PID |https://skos.um.es/TR/uneskos/#memberOf[https://skos.um.es/TR/uneskos/#memberOf]
+| PID | \http://purl.org/umu/uneskos#memberOf
 | TBX-nivå / _TBX level_ |conceptEntry
 | TBX-klassifisering / _TBX Classification_ |admin
 | Verdiområde / _Range_ |ref or xref
