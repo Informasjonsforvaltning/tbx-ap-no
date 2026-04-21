@@ -8,6 +8,10 @@ on:
       - docs/**
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   adoc_build:
     runs-on: ubuntu-latest
