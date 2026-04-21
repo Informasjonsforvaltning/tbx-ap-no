@@ -8,6 +8,9 @@ on:
       - "docs/**"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   adoc_build:
     runs-on: ubuntu-latest
