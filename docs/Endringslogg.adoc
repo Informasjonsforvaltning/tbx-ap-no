@@ -3,6 +3,8 @@
 
 _Vedlegget er deskriptivt_.
 
+NB! #Standarden er utfaset#. Bruk RDF-basert tilgjengeliggjøring av begrepsbeskrivelser i stedet, se https://data.norge.no/specification/skos-ap-no-begrep/[_Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep)_].
+
 === Endringer fra v.2.0.0 til v.2.0.x
 
 Kun redaksjonelle oppdateringer, for å rette opp skrivefeil, lenkefeil, uoverensstemmelser mellom tekst og tegning, upresise formuleringer og lignende.
