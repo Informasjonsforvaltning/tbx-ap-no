@@ -15,18 +15,26 @@ ifdef::backend-pdf[:toc: macro]
 
 image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
-*Status*: Gjeldende +
+*Status*: #Utfaset# +
 *Versjon*: 2.0.4 +
 *Publisert*: 2022-12-09 (v.2.0.0) +
-*Oppdatert*: 2025-08-22 (v.2.0.x, se <<Endringslogg, endringslogg>>) +
-*Gjeldende versjon*: https://data.norge.no/specification/tbx-ap-no/ +
+*Oppdatert*: 2026-06-15 (markert utfaset), 2025-08-22 (v.2.0.x), se <<Endringslogg, endringslogg>> +
+*Denne versjon*: https://data.norge.no/specification/tbx-ap-no/ +
 *Forrige versjon*: https://data.norge.no/specification/tbx-ap-no/v1 + 
-*Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
+// *Redaktørens utkast*: https://informasjonsforvaltning.github.io/tbx-ap-no/ +
 
-include::download.adoc[]
+// include::download.adoc[]
 
-NOTE: *Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/tbx-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+// NOTE: *Innmelding av feil og mangler:* +
+// Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/tbx-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+
+// markere denne som "utgått" med fixed textbox her kodet direkte i html
+++++
+<div style="position: fixed; top: 40%; left: 50%; transform: translateX(-50%); background-color: #ffffff; border: 1px solid black; padding: 15px; box-shadow: 15px 15px 15px red; opacity: 0.85">
+  <p> <strong>NB! Denne standarden er utfaset og vil ikke bli vedlikeholdt. </p>
+  <p>Bruk RDF-basert tilgjengeliggjøring av begrepsbeskrivelser i stedet, se <a href=https://data.norge.no/specification/skos-ap-no-begrep>Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)</a>.</a> </strong> </p>
+</div>
+++++
 
 // innholdsfortegnelse i PDF plasseres her:
 toc::[]
